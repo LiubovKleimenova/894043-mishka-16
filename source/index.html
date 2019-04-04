@@ -2,11 +2,108 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Интернет-магазин Мишка</title>
+    <title>Интернет-магазин Mishka</title>
+
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header>
+      <p class="logo"><img src="http://placehold.it/86x35" alt="Логотип Mishka" width="86" height="35"></p>
+      <nav>
+        <ul>
+          <li><a href="">Каталог товаров</a></li>
+          <li><a href="">Вязание на заказ</a></li>
+          <li><a href="">Поиск по сайту</a></li>
+          <li><a href="">Корзина: <span>пока пуста</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Милые штуки ручной работы для дома</h1>
+      <section>
+        <h2>Наши изделия</h2>
+        <ul>
+          <li>Предметы интерьера</li>
+          <li>Детские игрушки</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Товар недели</h2>
+        <p>Вязаные корзинки</p>
+        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах</p>
+        <table><!--Видела в интернете мнение, что в такой  как здесь ситуации
+          с описанием этой корзинки  можно использовать теги dl, dt,dd (
+          вроде как список данных), в спецификации тоже написано, что они подходит для
+          name-value group, не знаю какой будет праивльнее выбрать -->
+          <tr>
+            <td>Цвет:</td>
+            <td>&laquo;Тиффани&raquo;/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+        <img src="http://placehold.it/260x315" alt="Вязаные корзинки различных расцветок" width="260" height="315">
+        <p class="price">Цена:<span>990 руб.</span></p>
+        <a href="" class=" button">Заказать</a> <!--я так понимаю здесь при нажатии открывается
+          модальное окно, но могло бы открываться и в новом окне-->
+      </section>
+      <section>
+        <h2>Коротко о нас</h2>
+        <ul>
+          <li>
+            <p></p>
+          </li>
+          <li>
+            <p></p>
+          </li>
+          <li>
+            <p></p>
+          </li>
+          <li>
+            <p></p>
+          </li>
+          <li>
+            <p></p>
+          </li>
+          <li>
+            <p></p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2>Отзывы</h2>
+        <p>Анастасия Красильникова<span>@misssssiskras</span></p>
+        <button></button>
+        <button></button>
+        <button class="button">Написать</button>
+      </section>
+      <section>
+        <h2>Контакты</h2>
+          <table><!--опять же не уверена таблица ли это?-->
+            <tr>
+              <td>e-mail:</td>
+              <td>info@mimimishkashop.ru</td>
+            </tr>
+            <tr>
+              <td>адрес:</td>
+              <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            </tr>
+          </table>
+          <img src="http://placehold.it/320x457" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8, офис 101" width="320" height="457">
+      </section>
+      <footer>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <p>Разработано <a href=""><img src="http://placehold.it/27x34" alt="Логотип HTML Academy"></a></p>
+      </footer>
+    </main>
   </body>
 </html>
