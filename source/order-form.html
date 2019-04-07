@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма онлайн-заказа Mishka</title>
+
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo"><img src="http://placehold.it/86x35" alt="Логотип Mishka" width="86" height="35"></a>
+      <nav>
+        <ul>
+          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li><a>Вязание на заказ</a></li>
+          <li><a href="">Поиск по сайту</a></li>
+          <li><a href="">Корзина: <span>пока пуста</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Вязание на заказ</h1>
+      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Тип</legend>
+          <input type="radio" name="product-type" id="accessories" value="accessories" checked>
+          <label for="accessories">Аксессуары для интерьера</label>
+          <input type="radio" name="product-type" id="toys" value="toys">
+          <label for="toys">Аксессуары для интерьера</label>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <label for="white" class="color-select">
+            <input type="checkbox" name="white" id="white" checked/>
+            <span class="checkbox-indicator"></span>Белый
+          </label>
+          <label for="gray" class="color-select">
+            <input type="checkbox" name="gray" id="gray" checked/>
+            <span class="checkbox-indicator"></span>Серый
+          </label>
+          <label for="tiffany" class="color-select">
+            <input type="checkbox" name="tiffany" id="tiffany"/>
+            <span class="checkbox-indicator"></span>Тиффани
+          </label>
+          <label for="black" class="color-select">
+            <input type="checkbox" name="black" id="black"/>
+            <span class="checkbox-indicator"></span>Черный
+          </label>
+          <label for="pink" class="color-select">
+            <input type="checkbox" name="pink" id="pink"/>
+            <span class="checkbox-indicator"></span>Розовый
+          </label>
+          <label for="orange" class="color-select">
+            <input type="checkbox" name="orange" id="orange"/>
+            <span class="checkbox-indicator"></span>Оранжевый
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>ФИО</legend>
+          <label> Имя:
+          <input type="text" name="name" value="Введите ваше имя*">
+          </label>
+          <label> Фамилия:
+          <input type="text" name="surname" value="Укажите фамилию*">
+          </label>
+          <label> Отчество:
+          <input type="text" name="fathers-name" value="Отчество, если желаете">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>ТЕЛ</legend>
+          <input type="text" name="phone-number" value="+7 XXX XXX XX XX*">
+        </fieldset>
+        <fieldset>
+          <legend>E-MAIL</legend>
+          <input type="email" placeholder="Ваш Email*">
+        </fieldset>
+        <fieldset>
+          <legend>ДОП</legend>
+          <textarea name="additional-info" rows="8" cols="25">Опишите все ваши пожелания к заказу</textarea>
+        </fieldset>
+
+        <p>*Поля обязательны для заполнения</p>
+        <input type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+
+      </form>
+    </main>
+  </body>
+</html>
