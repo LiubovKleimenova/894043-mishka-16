@@ -63,20 +63,18 @@
         <p class="manufacturing__description">По просьбам нашиз фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
         <a href="#" class="manufacturing__button button">Сделать заказ</a>
       </section>
-
-      <section class="page-catalog__modal modal">
+      <section class="page-main__modal modal">
         <h2 class="modal__heading">Добавить в корзину</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="modal__fieldset">
             <p class="modal__command">Выберите размер</p>
-            <label class="modal__radio radio_S" for="small">S <input type="radio" name="item-size" id="small" checked></label>
-            <label class="modal__radio radio_M" for="medium">M <input type="radio" name="item-size" id="medium"></label>
-            <label class="modal__radio radio_L" for="large">L <input type="radio" name="item-size" id="large"></label>
+            <label class="modal__radio radio_S" for="small">S <input type="radio" name="item-size" id="small" value="small" checked></label>
+            <label class="modal__radio radio_M" for="medium">M <input type="radio" name="item-size" id="medium" value="medium"></label>
+            <label class="modal__radio radio_L" for="large">L <input type="radio" name="item-size" id="large" value="large"></label>
           </fieldset>
-          <input class="modal__button button" type="submit" value="Добавить">
+          <button class="modal__button button" type="submit">Добавить</button>
         </form>
       </section>
-
     </main>
     <footer class="page-footer">
       <ul class="page-footer__list social">
