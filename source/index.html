@@ -98,21 +98,20 @@
           </table>
           <img class="contacts-map" src="http://placehold.it/320x457" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8, офис 101" width="320" height="457">
       </section>
+
       <section class="page-main__modal modal">
         <h2 class="modal__heading">Добавить в корзину</h2>
-        <p class="modal__text">Выберите размер</p>
-
-<!--         -->
-
-
-
-<!-- ДОБАВИТЬ ВЫБОР РАЗМЕРА ЧЕРЕЗ РАДИОКНОПКИ-->
-
-
-
-<!--         -->
-
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal__fieldset">
+            <p class="modal__command">Выберите размер</p>
+            <label class="modal__radio radio_S" for="small">S <input type="radio" name="item-size" id="small" checked></label>
+            <label class="modal__radio radio_M" for="medium">M <input type="radio" name="item-size" id="medium"></label>
+            <label class="modal__radio radio_L" for="large">L <input type="radio" name="item-size" id="large"></label>
+          </fieldset>
+          <input class="modal__button button" type="submit" value="Добавить">
+        </form>
       </section>
+
     </main>
     <footer class="page-footer">
       <ul class="page-footer__list social">

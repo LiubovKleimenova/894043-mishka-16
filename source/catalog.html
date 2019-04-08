@@ -63,25 +63,27 @@
         <p class="manufacturing__description">По просьбам нашиз фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
         <a href="#" class="manufacturing__button button">Сделать заказ</a>
       </section>
-<!--          -->
 
-<!--     ДОБАВИТЬ МОДАЛКУ
+      <section class="page-catalog__modal modal">
+        <h2 class="modal__heading">Добавить в корзину</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal__fieldset">
+            <p class="modal__command">Выберите размер</p>
+            <label class="modal__radio radio_S" for="small">S <input type="radio" name="item-size" id="small" checked></label>
+            <label class="modal__radio radio_M" for="medium">M <input type="radio" name="item-size" id="medium"></label>
+            <label class="modal__radio radio_L" for="large">L <input type="radio" name="item-size" id="large"></label>
+          </fieldset>
+          <input class="modal__button button" type="submit" value="Добавить">
+        </form>
+      </section>
 
-
-+ПРОГНАТЬ ЧЕРЕЗ prettier / beautify     -->
-
-<!--          -->
-
-<!--          -->
     </main>
-
-      <footer class="page-footer">
-        <ul class="page-footer__list social">
-          <li class="social__item"><a href="#"><span class="visually-hidden">Мишка в Инстаграм</span></a></li>
-          <li class="social__item"><a href="#"><span class="visually-hidden">Мишка на фейсбуке</span></a></li>
-          <li class="social__item"><a href="#"><span class="visually-hidden">Мишка в твиттере</span></a></li>
-        </ul>
-        <p class="page-footer__copyright author">Разработано <a class="author__link" href=""><img class="author__logo" src="http://placehold.it/27x34" alt="Логотип HTML Academy"></a></p>
-      </footer>
-
+    <footer class="page-footer">
+      <ul class="page-footer__list social">
+        <li class="social__item"><a href="#"><span class="visually-hidden">Мишка в Инстаграм</span></a></li>
+        <li class="social__item"><a href="#"><span class="visually-hidden">Мишка на фейсбуке</span></a></li>
+        <li class="social__item"><a href="#"><span class="visually-hidden">Мишка в твиттере</span></a></li>
+      </ul>
+      <p class="page-footer__copyright author">Разработано <a class="author__link" href=""><img class="author__logo" src="http://placehold.it/27x34" alt="Логотип HTML Academy"></a></p>
+    </footer>
   </body>
