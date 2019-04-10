@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 14px;
+
+  @include font17-bold;
+  color: #444444;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: solid 2px #444444;
+  background-color: #ffffff;
+
+}

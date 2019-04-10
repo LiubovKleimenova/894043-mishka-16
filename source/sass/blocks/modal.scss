@@ -1,0 +1,46 @@
+.modal {
+  @include inner-padding;
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 336px;
+  box-shadow: 0px 5px 10px 0 $dark-forest-green;
+  border: solid 1px $pinkish-grey;
+}
+
+.modal__heading {
+  display: block;
+  width: 148px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.modal__fieldset {
+  @include zero-indent;
+  margin-bottom: 31px;
+  border: none;
+}
+
+.modal__command {
+  @include zero-indent;
+  margin-bottom: 38px;
+  text-align: center;
+  color: #444444;
+}
+
+.modal__button {
+  background-color: $seafoam-blue;
+  border-color: $seafoam-blue;
+  color: #ffffff;
+}

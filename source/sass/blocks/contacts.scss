@@ -1,0 +1,31 @@
+.contacts {
+  @include inner-padding();
+  padding-top: 45px;
+}
+
+.contacts__heading {
+  @include zero-indent;
+  @include font17-bold;
+}
+//разобраться??
+.contacts__info {
+  margin-top: 42px;
+  margin-bottom: 42px;
+  border-collapse: collapse;
+}
+.contacts__feature{
+  width: 50px;
+}
+
+.contacts__value {
+  padding-left: 30px;
+}
+
+.contacts__map {
+  margin-left: -30px;
+}
+
+.contacts__button {
+  margin-top: 39px;
+  margin-bottom: 39px;
+}

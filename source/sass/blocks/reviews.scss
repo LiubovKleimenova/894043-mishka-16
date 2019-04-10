@@ -1,0 +1,51 @@
+.reviews {
+  @include zero-indent;
+  @include inner-padding();
+  padding-top: 60px;
+  padding-bottom: 45px;
+}
+
+.reviews__heading {
+}
+
+.reviews__review-text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: left;
+  color: #444444;
+}
+
+.reviews__person {
+  @include font17-bold;
+  text-align: left;
+  color: #000000;
+}
+
+.reviews__nikname {
+  font-weight: normal;
+  line-height: 1.76;
+  color: #444444;
+}
+
+.reviews__arrow {
+  @include zero-indent;
+  margin-bottom: 38px;
+  width: 130px;
+  height: 52px;
+  border: solid 1px #ececec;
+  background-color: #ffffff;
+
+  &--left {
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--right {
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

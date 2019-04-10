@@ -1,0 +1,56 @@
+.promo {
+  @include zero-indent;
+  padding-top: 34px;
+  @include inner-padding();
+}
+.promo__heading {
+  @include zero-indent;
+}
+.promo__item {
+  @include zero-indent;
+  padding-top: 8px;
+  padding-bottom: 30px;
+  @include font17-bold;
+  text-align: left;
+  color: $seafoam-blue;
+  text-transform: uppercase;
+}
+.promo__description {
+  @include zero-indent;
+  padding-bottom: 30px;
+  color: #444444;
+}
+.promo__info {
+  border-collapse: collapse;
+}
+
+.promo__line {
+  border-bottom:1px solid #ececec;
+}
+
+.promo__value {
+  padding-left: 30px;
+  padding: 10px 20px 10px 30px;
+}
+
+.promo__picture {
+  @include zero-indent;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.promo__price {
+  @include zero-indent;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  color: #444444;
+  text-align: center;
+}
+
+.promo__button {
+  margin-top: 28px;
+  margin-bottom: 36px;
+}

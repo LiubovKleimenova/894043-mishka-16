@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 62px;
+  margin-left: 57px;
+}
+
+.social__item {
+  display: block;
+  list-style: none;
+}
+
+.social__pic {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  &--instagram {
+    width: 22px;
+    height: 21px;
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &--fb {
+    width: 15px;
+    height: 28px;
+    background-image: url("../img/icon-fb.svg");
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+    background-image: url("../img/icon-twitter.svg");
+  }
+}

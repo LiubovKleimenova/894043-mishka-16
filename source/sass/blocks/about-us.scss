@@ -1,0 +1,13 @@
+.about-us {
+  @include zero-indent;
+  padding-top: 34px;
+  @include inner-padding();
+}
+
+.about-us__heading {
+  @include zero-indent;
+}
+
+.about-us__list {
+  @include zero-indent;
+}

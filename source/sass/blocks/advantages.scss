@@ -1,0 +1,12 @@
+.advantages {
+  list-style: none;
+
+  @include font17-bold;
+  color: #000000;
+  text-align: left;
+}
+
+.advantages__item {
+  @include zero-indent;
+  padding-top: 85px;
+}

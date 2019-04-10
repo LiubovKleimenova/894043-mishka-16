@@ -1,0 +1,19 @@
+.main-nav {
+  position: relative;
+
+  @include font17-bold;
+  line-height: 1.41;
+  color: #000000;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -50px;
+  left: 210px;
+
+}
+
+.main-nav__list {
+  @include zero-indent;
+
+}
