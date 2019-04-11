@@ -1,5 +1,4 @@
-.mishka-products{
-
+.mishka-products {
   outline: 3px solid red;
 }
 
@@ -9,23 +8,23 @@
 
 .mishka-products__item {
   display: block;
+
   @include zero-indent;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 29px;
   padding-right: 185px;
-
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 19px;
   font-weight: bold;
   line-height: 1.26;
 
   &:first-child {
-      background-color: $seafoam-blue;
+    background-color: $seafoam-blue;
   }
 
   &:last-child {
-      background-color: $aqua-marine;
+    background-color: $aqua-marine;
   }
 
   list-style: none;

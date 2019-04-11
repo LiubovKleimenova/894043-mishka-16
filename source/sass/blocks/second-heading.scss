@@ -1,6 +1,6 @@
 .second-heading {
   @include zero-indent;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 25px;
   font-weight: bold;
   font-style: normal;
@@ -9,6 +9,5 @@
   letter-spacing: normal;
   text-align: left;
   color: #000000;
-
   outline: 3px solid blue;
 }

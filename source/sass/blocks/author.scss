@@ -1,13 +1,12 @@
 .author {
+  @include zero-indent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 182px;
-  @include zero-indent;
   margin-left: auto;
   margin-right: auto;
-
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 19px;
   font-weight: bold;
   font-style: normal;
@@ -18,15 +17,10 @@
   color: #000000;
 }
 
-.author__link {
-
-}
-
 .author__logo {
   fill: $seafoam-blue;
 
   &:hover {
     fill: #46c1ae;
   }
-
 }

@@ -1,7 +1,7 @@
 .about-us {
   @include zero-indent;
-  padding-top: 34px;
   @include inner-padding();
+  padding-top: 34px;
   outline: 3px solid red;
 }
 

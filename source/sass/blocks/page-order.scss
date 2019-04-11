@@ -4,11 +4,8 @@
   outline: 5px solid blue;
 }
 
-.page-order__heading {}
-
 .page-order__suggestion {
   @include outer-margin;
-
   font-size: 13px;
   font-weight: normal;
   font-style: normal;

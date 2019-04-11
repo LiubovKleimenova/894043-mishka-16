@@ -4,7 +4,6 @@
   @include font17-bold;
   line-height: 1.41;
   color: #000000;
-
   outline: 3px solid red;
 }
 
@@ -12,10 +11,8 @@
   position: absolute;
   top: -50px;
   left: 210px;
-
 }
 
 .main-nav__list {
   @include zero-indent;
-
 }

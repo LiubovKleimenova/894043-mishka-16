@@ -3,7 +3,7 @@
   padding-right: 28px;
 }
 
-.product__photo{
+.product__photo {
   margin-left: -28px;
 }
 
@@ -14,6 +14,7 @@
 .product__name {
   @include zero-indent;
   padding-top: 32px;
+
   @include font17-bold;
   color: #000000;
   text-decoration: none;

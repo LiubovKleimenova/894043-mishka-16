@@ -3,17 +3,15 @@
   box-sizing: border-box;
   width: 320px;
   min-height: 336px;
-  box-shadow: 0px 5px 10px 0 $dark-forest-green;
+  box-shadow: 0 5px 10px 0 0 $dark-forest-green;
   border: solid 1px $pinkish-grey;
 }
 
 .modal__heading {
   display: block;
   width: 148px;
-
   margin-left: auto;
   margin-right: auto;
-
   font-size: 25px;
   font-weight: bold;
   font-style: normal;
@@ -22,7 +20,6 @@
   letter-spacing: normal;
   text-align: center;
   color: #000000;
-
   text-transform: uppercase;
 }
 
@@ -37,8 +34,4 @@
   margin-bottom: 38px;
   text-align: center;
   color: #444444;
-}
-
-.modal__button {
-
 }

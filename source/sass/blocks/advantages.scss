@@ -1,10 +1,8 @@
 .advantages {
-  list-style: none;
-
   @include font17-bold;
+  list-style: none;
   color: #000000;
   text-align: left;
-
 }
 
 .advantages__item {

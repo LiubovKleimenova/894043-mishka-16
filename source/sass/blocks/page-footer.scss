@@ -1,9 +1,9 @@
 .page-footer {
   width: $width-mobile;
   box-sizing: border-box;
+
   @include inner-padding;
   background-color: #f1f1f1;
-
   outline: 3px solid red;
 }
 
@@ -16,6 +16,6 @@
 }
 
 .page-footer__copyright {
-    display: block;
-    min-height: 80px;
+  display: block;
+  min-height: 80px;
 }
