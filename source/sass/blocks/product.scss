@@ -1,0 +1,37 @@
+.product {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.product__photo{
+  margin-left: -28px;
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__name {
+  @include zero-indent;
+  padding-top: 32px;
+  @include font17-bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product__description {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}
+
+.product__price {
+  border-top: 1px solid #ececec;
+  padding-top: 27px;
+  padding-bottom: 30px;
+}

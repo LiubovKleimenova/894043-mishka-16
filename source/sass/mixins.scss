@@ -18,6 +18,11 @@
   padding-right: $p-right;
 }
 
+@mixin outer-margin($m-left: 30px, $m-right: 30px) {
+  margin-left: $m-left;
+  margin-right: $m-right;
+}
+
 @mixin zero-indent {
   margin: 0;
   padding: 0;

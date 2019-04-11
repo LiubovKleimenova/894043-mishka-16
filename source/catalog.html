@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"  href="index.html"><img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Логотип Mishka" width="86" height="35"></a>
+      <a class="page-header__logo"  href="index.html"><img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka" width="86" height="35"></a>
       <nav class="page-header__menu main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
@@ -20,14 +20,14 @@
       </nav>
     </header>
     <main class="page-catalog">
-      <h1  class="page-catalog__heading main-heading">Каталог товаров</h1>
+      <h1  class="page-catalog__heading main-heading grey-heading">Каталог товаров</h1>
       <section class="catalog">
-        <h2 class="catalog__heading second-heading">Список товаров</h2>
+        <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list goods">
           <li class="goods__item product">
             <a class="product__link" href="#">
-              <img class="product__photo" src="http://placehold.it/260x195" alt="Вязаный заяц" width="260" height="195">
-              <h3 class="product__name">Зайчик-попрыгайчик</h3>
+              <img class="product__photo" src="img/photo-hare-mobile@1x.jpg" alt="Вязаный заяц" width="260" height="195">
+              <p class="product__name">Зайчик-попрыгайчик</p>
             </a>
             <p class="product__description">Рост 30 см, вес 200 г</p>
             <p class="product__price">1 200 руб.</p>
@@ -37,7 +37,7 @@
           </li>
           <li class="goods__item product">
             <a class="product__link" href="#">
-              <img class="product__photo" src="http://placehold.it/260x195" alt="Вязаная корзинка" width="260" height="195">
+              <img class="product__photo" src="img/photo-bowl-mobile@1x.jpg" alt="Вязаная корзинка" width="260" height="195">
               <h3 class="product__name">Корзинка для белья</h3>
             </a>
             <p class="product__description">Диаметр 15 см, высота 10 см</p>
@@ -48,7 +48,7 @@
           </li>
           <li class="goods__item product">
             <a class="product__link" href="#">
-              <img class="product__photo" src="http://placehold.it/260x195" alt="Большая вязаная корзинка" width="260" height="195">
+              <img class="product__photo" src="img/photo-toys-mobile@1x.jpg" alt="Большая вязаная корзинка" width="260" height="195">
               <h3 class="product__name">Большая корзинка для игрушек</h3>
             </a>
             <p class="product__description">Диаметр 30 см, высота 30 см</p>
@@ -62,8 +62,9 @@
       <section class="manufacturing">
         <h2 class="manufacturing__heading">Процесс производства</h2>
         <a class="manufacturing__video" href="#"><img src="http://placehold.it/260x150" alt="Видео процесса"  width="260" height="150"></a>
-        <p class="manufacturing__description">По просьбам нашиз фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-        <a href="#" class="manufacturing__button button">Сделать заказ</a>
+        <p class="manufacturing__description">По просьбам нашиз фолловеров мы сняли для вас подробное видео о том, как появляются наши товары
+          <a href="#" class="manufacturing__button button">Сделать заказ</a>
+        </p>
       </section>
       <section class="page-main__modal modal">
         <h2 class="modal__heading">Добавить в корзину</h2>
@@ -74,7 +75,7 @@
             <label class="modal__radio radio_M" for="medium">M <input type="radio" name="item-size" id="medium" value="medium"></label>
             <label class="modal__radio radio_L" for="large">L <input type="radio" name="item-size" id="large" value="large"></label>
           </fieldset>
-          <button class="modal__button button" type="submit">Добавить</button>
+          <button class="modal__button button button--blue" type="submit">Добавить</button>
         </form>
       </section>
     </main>

@@ -3,6 +3,7 @@
   @include inner-padding();
   padding-top: 60px;
   padding-bottom: 45px;
+  outline: 3px solid red;
 }
 
 .reviews__heading {
@@ -15,6 +16,7 @@
   line-height: 2;
   text-align: left;
   color: #444444;
+  outline: 3px solid yellow;
 }
 
 .reviews__person {

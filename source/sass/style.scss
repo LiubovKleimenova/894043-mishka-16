@@ -1,3 +1,7 @@
+html {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
 @import "variables.scss";
 @import "mixins.scss";
 @import "blocks/visually-hidden.scss";
@@ -18,3 +22,12 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/author.scss";
+
+@import "blocks/page-catalog.scss";
+@import "blocks/catalog.scss";
+@import "blocks/goods.scss";
+@import "blocks/product.scss";
+@import "blocks/manufacturing.scss";
+
+@import "blocks/page-order.scss";
+@import "blocks/grey-heading.scss";

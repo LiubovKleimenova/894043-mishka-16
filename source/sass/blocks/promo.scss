@@ -2,6 +2,7 @@
   @include zero-indent;
   padding-top: 34px;
   @include inner-padding();
+  outline: 3px solid red;
 }
 .promo__heading {
   @include zero-indent;
@@ -14,11 +15,13 @@
   text-align: left;
   color: $seafoam-blue;
   text-transform: uppercase;
+  outline: 3px solid yellow;
 }
 .promo__description {
   @include zero-indent;
   padding-bottom: 30px;
   color: #444444;
+
 }
 .promo__info {
   border-collapse: collapse;
@@ -31,6 +34,7 @@
 .promo__value {
   padding-left: 30px;
   padding: 10px 20px 10px 30px;
+
 }
 
 .promo__picture {

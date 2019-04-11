@@ -2,6 +2,7 @@
   @include zero-indent;
   padding-top: 34px;
   @include inner-padding();
+  outline: 3px solid red;
 }
 
 .about-us__heading {

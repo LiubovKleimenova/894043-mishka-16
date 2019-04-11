@@ -1,11 +1,13 @@
 .contacts {
   @include inner-padding();
   padding-top: 45px;
+  outline: 3px solid red;
 }
 
 .contacts__heading {
   @include zero-indent;
   @include font17-bold;
+  outline: 3px solid blue;
 }
 //разобраться??
 .contacts__info {
