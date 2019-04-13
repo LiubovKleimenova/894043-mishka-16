@@ -6,7 +6,12 @@
 
 .contacts__heading {
   @include zero-indent;
-  @include font17-bold;
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.67;
+  color: $black;
+
   outline: 3px solid blue;
 }
 //разобраться??

@@ -1,13 +1,9 @@
 .second-heading {
   @include zero-indent;
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include font-properties-normal;
   font-size: 25px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.2;
-  letter-spacing: normal;
-  text-align: left;
   color: $black;
   outline: 3px solid blue;
 }

@@ -15,20 +15,20 @@
   @include zero-indent;
   padding-top: 32px;
 
-  @include font17-bold;
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
   color: $black;
   text-decoration: none;
 }
 
 .product__description {
+  @include font-properties-normal;
   font-size: 13px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 2.31;
-  letter-spacing: normal;
-  text-align: left;
-  color: #$greyish-brown;
+  color: $greyish-brown;
 }
 
 .product__price {

@@ -1,0 +1,11 @@
+html {
+  font-family: "Open Sans", "Arial", sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-family: inherit;
+}

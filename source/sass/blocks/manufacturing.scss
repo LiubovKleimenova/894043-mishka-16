@@ -5,9 +5,12 @@
 }
 
 .manufacturing__heading {
-  @include font17-bold;
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
   line-height: 1.41;
   color: $black;
+
   padding-left: 91px;
   padding-top: 29px;
 }

@@ -1,8 +1,7 @@
 .promo {
   @include zero-indent;
-  padding-top: 34px;
-
   @include inner-padding();
+  padding-top: 34px;
   outline: 3px solid red;
 }
 
@@ -15,8 +14,10 @@
   padding-top: 8px;
   padding-bottom: 30px;
 
-  @include font17-bold;
-  text-align: left;
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
   color: $seafoam-blue;
   text-transform: uppercase;
   outline: 3px solid yellow;
@@ -25,11 +26,19 @@
 .promo__description {
   @include zero-indent;
   padding-bottom: 30px;
+
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6;
   color: $greyish-brown;
 }
 
 .promo__info {
   border-collapse: collapse;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: $greyish-brown;
 }
 
 .promo__line {
@@ -49,6 +58,7 @@
 .promo__price {
   @include zero-indent;
   @include margin-center;
+  @include font-properties-normal;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;

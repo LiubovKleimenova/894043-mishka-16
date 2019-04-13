@@ -3,20 +3,11 @@
   background-color: white;
 }
 
-@mixin font17-bold {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.18;
-  letter-spacing: normal;
-}
-
 @mixin font-properties-normal {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
+  text-align: left;
 }
 
 @mixin inner-padding($p-left: 30px, $p-right: 30px) {

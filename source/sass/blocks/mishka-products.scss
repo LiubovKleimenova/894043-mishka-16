@@ -10,14 +10,6 @@
   display: block;
 
   @include zero-indent;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 29px;
-  padding-right: 185px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 1.26;
 
   &:first-child {
     background-color: $seafoam-blue;
@@ -31,6 +23,17 @@
 }
 
 .mishka-products__link {
+  @include zero-indent;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 185px;
+
+  @include font-properties-normal;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
   text-decoration: none;
   color: $white;
 }

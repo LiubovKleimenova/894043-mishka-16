@@ -6,13 +6,10 @@
 
 .page-order__suggestion {
   @include outer-margin;
+  @include font-properties-normal;
   font-size: 13px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.85;
-  letter-spacing: normal;
-  text-align: left;
   color: $greyish-brown;
 }
 

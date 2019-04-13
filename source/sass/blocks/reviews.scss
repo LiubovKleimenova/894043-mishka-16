@@ -7,22 +7,25 @@
 }
 
 .reviews__review-text {
-  font-family: "Open Sans", "Arial", sans-serif;
+  @include font-properties-normal;
   font-size: 15px;
   font-weight: normal;
   line-height: 2;
-  text-align: left;
   color: $greyish-brown;
   outline: 3px solid yellow;
 }
 
 .reviews__person {
-  @include font17-bold;
-  text-align: left;
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
   color: $black;
 }
 
 .reviews__nikname {
+  @include font-properties-normal;
+  font-size: 17px;
   font-weight: normal;
   line-height: 1.76;
   color: $greyish-brown;

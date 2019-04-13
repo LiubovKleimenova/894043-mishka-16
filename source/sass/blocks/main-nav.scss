@@ -1,9 +1,12 @@
 .main-nav {
   position: relative;
 
-  @include font17-bold;
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
   line-height: 1.41;
   color: $black;
+
   outline: 3px solid red;
 }
 

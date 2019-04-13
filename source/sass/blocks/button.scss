@@ -1,15 +1,18 @@
 .button {
   display: block;
-  box-sizing: border-box;
   width: 100%;
   padding-top: 17px;
   padding-bottom: 14px;
 
-  @include font17-bold;
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
   color: $greyish-brown;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
   border: solid 2px $greyish-brown;
   background-color: $white;
 

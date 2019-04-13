@@ -1,10 +1,11 @@
 .page-main {
   width: $width-mobile;
   padding-top: 76px;
-  font-family: "Open Sans", "Arial", sans-serif;
+
+  @include font-properties-normal;
   font-size: 15px;
-  line-height: 1.6;
   font-weight: normal;
+  line-height: 1.6;
   color: $black;
 
   outline: 10px dashed fuchsia;

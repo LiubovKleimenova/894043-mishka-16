@@ -1,8 +1,12 @@
 .advantages {
-  @include font17-bold;
-  list-style: none;
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
   color: $black;
   text-align: left;
+
+  list-style: none;
 }
 
 .advantages__item {

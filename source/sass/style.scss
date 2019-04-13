@@ -1,9 +1,6 @@
-html {
-  font-family: "Open Sans", "Arial", sans-serif;
-}
-
 @import "variables.scss";
 @import "mixins.scss";
+@import "general.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
