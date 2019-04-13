@@ -4,8 +4,8 @@
   justify-content: space-between;
   align-items: center;
   width: 182px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include margin-center;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 19px;
   font-weight: bold;
@@ -14,13 +14,14 @@
   line-height: 0.95;
   letter-spacing: normal;
   text-align: left;
-  color: #000000;
+  color: $black;
 }
+
 
 .author__logo {
   fill: $seafoam-blue;
 
   &:hover {
-    fill: #46c1ae;
+    fill: $greeeny-blue;
   }
 }

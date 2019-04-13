@@ -4,8 +4,7 @@
 
 .catalog__list {
   @include zero-indent;
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-center;
   list-style: none;
   outline: 3px solid blue;
 }

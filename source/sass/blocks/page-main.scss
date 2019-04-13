@@ -5,14 +5,14 @@
   font-size: 15px;
   line-height: 1.6;
   font-weight: normal;
-  color: #000000;
+  color: $black;
 
   outline: 10px dashed fuchsia;
 }
 
 .page-main__heading {
   width: 244px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include margin-center;
   text-align: center;
 }

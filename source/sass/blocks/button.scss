@@ -6,16 +6,16 @@
   padding-bottom: 14px;
 
   @include font17-bold;
-  color: #444444;
+  color: $greyish-brown;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  border: solid 2px #444444;
-  background-color: #ffffff;
+  border: solid 2px $greyish-brown;
+  background-color: $white;
 
   &--blue {
     background-color: $seafoam-blue;
     border-color: $seafoam-blue;
-    color: #ffffff;
+    color: $white;
   }
 }

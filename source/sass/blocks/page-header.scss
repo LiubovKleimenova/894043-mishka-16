@@ -8,11 +8,11 @@
 .page-header__logo {
   display: block;
   padding-bottom: 22px;
-  box-shadow: 0 1px 0 0 #ececec;
+  box-shadow: 0 1px 0 0 $lighter-grey;
 }
 
 .page-header__logo-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include margin-center;
 }

@@ -12,20 +12,20 @@
   font-weight: normal;
   line-height: 2;
   text-align: left;
-  color: #444444;
+  color: $greyish-brown;
   outline: 3px solid yellow;
 }
 
 .reviews__person {
   @include font17-bold;
   text-align: left;
-  color: #000000;
+  color: $black;
 }
 
 .reviews__nikname {
   font-weight: normal;
   line-height: 1.76;
-  color: #444444;
+  color: $greyish-brown;
 }
 
 .reviews__arrow {
@@ -33,8 +33,8 @@
   margin-bottom: 38px;
   width: 130px;
   height: 52px;
-  border: solid 1px #ececec;
-  background-color: #ffffff;
+  border: solid 1px $lighter-grey;
+  background-color: $white;
 
   &--left {
     background-image: url("../img/icon-left-arrow.svg");

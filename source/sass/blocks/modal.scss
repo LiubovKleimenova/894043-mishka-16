@@ -10,8 +10,8 @@
 .modal__heading {
   display: block;
   width: 148px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include margin-center;
   font-size: 25px;
   font-weight: bold;
   font-style: normal;
@@ -19,7 +19,7 @@
   line-height: 1.2;
   letter-spacing: normal;
   text-align: center;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -33,5 +33,5 @@
   @include zero-indent;
   margin-bottom: 38px;
   text-align: center;
-  color: #444444;
+  color: $greyish-brown;
 }
