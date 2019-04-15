@@ -1,0 +1,9 @@
+.grey-heading {
+  display: block;
+
+  @include zero-indent;
+  @include inner-padding;
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: $lighter-grey;
+}

@@ -1,0 +1,19 @@
+.page-main {
+  width: $width-mobile;
+  padding-top: 76px;
+
+  @include font-properties-normal;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6;
+  color: $black;
+
+  outline: 10px dashed fuchsia;
+}
+
+.page-main__heading {
+  width: 244px;
+
+  @include margin-center;
+  text-align: center;
+}

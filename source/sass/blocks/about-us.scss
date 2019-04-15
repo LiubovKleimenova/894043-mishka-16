@@ -1,0 +1,14 @@
+.about-us {
+  @include zero-indent;
+  @include inner-padding();
+  padding-top: 34px;
+  outline: 3px solid red;
+}
+
+.about-us__heading {
+  @include zero-indent;
+}
+
+.about-us__list {
+  @include zero-indent;
+}

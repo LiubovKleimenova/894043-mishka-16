@@ -1,0 +1,38 @@
+.product {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.product__photo {
+  margin-left: -28px;
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__name {
+  @include zero-indent;
+  padding-top: 32px;
+
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  color: $black;
+  text-decoration: none;
+}
+
+.product__description {
+  @include font-properties-normal;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 2.31;
+  color: $greyish-brown;
+}
+
+.product__price {
+  border-top: 1px solid $lighter-grey;
+  padding-top: 27px;
+  padding-bottom: 30px;
+}

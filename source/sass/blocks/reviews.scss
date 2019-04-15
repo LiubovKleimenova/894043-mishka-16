@@ -1,0 +1,53 @@
+.reviews {
+  @include zero-indent;
+  @include inner-padding();
+  padding-top: 60px;
+  padding-bottom: 45px;
+  outline: 3px solid red;
+}
+
+.reviews__review-text {
+  @include font-properties-normal;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  color: $greyish-brown;
+  outline: 3px solid yellow;
+}
+
+.reviews__person {
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  color: $black;
+}
+
+.reviews__nikname {
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.76;
+  color: $greyish-brown;
+}
+
+.reviews__arrow {
+  @include zero-indent;
+  margin-bottom: 38px;
+  width: 130px;
+  height: 52px;
+  border: solid 1px $lighter-grey;
+  background-color: $white;
+
+  &--left {
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--right {
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

@@ -1,0 +1,7 @@
+.main-heading {
+  @include font-properties-normal;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
+  color: $greyish-black;
+}

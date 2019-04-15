@@ -1,0 +1,18 @@
+.page-order {
+  @include mobile-style;
+  padding-bottom: 55px;
+  outline: 5px solid blue;
+}
+
+.page-order__suggestion {
+  @include outer-margin;
+  @include font-properties-normal;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.85;
+  color: $greyish-brown;
+}
+
+.page-order__form-wrapper {
+  @include outer-margin;
+}

@@ -1,0 +1,23 @@
+.author {
+  @include zero-indent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 182px;
+
+  @include margin-center;
+  @include font-properties-normal;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 0.95;
+  color: $black;
+}
+
+
+.author__logo {
+  fill: $seafoam-blue;
+
+  &:hover {
+    fill: $greeeny-blue;
+  }
+}

@@ -1,0 +1,24 @@
+.manufacturing {
+  @include outer-margin;
+  outline: 5px dotted pink;
+  padding-bottom: 33px;
+}
+
+.manufacturing__heading {
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  color: $black;
+
+  padding-left: 91px;
+  padding-top: 29px;
+}
+
+.manufacturing__description {
+  @include outer-margin;
+}
+
+.manufacturing__button {
+  margin-top: 29px;
+}

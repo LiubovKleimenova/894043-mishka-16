@@ -1,0 +1,16 @@
+.advantages {
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  color: $black;
+  text-align: left;
+
+  list-style: none;
+}
+
+.advantages__item {
+  @include zero-indent;
+  padding-top: 85px;
+  outline: 3px solid orange;
+}

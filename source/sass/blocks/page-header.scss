@@ -1,0 +1,18 @@
+.page-header {
+  @include mobile-style;
+  position: relative;
+  padding-top: 22px;
+  outline: 6px solid green;
+}
+
+.page-header__logo {
+  display: block;
+  padding-bottom: 22px;
+  box-shadow: 0 1px 0 0 $lighter-grey;
+}
+
+.page-header__logo-image {
+  display: block;
+
+  @include margin-center;
+}

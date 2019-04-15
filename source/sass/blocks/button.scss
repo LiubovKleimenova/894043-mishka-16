@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 14px;
+
+  @include font-properties-normal;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  color: $greyish-brown;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: solid 2px $greyish-brown;
+  background-color: $white;
+
+  &--blue {
+    background-color: $seafoam-blue;
+    border-color: $seafoam-blue;
+    color: $white;
+  }
+}

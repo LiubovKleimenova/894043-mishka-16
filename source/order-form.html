@@ -3,108 +3,104 @@
   <head>
     <meta charset="utf-8">
     <title>Форма онлайн-заказа Mishka</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo"><img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Логотип Mishka" width="86" height="35"></a>
-      <nav class="main-nav">
+      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka" width="86" height="35"></a>
+      <nav class="page-header__menu main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item site-list__item--active"><a>Вязание на заказ</a></li>
-          <li class="site-list__item"><a href="#">Поиск по сайту</a></li>
-          <li class="site-list__item"><a href="#">Корзина: <span>пока пуста</span></a></li>
+          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="order-form.html">Вязание на заказ</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Поиск по сайту</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Корзина: <span>пока пуста</span></a></li>
         </ul>
       </nav>
     </header>
     <main class="page-order">
-      <h1 class="page-order__heading main-heading">Вязание на заказ</h1>
+      <h1 class="page-order__heading main-heading grey-heading">Вязание на заказ</h1>
       <p class="page-order__suggestion">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-<div class="page-order__form-wrapper interraction">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="interraction__field type">
-          <legend class="interraction__legend">Тип</legend>
-
-          <label class="type__label" for="accessories">
+      <div class="page-order__form-wrapper interraction">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="interraction__field type">
+            <legend class="interraction__legend">Тип</legend>
+            <label class="type__label" for="accessories">
             <input class="visually-hidden" type="radio" name="product-type" id="accessories" value="accessories" checked>
             <span class="type__radio radio-indicator"></span>
             Аксессуары для интерьера
-          </label>
-
-          <label class="type__label" for="toys">
+            </label>
+            <label class="type__label" for="toys">
             <input class="visually-hidden" type="radio" name="product-type" id="toys" value="toys">
             <span class="type__radio radio-indicator"></span>
             Детская игрушка
-          </label>
-
-        </fieldset>
-        <fieldset class="interraction__field color">
-          <legend class="interraction__legend">Цвет</legend>
-          <label class="color__label" for="white">
+            </label>
+          </fieldset>
+          <fieldset class="interraction__field color">
+            <legend class="interraction__legend">Цвет</legend>
+            <label class="color__label" for="white">
             <input class="visually-hidden" type="checkbox" name="white" id="white" checked/>
             <span class="color__checkbox checkbox-indicator"></span>Белый
-          </label>
-          <label class="color__label" for="gray">
+            </label>
+            <label class="color__label" for="gray">
             <input class="visually-hidden" type="checkbox" name="gray" id="gray" checked/>
             <span class="color__checkbox checkbox-indicator"></span>Серый
-          </label>
-          <label class="color__label" for="tiffany">
+            </label>
+            <label class="color__label" for="tiffany">
             <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany"/>
             <span class="color__checkbox checkbox-indicator"></span>Тиффани
-          </label>
-          <label class="color__label" for="black">
+            </label>
+            <label class="color__label" for="black">
             <input class="visually-hidden" type="checkbox" name="black" id="black"/>
             <span class="color__checkbox checkbox-indicator"></span>Черный
-          </label>
-          <label class="color__label" for="pink">
+            </label>
+            <label class="color__label" for="pink">
             <input class="visually-hidden" type="checkbox" name="pink" id="pink"/>
             <span class="color__checkbox checkbox-indicator"></span>Розовый
-          </label>
-          <label class="color__label" for="orange">
+            </label>
+            <label class="color__label" for="orange">
             <input class="visually-hidden" type="checkbox" name="orange" id="orange"/>
             <span class="color__checkbox checkbox-indicator"></span>Оранжевый
-          </label>
-        </fieldset>
-
-        <fieldset class="interraction__field buyer">
-          <legend class="interraction__legend">ФИО</legend>
-          <label class="buyer__label"> Имя:
-          <input class="buyer__text-field text-field" type="text" name="name" value="Введите ваше имя*">
-          </label>
-          <label class="buyer__label"> Фамилия:
-          <input class="buyer__text-field text-field" type="text" name="surname" value="Укажите фамилию*">
-          </label>
-          <label class="buyer__label"> Отчество:
-          <input class="buyer__text-field text-field" type="text" name="fathers-name" value="Отчество, если желаете">
-          </label>
-        </fieldset>
-        <fieldset class="interraction__field phone">
-          <legend class="interraction__legend">ТЕЛ</legend>
-          <input class="phone__field text-field text-field--big-font" type="text" name="phone-number" value="+7 XXX XXX XX XX*">
-        </fieldset>
-        <fieldset class="interraction__field email">
-          <legend class="interraction__legend">E-MAIL</legend>
-          <input class="email__field text-field" type="email" placeholder="Ваш Email*">
-        </fieldset>
-        <fieldset class="interraction__field add-details">
-          <legend class="interraction__legend">ДОП</legend>
-          <textarea class="add-details__field text-field" name="additional-info" rows="8" cols="25">Опишите все ваши пожелания к заказу</textarea>
-        </fieldset>
-
-        <p class="interraction__obligatory">*Поля обязательны для заполнения</p>
-        <button class="interraction__button button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
-
-      </form>
+            </label>
+          </fieldset>
+          <fieldset class="interraction__field buyer">
+            <legend class="interraction__legend">ФИО</legend>
+            <label class="buyer__label"> Имя:
+            <input class="buyer__text-field text-field" type="text" name="name" value="Введите ваше имя*">
+            </label>
+            <label class="buyer__label"> Фамилия:
+            <input class="buyer__text-field text-field" type="text" name="surname" value="Укажите фамилию*">
+            </label>
+            <label class="buyer__label"> Отчество:
+            <input class="buyer__text-field text-field" type="text" name="fathers-name" value="Отчество, если желаете">
+            </label>
+          </fieldset>
+          <fieldset class="interraction__field phone">
+            <legend class="interraction__legend">ТЕЛ</legend>
+            <input class="phone__field text-field text-field--big-font" type="text" name="phone-number" value="+7 XXX XXX XX XX*">
+          </fieldset>
+          <fieldset class="interraction__field email">
+            <legend class="interraction__legend">E-MAIL</legend>
+            <input class="email__field text-field" type="email" placeholder="Ваш Email*">
+          </fieldset>
+          <fieldset class="interraction__field add-details">
+            <legend class="interraction__legend">ДОП</legend>
+            <textarea class="add-details__field text-field" name="additional-info" rows="8" cols="25">Опишите все ваши пожелания к заказу</textarea>
+          </fieldset>
+          <p class="interraction__obligatory">*Поля обязательны для заполнения</p>
+          <button class="interraction__button button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+        </form>
       </div>
     </main>
     <footer class="page-footer">
       <ul class="page-footer__list social">
-        <li class="social__item"><a href="#"><span class="visually-hidden">Мишка в Инстаграм</span></a></li>
-        <li class="social__item"><a href="#"><span class="visually-hidden">Мишка на фейсбуке</span></a></li>
-        <li class="social__item"><a href="#"><span class="visually-hidden">Мишка в твиттере</span></a></li>
+        <li class="social__item"><a href="#"><span class="social__pic social__pic--instagram"></span><span class="visually-hidden">Мишка в Инстаграм</span></a></li>
+        <li class="social__item"><a href="#"><span class="social__pic social__pic--fb"></span><span class="visually-hidden">Мишка на фейсбуке</span></a></li>
+        <li class="social__item"><a href="#"><span class="social__pic social__pic--twitter"></span><span class="visually-hidden">Мишка в твиттере</span></a></li>
       </ul>
-      <p class="page-footer__copyright author">Разработано <a class="author__link" href=""><img class="author__logo" src="http://placehold.it/27x34" alt="Логотип HTML Academy"></a></p>
+      <p class="page-footer__copyright author">Разработано <a class="author__link" href=""><svg class="author__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+        <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+      </svg><span class="visually-hidden">Логотип HTML Academy</span></a></p>
     </footer>
-  </body>
 </html>

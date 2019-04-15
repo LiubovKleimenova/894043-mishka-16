@@ -1,0 +1,34 @@
+.modal {
+  @include inner-padding;
+  width: 320px;
+  min-height: 336px;
+  box-shadow: 0 5px 10px 0 0 $dark-forest-green;
+  border: solid 1px $pinkish-grey;
+}
+
+.modal__heading {
+  display: block;
+  width: 148px;
+
+  @include margin-center;
+  @include font-properties-normal;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__fieldset {
+  @include zero-indent;
+  margin-bottom: 31px;
+  border: none;
+}
+
+.modal__command {
+  @include zero-indent;
+  margin-bottom: 38px;
+  text-align: center;
+  color: $greyish-brown;
+}

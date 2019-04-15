@@ -1,0 +1,39 @@
+.mishka-products {
+  outline: 3px solid red;
+}
+
+.mishka-products__list {
+  @include zero-indent;
+}
+
+.mishka-products__item {
+  display: block;
+
+  @include zero-indent;
+
+  &:first-child {
+    background-color: $seafoam-blue;
+  }
+
+  &:last-child {
+    background-color: $aqua-marine;
+  }
+
+  list-style: none;
+}
+
+.mishka-products__link {
+  @include zero-indent;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 185px;
+
+  @include font-properties-normal;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  text-decoration: none;
+  color: $white;
+}

@@ -1,0 +1,9 @@
+.second-heading {
+  @include zero-indent;
+  @include font-properties-normal;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: $black;
+  outline: 3px solid blue;
+}

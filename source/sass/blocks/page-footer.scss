@@ -1,0 +1,20 @@
+.page-footer {
+  width: $width-mobile;
+
+  @include inner-padding;
+  background-color: $grey;
+  outline: 3px solid red;
+}
+
+.page-footer__list {
+  @include zero-indent;
+  display: block;
+  min-height: 80px;
+  border-bottom: 1px solid $lighter-grey;
+  list-style: none;
+}
+
+.page-footer__copyright {
+  display: block;
+  min-height: 80px;
+}

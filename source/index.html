@@ -3,33 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Mishka</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"><img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Логотип Mishka" width="86" height="35"></a>
-      <nav class="main-nav">
+      <a class="page-header__logo"><img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka" width="86" height="35"></a>
+      <nav class="page-header__menu main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a href="order-form.html">Вязание на заказ</a></li>
-          <li class="site-list__item"><a href="#">Поиск по сайту</a></li>
-          <li class="site-list__item"><a href="#">Корзина: <span>пока пуста</span></a></li>
+          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="order-form.html">Вязание на заказ</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Поиск по сайту</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Корзина: <span>пока пуста</span></a></li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__heading main-heading">Милые штуки ручной работы для дома</h1>
+      <h1 class="page-main__heading main-heading">Милые штуки ручной<br>работы для дома</h1>
       <section class="mishka-products">
         <h2 class="visually-hidden">Наши изделия</h2>
         <ul class="mishka-products__list">
-          <li class="mishka-products__item"><a class="mishka-products__link">Предметы интерьера</a></li>
-          <li class="mishka-products__item"><a class="mishka-products__link">Детские игрушки</a></li>
+          <li class="mishka-products__item"><a class="mishka-products__link" href="#">Предметы интерьера</a></li>
+          <li class="mishka-products__item"><a class="mishka-products__link" href="#">Детские игрушки</a></li>
         </ul>
       </section>
       <section class="promo">
-        <h2 class="promo__heading second-heading">Товар недели</h2>
-        <p class="promo__item">Вязаные корзинки</p>
+        <h2 class="promo__heading second-heading">Вязаные корзинки</h2>
+        <p class="promo__item">Товар недели</p>
         <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах</p>
         <table class="promo__info">
           <tr class="promo__line">
@@ -46,11 +47,11 @@
           </tr>
         </table>
         <img class="promo__picture" src="http://placehold.it/260x315" alt="Вязаные корзинки различных расцветок" width="260" height="315">
-        <p class="promo__price">Цена:<span class="promo__price-value">990 руб.</span></p>
+        <p class="promo__price">Цена: 990 руб.</p>
         <a href="#" class="promo__button button">Заказать</a>
       </section>
       <section class="about-us">
-        <h2 class="about-us__heading second-heading">Коротко о нас</h2>
+        <h2 class="about-us__heading second-heading">Коротко о нас:</h2>
         <ul class="about-us__list advantages">
           <li class="advantages__item">
             Экологически чистые материалы
@@ -74,13 +75,13 @@
       <section class="reviews">
         <h2 class="reviews__heading second-heading">Отзывы</h2>
         <p class="reviews__review-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <p class="reviews__person">Анастасия Красильникова <span>@misssssiskras</span></p>
-        <button type="button" class="reviews__arrow reviews__arrow--left"><span class="visually-hidden">Предыдущий отзыв</span></button>
-        <button type="button" class="reviews__arrow reviews__arrow--right"><span class="visually-hidden">Следующий отзыв</span></button>
+        <p class="reviews__person">Анастасия Красильникова <span class="reviews__nikname">@misssssiskras</span></p>
+        <button type="button" class="reviews__arrow reviews__arrow--left"><span class="visually-hidden">Предыдущий отзыв</span></button><!--
+     --><button type="button" class="reviews__arrow reviews__arrow--right"><span class="visually-hidden">Следующий отзыв</span></button>
         <a href="#" class="reviews__button button">Написать</a>
       </section>
       <section class="contacts">
-        <h2 class="contacts__heading second-heading">Контакты</h2>
+        <h2 class="contacts__heading">Контакты</h2>
           <table class="contacts__info">
             <tr>
               <td class="contacts__feature">e-mail:</td>
@@ -91,7 +92,8 @@
               <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
             </tr>
           </table>
-          <img class="contacts-map" src="http://placehold.it/320x457" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8, офис 101" width="320" height="457">
+          <img class="contacts__map" src="http://placehold.it/320x457" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8, офис 101" width="320" height="457">
+          <a href="#" class="contacts__button button">Напишите нам</a>
       </section>
 
       <section class="page-main__modal modal">
@@ -103,18 +105,20 @@
             <label class="modal__radio radio_M" for="medium">M <input type="radio" name="item-size" id="medium" value="medium"></label>
             <label class="modal__radio radio_L" for="large">L <input type="radio" name="item-size" id="large" value="large"></label>
           </fieldset>
-          <button class="modal__button button" type="submit">Добавить</button>
+          <button class="modal__button button button--blue" type="submit">Добавить</button>
         </form>
       </section>
 
     </main>
     <footer class="page-footer">
       <ul class="page-footer__list social">
-        <li class="social__item"><a href="#"><span class="visually-hidden">Мишка в Инстаграм</span></a></li>
-        <li class="social__item"><a href="#"><span class="visually-hidden">Мишка на фейсбуке</span></a></li>
-        <li class="social__item"><a href="#"><span class="visually-hidden">Мишка в твиттере</span></a></li>
+        <li class="social__item"><a href="#"><span class="social__pic social__pic--instagram"></span><span class="visually-hidden">Мишка в Инстаграм</span></a></li>
+        <li class="social__item"><a href="#"><span class="social__pic social__pic--fb"></span><span class="visually-hidden">Мишка на фейсбуке</span></a></li>
+        <li class="social__item"><a href="#"><span class="social__pic social__pic--twitter"></span><span class="visually-hidden">Мишка в твиттере</span></a></li>
       </ul>
-      <p class="page-footer__copyright author">Разработано <a class="author__link" href=""><img class="author__logo" src="http://placehold.it/27x34" alt="Логотип HTML Academy"></a></p>
+      <p class="page-footer__copyright author">Разработано <a class="author__link" href=""><svg class="author__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+        <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+      </svg><span class="visually-hidden">Логотип HTML Academy</span></a></p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,10 @@
+.catalog {
+  @include inner-padding;
+}
+
+.catalog__list {
+  @include zero-indent;
+  @include margin-center;
+  list-style: none;
+  outline: 3px solid blue;
+}
