@@ -1,4 +1,6 @@
 .advantages {
+  display: flex;
+  flex-direction: column;
   @include font-properties-normal;
   font-size: 17px;
   font-weight: bold;
@@ -10,7 +12,19 @@
 }
 
 .advantages__item {
+
   @include zero-indent;
   padding-top: 85px;
   outline: 3px solid orange;
+}
+
+@media (min-width: $width-tablet) {
+  .advantages {
+    height: 450px;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 290px;
+  }
 }

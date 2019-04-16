@@ -1,5 +1,7 @@
 .page-main {
   width: $width-mobile;
+
+  @include margin-center;
   padding-top: 76px;
 
   @include font-properties-normal;
@@ -7,7 +9,6 @@
   font-weight: normal;
   line-height: 1.6;
   color: $black;
-
   outline: 10px dashed fuchsia;
 }
 
@@ -16,4 +17,26 @@
 
   @include margin-center;
   text-align: center;
+  outline: 3px solid  blue;
+}
+
+@media (min-width: $width-tablet) {
+  .page-main {
+    width: $width-tablet;
+    padding-top: 161px;
+  }
+
+  .page-main__heading{
+    width: 498px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-main {
+    width: $width-desktop;
+  }
+
+  .page-main__heading{
+    width: 620px;
+  }
 }

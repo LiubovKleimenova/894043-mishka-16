@@ -2,7 +2,7 @@
   @include zero-indent;
   @include inner-padding();
   padding-top: 60px;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
   outline: 3px solid red;
 }
 
@@ -34,7 +34,7 @@
 .reviews__arrow {
   @include zero-indent;
   margin-bottom: 38px;
-  width: 130px;
+  width: 50%;
   height: 52px;
   border: solid 1px $lighter-grey;
   background-color: $white;
@@ -49,5 +49,19 @@
     background-image: url("../img/icon-right-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .reviews {
+    @include inner-padding(52px, 52px);
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+  }
+
+  .reviews__button-wrapper {
+    width: 175px;
+    flex-shrink:0;
   }
 }
