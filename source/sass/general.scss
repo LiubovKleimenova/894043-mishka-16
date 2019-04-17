@@ -9,3 +9,12 @@ html {
   box-sizing: inherit;
   font-family: inherit;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  min-width: 320px;
+}

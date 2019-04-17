@@ -1,6 +1,7 @@
 .page-footer {
   width: $width-mobile;
 
+  @include margin-center;
   @include inner-padding;
   background-color: $grey;
   outline: 3px solid red;
@@ -17,4 +18,16 @@
 .page-footer__copyright {
   display: block;
   min-height: 80px;
+}
+
+@media (min-width: $width-tablet) {
+  .page-footer {
+    width: $width-tablet;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-footer {
+    width: $width-desktop;
+  }
 }
