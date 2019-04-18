@@ -20,6 +20,7 @@
     display: flex;
     justify-content: space-around;
   }
+
   .site-list__item {
     @include zero-indent;
     padding-top: 25px;
@@ -33,6 +34,7 @@
     justify-content: space-around;
     margin-top: -88px;
   }
+
   .site-list__item {
     @include zero-indent;
     padding-top: 25px;

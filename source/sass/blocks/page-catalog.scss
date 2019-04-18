@@ -1,5 +1,6 @@
 .page-catalog {
   width: $width-mobile;
+
   @include margin-center;
   outline: 5px solid red;
 }

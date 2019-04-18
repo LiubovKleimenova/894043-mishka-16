@@ -40,6 +40,7 @@
 
   .contacts__button {
     width: 230px;
+
     @include margin-center;
   }
 }
@@ -49,8 +50,8 @@
     @include outer-margin(52px, 52px);
     min-height: 457px;
     width: 500px;
-
   }
+
   .contacts__heading {
     font-size: 53px;
     margin-left: 150px;
@@ -62,11 +63,12 @@
 
   .contacts__map {
     position: absolute;
-    top:0;
+    top: 0;
     right: -550px;
     width: 525px;
     height: 457px;
   }
+
   .content__button {
     margin-bottom: 0;
   }

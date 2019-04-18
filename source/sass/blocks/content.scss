@@ -51,6 +51,7 @@
 @media (min-width: $width-tablet) {
   .content__picture {
     position: absolute;
+
     @include zero-indent;
     top: 0;
     right: -377px;
@@ -72,6 +73,7 @@
 @media (min-width: $width-desktop) {
   .content__picture {
     position: absolute;
+
     @include zero-indent;
     top: -180px;
     right: -750px;

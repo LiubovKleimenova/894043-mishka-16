@@ -62,7 +62,7 @@
 
   .reviews__button-wrapper {
     width: 175px;
-    flex-shrink:0;
+    flex-shrink: 0;
   }
 }
 
@@ -70,14 +70,11 @@
   .reviews {
     @include outer-margin(52px, 52px);
     @include inner-padding(125px, 50px);
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    display: flex;
     min-height: 457px;
   }
 
   .reviews__button-wrapper {
     width: 175px;
-    flex-shrink:0;
+    flex-shrink: 0;
   }
 }

@@ -35,7 +35,8 @@
 @media (min-width: $width-tablet) {
   .modal {
     width: 566px;
+
     @include margin-center;
-    @include inner-padding(107px, 107px)
+    @include inner-padding(107px, 107px);
   }
 }
