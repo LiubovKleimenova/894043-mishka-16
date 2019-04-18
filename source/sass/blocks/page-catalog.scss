@@ -1,4 +1,17 @@
 .page-catalog {
   width: $width-mobile;
+  @include margin-center;
   outline: 5px solid red;
+}
+
+@media (min-width: $width-tablet) {
+  .page-catalog {
+    width: $width-tablet;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-catalog {
+    width: $width-desktop;
+  }
 }

@@ -14,7 +14,6 @@
 
 .page-main__heading {
   width: 244px;
-
   @include margin-center;
   text-align: center;
   outline: 3px solid  blue;
@@ -37,6 +36,7 @@
   }
 
   .page-main__heading{
-    width: 620px;
+    width: 650px;
+    margin-bottom: 354px;
   }
 }

@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 62px;
-  margin-left: 57px;
 }
 
 .social__item {
@@ -32,5 +30,11 @@
     width: 23px;
     height: 20px;
     background-image: url("../img/icon-twitter.svg");
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .social {
+    width: 140px;
   }
 }

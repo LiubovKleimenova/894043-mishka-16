@@ -7,9 +7,21 @@
   outline: 3px solid red;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__logo-image {
+  display: block;
+
+  @include margin-center;
+}
+
 .page-footer__list {
   @include zero-indent;
   display: block;
+  margin-right: 62px;
+  margin-left: 57px;
   min-height: 80px;
   border-bottom: 1px solid $lighter-grey;
   list-style: none;
@@ -23,6 +35,12 @@
 @media (min-width: $width-tablet) {
   .page-footer {
     width: $width-tablet;
+    display: flex;
+    align-items: center;
+    min-height: 143px;
+  }
+  .page-footer__logo {
+    display: block;
   }
 }
 
@@ -30,4 +48,5 @@
   .page-footer {
     width: $width-desktop;
   }
+
 }

@@ -8,7 +8,6 @@
 
 .modal__heading {
   display: block;
-  width: 148px;
 
   @include margin-center;
   @include font-properties-normal;
@@ -31,4 +30,12 @@
   margin-bottom: 38px;
   text-align: center;
   color: $greyish-brown;
+}
+
+@media (min-width: $width-tablet) {
+  .modal {
+    width: 566px;
+    @include margin-center;
+    @include inner-padding(107px, 107px)
+  }
 }

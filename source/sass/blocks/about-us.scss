@@ -19,3 +19,10 @@
     padding-top: 60px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .about-us {
+    @include outer-margin(175px, 200px);
+    padding-top: 60px;
+  }
+}

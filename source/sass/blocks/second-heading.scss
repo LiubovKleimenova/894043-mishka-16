@@ -7,3 +7,9 @@
   color: $black;
   outline: 3px solid blue;
 }
+
+@media (min-width: $width-desktop) {
+  .second-heading {
+    font-size: 53px;
+  }
+}

@@ -1,10 +1,5 @@
 .product {
-  padding-left: 28px;
-  padding-right: 28px;
-}
-
-.product__photo {
-  margin-left: -28px;
+  @include inner-padding(28px, 28px)
 }
 
 .product__link {
