@@ -57,13 +57,7 @@
 }
 
 @media (min-width: $width-desktop) {
-  .mishka-products {
-    @include outer-margin(52px, 52px);
-  }
-
   .mishka-products__link {
     padding-right: 395px;
-    font-size: 20px;
-    line-height: 1.5;
   }
 }

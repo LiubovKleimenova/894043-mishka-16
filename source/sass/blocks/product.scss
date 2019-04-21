@@ -2,12 +2,13 @@
   @include inner-padding(28px, 28px);
 }
 
-.product__link {
-  text-decoration: none;
+.product__photo {
+  display: block;
 }
 
 .product__name {
   @include zero-indent;
+  display: block;
   padding-top: 32px;
 
   @include font-properties-normal;
@@ -30,4 +31,33 @@
   border-top: 1px solid $lighter-grey;
   padding-top: 27px;
   padding-bottom: 30px;
+}
+
+
+@media (min-width: $width-tablet) {
+  .product {
+    display: flex;
+  }
+
+  .product__photo {
+    margin-right: 26px;
+  }
+
+  .product__photo img {
+    min-width: 334px;
+    min-height: 334px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .product {
+    display: block;
+    @include zero-indent;
+    margin-left: 52px;
+  }
+
+  .product__photo img {
+    min-width: 316px;
+    min-height: 462px;
+  }
 }

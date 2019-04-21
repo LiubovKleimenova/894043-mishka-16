@@ -14,6 +14,8 @@
 .advantages__item {
   @include zero-indent;
   padding-top: 85px;
+  width: 290px;
+  min-height: 129px;
   outline: 3px solid orange;
 }
 
@@ -21,6 +23,9 @@
   .advantages {
     height: 450px;
     flex-wrap: wrap;
+
+    font-size: 20px;
+    line-height: 1.1;
   }
 
   .advantages__item {

@@ -30,3 +30,14 @@
     display: none;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .main-nav {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

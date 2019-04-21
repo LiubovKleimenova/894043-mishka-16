@@ -1,5 +1,6 @@
 .page-order {
   @include mobile-style;
+  @include margin-center;
   padding-bottom: 55px;
   outline: 5px solid blue;
 }
@@ -15,4 +16,17 @@
 
 .page-order__form-wrapper {
   @include outer-margin;
+}
+
+
+@media (min-width: $width-tablet) {
+  .page-order {
+    width: $width-tablet;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-order {
+    width: $width-desktop;
+  }
 }
