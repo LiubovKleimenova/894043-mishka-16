@@ -1,6 +1,6 @@
 .page-header {
   @include mobile-style;
-  position: relative;
+  @include margin-center;
   padding-top: 22px;
   outline: 6px solid green;
 }
@@ -15,4 +15,16 @@
   display: block;
 
   @include margin-center;
+}
+
+@media (min-width: $width-tablet) {
+  .page-header {
+    width: $width-tablet;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-header {
+    width: $width-desktop;
+  }
 }

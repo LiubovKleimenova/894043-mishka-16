@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет-магазин Mishka</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -20,7 +21,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__heading main-heading">Милые штуки ручной<br>работы для дома</h1>
+      <h1 class="page-main__heading main-heading">Милые штуки ручной работы для дома</h1>
       <section class="mishka-products">
         <h2 class="visually-hidden">Наши изделия</h2>
         <ul class="mishka-products__list">
@@ -29,26 +30,30 @@
         </ul>
       </section>
       <section class="promo">
-        <h2 class="promo__heading second-heading">Вязаные корзинки</h2>
-        <p class="promo__item">Товар недели</p>
-        <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах</p>
-        <table class="promo__info">
-          <tr class="promo__line">
-            <td class="promo__feature">Цвет:</td>
-            <td class="promo__value">&laquo;Тиффани&raquo;/серый</td>
-          </tr>
-          <tr class="promo__line">
-            <td class="promo__feature">Диаметр:</td>
-            <td class="promo__value">25 см</td>
-          </tr>
-          <tr class="promo__line">
-            <td class="promo__feature">Высота:</td>
-            <td class="promo__value">15 см</td>
-          </tr>
-        </table>
-        <img class="promo__picture" src="http://placehold.it/260x315" alt="Вязаные корзинки различных расцветок" width="260" height="315">
-        <p class="promo__price">Цена: 990 руб.</p>
-        <a href="#" class="promo__button button">Заказать</a>
+        <div class="promo__wrapper-heading">
+          <h2 class="promo__heading second-heading">Вязаные корзинки</h2>
+          <p class="promo__item">Товар недели</p>
+        </div>
+        <div class="promo__content content">
+          <p class="content__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах</p>
+          <table class="content__info">
+            <tr class="content__line">
+              <td class="content__feature">Цвет:</td>
+              <td class="content__value">&laquo;Тиффани&raquo;/серый</td>
+            </tr>
+            <tr class="content__line">
+              <td class="content__feature">Диаметр:</td>
+              <td class="content__value">25 см</td>
+            </tr>
+            <tr class="content__line">
+              <td class="content__feature">Высота:</td>
+              <td class="content__value">15 см</td>
+            </tr>
+          </table>
+          <img class="content__picture" src="http://placehold.it/260x315" alt="Вязаные корзинки различных расцветок" width="260" height="315">
+          <p class="content__price">Цена: 990 руб.</p>
+          <a href="#" class="content__button button">Заказать</a>
+        </div>
       </section>
       <section class="about-us">
         <h2 class="about-us__heading second-heading">Коротко о нас:</h2>
@@ -73,15 +78,21 @@
         </ul>
       </section>
       <section class="reviews">
-        <h2 class="reviews__heading second-heading">Отзывы</h2>
-        <p class="reviews__review-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <p class="reviews__person">Анастасия Красильникова <span class="reviews__nikname">@misssssiskras</span></p>
-        <button type="button" class="reviews__arrow reviews__arrow--left"><span class="visually-hidden">Предыдущий отзыв</span></button><!--
-     --><button type="button" class="reviews__arrow reviews__arrow--right"><span class="visually-hidden">Следующий отзыв</span></button>
-        <a href="#" class="reviews__button button">Написать</a>
+        <div class="reviews__body-wrapper">
+          <h2 class="reviews__heading second-heading">Отзывы</h2>
+          <p class="reviews__review-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="reviews__person">Анастасия Красильникова <span class="reviews__nikname">@misssssiskras</span></p>
+        </div>
+          <div class="reviews__button-wrapper">
+            <div class="reviews__arrows">
+            <button type="button" class="reviews__arrow reviews__arrow--left"><span class="visually-hidden">Предыдущий отзыв</span></button><!--
+         --><button type="button" class="reviews__arrow reviews__arrow--right"><span class="visually-hidden">Следующий отзыв</span></button>
+          </div>
+          <a href="#" class="reviews__button button">Написать</a>
+        </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__heading">Контакты</h2>
+        <h2 class="contacts__heading second-heading">Контакты</h2>
           <table class="contacts__info">
             <tr>
               <td class="contacts__feature">e-mail:</td>
@@ -111,6 +122,7 @@
 
     </main>
     <footer class="page-footer">
+      <a class="page-footer__logo"><img class="page-footer__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka" width="86" height="35"></a>
       <ul class="page-footer__list social">
         <li class="social__item"><a href="#"><span class="social__pic social__pic--instagram"></span><span class="visually-hidden">Мишка в Инстаграм</span></a></li>
         <li class="social__item"><a href="#"><span class="social__pic social__pic--fb"></span><span class="visually-hidden">Мишка на фейсбуке</span></a></li>

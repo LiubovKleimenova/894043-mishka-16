@@ -1,8 +1,8 @@
 .about-us {
   @include zero-indent;
-  @include inner-padding();
+  @include outer-margin();
   padding-top: 34px;
-  outline: 3px solid red;
+  outline: 3px dotted red;
 }
 
 .about-us__heading {
@@ -11,4 +11,18 @@
 
 .about-us__list {
   @include zero-indent;
+}
+
+@media (min-width: $width-tablet) {
+  .about-us {
+    @include outer-margin(52px, 52px);
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .about-us {
+    @include outer-margin(175px, 200px);
+    padding-top: 60px;
+  }
 }

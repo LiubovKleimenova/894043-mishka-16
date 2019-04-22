@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 62px;
-  margin-left: 57px;
 }
 
 .social__item {
@@ -18,19 +16,25 @@
 
   &--instagram {
     width: 22px;
-    height: 21px;
+    min-height: 21px;
     background-image: url("../img/icon-insta.svg");
   }
 
   &--fb {
     width: 15px;
-    height: 28px;
+    min-height: 28px;
     background-image: url("../img/icon-fb.svg");
   }
 
   &--twitter {
     width: 23px;
-    height: 20px;
+    min-height: 20px;
     background-image: url("../img/icon-twitter.svg");
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .social {
+    width: 140px;
   }
 }

@@ -1,16 +1,34 @@
 .advantages {
+  display: flex;
+  flex-direction: column;
+
   @include font-properties-normal;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
   color: $black;
   text-align: left;
-
   list-style: none;
 }
 
 .advantages__item {
   @include zero-indent;
   padding-top: 85px;
+  width: 290px;
+  min-height: 129px;
   outline: 3px solid orange;
+}
+
+@media (min-width: $width-tablet) {
+  .advantages {
+    height: 450px;
+    flex-wrap: wrap;
+
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .advantages__item {
+    width: 290px;
+  }
 }

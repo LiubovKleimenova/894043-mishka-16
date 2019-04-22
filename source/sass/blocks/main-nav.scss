@@ -6,7 +6,6 @@
   font-weight: bold;
   line-height: 1.41;
   color: $black;
-
   outline: 3px solid red;
 }
 
@@ -18,4 +17,27 @@
 
 .main-nav__list {
   @include zero-indent;
+}
+
+
+@media (min-width: $width-tablet) {
+  .main-nav {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-nav {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

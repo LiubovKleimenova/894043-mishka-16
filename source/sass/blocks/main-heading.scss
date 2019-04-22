@@ -2,6 +2,21 @@
   @include font-properties-normal;
   font-size: 27px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 1.11;
   color: $greyish-black;
+  text-align: center;
+}
+
+@media (min-width: $width-tablet) {
+  .main-heading {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-heading {
+    font-size: 53px;
+    line-height: 1.08;
+  }
 }

@@ -1,13 +1,14 @@
 .contacts {
-  @include inner-padding();
+  position: relative;
   padding-top: 45px;
   outline: 3px solid red;
 }
 
 .contacts__heading {
   @include zero-indent;
+  @include outer-margin;
   @include font-properties-normal;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
   color: $black;
@@ -16,6 +17,7 @@
 }
 //разобраться??
 .contacts__info {
+  @include outer-margin;
   margin-top: 42px;
   margin-bottom: 42px;
   border-collapse: collapse;
@@ -25,15 +27,48 @@
   width: 50px;
 }
 
-.contacts__value {
-  padding-left: 30px;
-}
-
-.contacts__map {
-  margin-left: -30px;
-}
-
 .contacts__button {
   margin-top: 39px;
   margin-bottom: 39px;
+}
+
+@media (min-width: $width-tablet) {
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+  }
+
+  .contacts__button {
+    width: 230px;
+
+    @include margin-center;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .contacts {
+    @include outer-margin(52px, 52px);
+    min-height: 457px;
+    width: 500px;
+  }
+
+  .contacts__heading {
+    margin-left: 150px;
+  }
+
+  .contacts__info {
+    margin-left: 150px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    right: -550px;
+    width: 525px;
+    height: 457px;
+  }
+
+  .content__button {
+    margin-bottom: 0;
+  }
 }

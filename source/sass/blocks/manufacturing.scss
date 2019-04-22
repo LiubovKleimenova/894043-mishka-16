@@ -22,3 +22,42 @@
 .manufacturing__button {
   margin-top: 29px;
 }
+
+@media (min-width: $width-tablet) {
+  .manufacturing {
+    @include outer-margin(52px, 52px);
+    position: relative;
+    padding-top: 455px;
+    border: 1px solid $lighter-grey;
+  }
+
+  .manufacturing__video img {
+    width: 682px;
+    min-height: 455px;
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .manufacturing {
+    @include outer-margin(52px, 52px);
+    position: relative;
+    min-height: 455px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 690px;
+    padding-right: 57px;
+    margin-bottom: 105px;
+    border: 1px solid $lighter-grey;
+  }
+
+  .manufacturing__video img {
+    position: absolute;
+    left: 0;
+  }
+
+  .manufacturing__heading {
+    padding-top: 100px;
+  }
+}

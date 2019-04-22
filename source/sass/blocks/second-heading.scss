@@ -7,3 +7,17 @@
   color: $black;
   outline: 3px solid blue;
 }
+
+@media (min-width: $width-tablet) {
+  .second-heading {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .second-heading {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+}

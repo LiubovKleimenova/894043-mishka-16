@@ -1,8 +1,16 @@
 .promo {
   @include zero-indent;
-  @include inner-padding();
-  padding-top: 34px;
-  outline: 3px solid red;
+  @include outer-margin();
+  margin-bottom: 36px;
+  outline: 3px dashed yellow;
+}
+
+.promo__wrapper-heading {
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
+  margin-bottom: 30px;
+  outline: 2px dashed orange;
 }
 
 .promo__heading {
@@ -12,7 +20,6 @@
 .promo__item {
   @include zero-indent;
   padding-top: 8px;
-  padding-bottom: 30px;
 
   @include font-properties-normal;
   font-size: 17px;
@@ -20,53 +27,48 @@
   line-height: 1.18;
   color: $seafoam-blue;
   text-transform: uppercase;
-  outline: 3px solid yellow;
+  outline: 3px solid tomato;
 }
 
-.promo__description {
-  @include zero-indent;
-  padding-bottom: 30px;
-
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 1.6;
-  color: $greyish-brown;
+.promo__content {
+  outline: 3px dotted green;
 }
 
-.promo__info {
-  border-collapse: collapse;
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 1.33;
-  color: $greyish-brown;
+@media (min-width: $width-tablet) {
+  .promo {
+    @include outer-margin(52px, 52px);
+    margin-bottom: 53px;
+  }
+
+  .promo__wrapper-heading {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 43px;
+    margin-bottom: 55px;
+  }
+
+  .promo__item {
+    line-height: 1;
+  }
+
+  .promo__content {
+    width: 292px;
+  }
 }
 
-.promo__line {
-  border-bottom: 1px solid $lighter-grey;
-}
+@media (min-width: $width-desktop) {
+  .promo {
+    @include outer-margin(52px, 52px);
+    margin-bottom: 53px;
+  }
 
-.promo__value {
-  padding: 10px 20px 10px 30px;
-}
+  .promo__wrapper-heading {
+    width: 650px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 
-.promo__picture {
-  @include zero-indent;
-  margin-top: 28px;
-  margin-bottom: 28px;
-}
-
-.promo__price {
-  @include zero-indent;
-  @include margin-center;
-  @include font-properties-normal;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.18;
-  color: $greyish-brown;
-  text-align: center;
-}
-
-.promo__button {
-  margin-top: 28px;
-  margin-bottom: 36px;
+  .promo__content {
+    width: 292px;
+  }
 }

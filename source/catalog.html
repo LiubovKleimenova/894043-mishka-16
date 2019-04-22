@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Каталог Mishka</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -23,39 +24,51 @@
       <h1  class="page-catalog__heading main-heading grey-heading">Каталог товаров</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
-        <ul class="catalog__list goods">
-          <li class="goods__item product">
-            <a class="product__link" href="#">
-              <img class="product__photo" src="img/photo-hare-mobile@1x.jpg" alt="Вязаный заяц" width="260" height="195">
-              <p class="product__name">Зайчик-попрыгайчик</p>
+        <ul class="catalog__list">
+          <li class="catalog__item product">
+            <a class="product__photo" href="#">
+              <img src="img/photo-hare-mobile@1x.jpg" alt="Вязаный заяц" width="260" height="195">
             </a>
-            <p class="product__description">Рост 30 см, вес 200 г</p>
-            <p class="product__price">1 200 руб.</p>
-            <a class="product__add-to-cart" href="#">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            <div class="product__wrapper">
+              <a class="product__name" href="#">
+                Зайчик-попрыгайчик
+              </a>
+              <p class="product__description">Рост 30 см, вес 200 г</p>
+              <p class="product__price">1 200 руб.</p>
+              <a class="product__add-to-cart" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </div>
           </li>
-          <li class="goods__item product">
-            <a class="product__link" href="#">
-              <img class="product__photo" src="img/photo-bowl-mobile@1x.jpg" alt="Вязаная корзинка" width="260" height="195">
-              <h3 class="product__name">Корзинка для белья</h3>
+          <li class="catalog__item product">
+            <a class="product__photo" href="#">
+              <img src="img/photo-bowl-mobile@1x.jpg" alt="Вязаная корзинка" width="260" height="195">
+            </a>
+            <div class="product__wrapper">
+            <a class="product__name" href="#">
+              Корзинка для белья
             </a>
             <p class="product__description">Диаметр 15 см, высота 10 см</p>
             <p class="product__price">690 руб.</p>
             <a class="product__add-to-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
             </a>
+          </div>
           </li>
-          <li class="goods__item product">
-            <a class="product__link" href="#">
-              <img class="product__photo" src="img/photo-toys-mobile@1x.jpg" alt="Большая вязаная корзинка" width="260" height="195">
-              <h3 class="product__name">Большая корзинка для игрушек</h3>
+          <li class="catalog__item product">
+            <a class="product__photo" href="#">
+              <img src="img/photo-toys-mobile@1x.jpg" alt="Большая вязаная корзинка" width="260" height="195">
+            </a>
+            <div class="product__wrapper">
+            <a class="product__name" href="#">
+              Большая корзинка для игрушек
             </a>
             <p class="product__description">Диаметр 30 см, высота 30 см</p>
             <p class="product__price">1 500 руб.</p>
             <a class="product__add-to-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
             </a>
+          </div>
           </li>
         </ul>
       </section>
@@ -80,6 +93,7 @@
       </section>
     </main>
     <footer class="page-footer">
+      <a class="page-footer__logo"><img class="page-footer__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka" width="86" height="35"></a>
       <ul class="page-footer__list social">
         <li class="social__item"><a href="#"><span class="social__pic social__pic--instagram"></span><span class="visually-hidden">Мишка в Инстаграм</span></a></li>
         <li class="social__item"><a href="#"><span class="social__pic social__pic--fb"></span><span class="visually-hidden">Мишка на фейсбуке</span></a></li>
