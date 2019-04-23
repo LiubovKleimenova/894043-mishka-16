@@ -1,19 +1,18 @@
 .page-header {
   @include mobile-style;
   @include margin-center;
-  padding-top: 22px;
-  outline: 6px solid green;
+  outline: 2px solid green;
 }
 
 .page-header__logo {
   display: block;
+  padding-top: 22px;
   padding-bottom: 22px;
   box-shadow: 0 1px 0 0 $lighter-grey;
 }
 
 .page-header__logo-image {
   display: block;
-
   @include margin-center;
 }
 
@@ -21,10 +20,19 @@
   .page-header {
     width: $width-tablet;
   }
+
+  .page-header__logo-image {
+    @include zero-indent;
+    margin-left: 52px;
+  }
 }
 
 @media (min-width: $width-desktop) {
   .page-header {
     width: $width-desktop;
+  }
+
+  .page-header__logo-image {
+    @include margin-center;
   }
 }

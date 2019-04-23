@@ -2,7 +2,7 @@
   @include zero-indent;
   @include outer-margin();
   margin-bottom: 36px;
-  outline: 3px dashed yellow;
+  outline: 1px dashed yellow;
 }
 
 .promo__wrapper-heading {
@@ -10,7 +10,7 @@
   flex-direction: column;
   margin-top: 34px;
   margin-bottom: 30px;
-  outline: 2px dashed orange;
+  outline: 1px dashed orange;
 }
 
 .promo__heading {
@@ -27,11 +27,11 @@
   line-height: 1.18;
   color: $seafoam-blue;
   text-transform: uppercase;
-  outline: 3px solid tomato;
+  outline: 2px solid tomato;
 }
 
 .promo__content {
-  outline: 3px dotted green;
+  outline: 1px dotted green;
 }
 
 @media (min-width: $width-tablet) {

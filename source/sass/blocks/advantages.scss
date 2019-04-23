@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
 
+
   @include font-properties-normal;
   font-size: 17px;
   font-weight: bold;
@@ -12,16 +13,17 @@
 }
 
 .advantages__item {
+  width: 260px;
   @include zero-indent;
   padding-top: 85px;
-  width: 290px;
   min-height: 129px;
   outline: 3px solid orange;
 }
 
 @media (min-width: $width-tablet) {
   .advantages {
-    height: 450px;
+    flex-direction: row;
+    min-height: 450px;
     flex-wrap: wrap;
 
     font-size: 20px;
@@ -29,6 +31,26 @@
   }
 
   .advantages__item {
-    width: 290px;
+    width: 293px;
+    margin-right: 35px;
+
+    &:nth-of-type(1) {
+      order: 1;
+    }
+    &:nth-of-type(2) {
+      order: 3;
+    }
+    &:nth-of-type(3) {
+      order: 5;
+    }
+    &:nth-of-type(4) {
+      order: 2;
+    }
+    &:nth-of-type(5) {
+      order: 4;
+    }
+    &:nth-of-type(6) {
+      order: 6;
+    }
   }
 }

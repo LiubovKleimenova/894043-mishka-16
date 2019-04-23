@@ -9,15 +9,19 @@
   font-weight: normal;
   line-height: 1.6;
   color: $black;
-  outline: 10px dashed fuchsia;
+  outline: 2px dashed fuchsia;
+
+  background-image: url('../img/hero-mobile@1x.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .page-main__heading {
-  width: 244px;
+  width: 260px;
 
   @include margin-center;
+  margin-bottom: 120px;
   text-align: center;
-  outline: 3px solid  blue;
 }
 
 @media (min-width: $width-tablet) {

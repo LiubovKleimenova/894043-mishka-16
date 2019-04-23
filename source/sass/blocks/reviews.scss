@@ -58,9 +58,12 @@
     display: flex;
   }
 
+  .reviews__heading {
+    margin-right: 300px;
+  }
+
   .rewiews__body-wrapper {
     flex-shrink: 0;
-    width: 642px;
   }
 
   .reviews__review-text {
