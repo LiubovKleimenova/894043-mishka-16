@@ -1,5 +1,7 @@
 .main-nav {
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   @include font-properties-normal;
   font-size: 17px;
@@ -8,10 +10,26 @@
   color: $black;
 }
 
+.main-nav ul {
+  @include zero-indent;
+}
+
+.main-nav__logo {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $lighter-grey;
+}
+
+.main-nav__logo-image {
+  display: block;
+  @include margin-center;
+}
+
 .main-nav__toggle {
   position: absolute;
   z-index: 2;
-  top: -80px;
+  top: -15px;
   right: 0;
 
   width: 80px;
@@ -40,7 +58,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -80px;
+  top: -15px;
   right: 0;
 
   &::before,
@@ -72,29 +90,53 @@
   }
 }
 
-.main-nav__list {
-  @include zero-indent;
-}
-
 .main-nav__delivery {
-  font-size: 0;
+  display: none;
 }
 
 @media (min-width: $width-tablet) {
   .main-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+
     font-size: 15px;
     line-height: 1.6;
+    font-weight: bold;
+  }
+
+  .main-nav__logo {
+    order: 1;
+    width: 371px;
+
+  }
+
+  .main-nav__list {
+    order: 3;
+  }
+
+  .main-nav__user-interraction {
+    order: 2;
+  }
+
+  .main-nav__delivery {
+    order: 4;
+
+    display: block;
+    @include zero-indent;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 35px;
+    font-weight: normal;
+    color: $greyish-brown;
+  }
+
+  .main-nav__logo-image {
+    @include zero-indent;
+    margin-left: 52px;
   }
 
   .main-nav__toggle {
     display: none;
-  }
-
-  .main-nav__delivery {
-    font-size: 15px;
-    line-height: 1.6;
-    font-weight: normal;
-    color: $greyish-brown;
   }
 }
 
@@ -104,7 +146,37 @@
     line-height: 1.41;
   }
 
+  .main-nav__logo {
+    order: 2;
+    @include zero-indent;
+    width: 149px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+  }
+
+  .main-nav__list {
+    order: 1;
+  }
+
+  .main-nav__user-interraction {
+    order: 3;
+  }
+
+  .main-nav__offers {
+    order: 4;
+  }
+
+  .main-nav__delivery {
+    order: 5;
+  }
+
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__logo-image {
+    @include zero-indent;
+    width: 149px;
+    height: 72px;
   }
 }

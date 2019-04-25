@@ -8,15 +8,22 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"  href="index.html"><img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka" width="86" height="35"></a>
-      <nav class="page-header__menu main-nav">
+      <nav class="page-header__menu main-nav main-nav--closed">
+        <a class="main-nav__logo"  href="index.html"><img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka" width="86" height="35"></a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a class="site-list__link" href="order-form.html">Вязание на заказ</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Поиск по сайту</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Корзина: <span>пока пуста</span></a></li>
         </ul>
+        <ul class="main-nav__user-interraction user-list">
+          <li class="user-list__item"><a class="user-list__link" href="#">Поиск по сайту</a></li>
+          <li class="user-list__item"><a class="user-list__link" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="main-nav__offers offers">
+          <li class="offers__item"><a class="offers__link" href="#">Новые поступления</a></li>
+          <li class="offers__item"><a class="offers__link" href="#">Распродажа</a></li>
+        </ul>
+        <p class="main-nav__delivery">Бесплатная доставка</p>
       </nav>
     </header>
     <main class="page-catalog">
@@ -72,11 +79,19 @@
         </ul>
       </section>
       <section class="manufacturing">
-        <h2 class="manufacturing__heading">Процесс производства</h2>
-        <a class="manufacturing__video" href="#"><img src="http://placehold.it/260x150" alt="Видео процесса"  width="260" height="150"></a>
-        <p class="manufacturing__description">По просьбам нашиз фолловеров мы сняли для вас подробное видео о том, как появляются наши товары
-          <a href="#" class="manufacturing__button button">Сделать заказ</a>
-        </p>
+        <div class="manufacturing__wrapper">
+          <div class="manufacturing__heading-wrapper">
+            <h2 class="manufacturing__heading">Процесс производства</h2>
+          </div>
+          <div class="manufacturing__video-wrapper">
+            <a class="manufacturing__video" href="#"><img src="http://placehold.it/260x150" alt="Видео процесса"  width="260" height="150"></a>
+          </div>
+          <div class="manufacturing__description-wrapper">
+            <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары
+              <a href="#" class="manufacturing__button button">Сделать заказ</a>
+            </p>
+          </div>
+        </div>
       </section>
       <section class="page-main__modal modal">
         <h2 class="modal__heading">Добавить в корзину</h2>

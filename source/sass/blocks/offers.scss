@@ -1,0 +1,16 @@
+.offers {
+  display: none;
+  list-style: none;
+}
+
+.offers__link {
+  display: block;
+  color: $black;
+  text-decoration: none;
+}
+
+@media (min-width: $width-desktop) {
+  .offers {
+    display: flex;
+  }
+}
