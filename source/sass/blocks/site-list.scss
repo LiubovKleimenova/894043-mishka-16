@@ -19,7 +19,6 @@
   .site-list {
     display: flex;
     justify-content: flex-start;
-    width: 455px;
     background-color: transparent; //не работает
   }
 
@@ -29,8 +28,8 @@
 
   .site-list__link {
     @include zero-indent;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 18px;
+    padding-bottom: 24px;
     margin-right: 37px;
   }
 }
@@ -39,7 +38,6 @@
   .site-list {
     display: flex;
     width: auto;
-    border-bottom: 1px solid red;
   }
 
   .site-list__item {
