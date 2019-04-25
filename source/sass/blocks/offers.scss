@@ -13,4 +13,15 @@
   .offers {
     display: flex;
   }
+
+  .offers__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: $black;
+  }
 }
