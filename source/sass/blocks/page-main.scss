@@ -27,23 +27,25 @@
 @media (min-width: $width-tablet) {
   .page-main {
     width: $width-tablet;
-    padding-top: 161px;
+    padding-top: 60px;
 
-    background-position: 0 -68px;
+    background-position: 0 -100px;
   }
 
   .page-main__heading {
-    width: 498px;
+    width: 520px;
+    margin-bottom: 374px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .page-main {
     width: $width-desktop;
+    padding-top: 55px;
   }
 
   .page-main__heading {
     width: 650px;
-    margin-bottom: 354px;
+    margin-bottom: 355px;
   }
 }
