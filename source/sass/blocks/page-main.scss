@@ -2,6 +2,7 @@
   width: $width-mobile;
 
   @include margin-center;
+
   padding-top: 76px;
 
   @include font-properties-normal;
@@ -10,6 +11,7 @@
   line-height: 1.6;
   color: $black;
   outline: 2px dashed fuchsia;
+  border-top: 1px solid $lighter-grey;
 
   background-image: url('../img/hero-mobile@1x.jpg');
   background-position: top;
@@ -18,7 +20,7 @@
 
 .page-main__heading {
   width: 260px;
-
+  @include zero-indent;
   @include margin-center;
   margin-bottom: 120px;
   text-align: center;
@@ -27,9 +29,8 @@
 @media (min-width: $width-tablet) {
   .page-main {
     width: $width-tablet;
-    padding-top: 60px;
-
-    background-position: 0 -100px;
+    padding-top: 150px;
+    background-image: url('../img/hero-tablet@1x.jpg');
   }
 
   .page-main__heading {
@@ -41,11 +42,11 @@
 @media (min-width: $width-desktop) {
   .page-main {
     width: $width-desktop;
-    padding-top: 55px;
+    background-image: url('../img/hero-desktop@1x.jpg');
   }
 
   .page-main__heading {
     width: 650px;
-    margin-bottom: 355px;
+    margin-bottom: 360px;
   }
 }

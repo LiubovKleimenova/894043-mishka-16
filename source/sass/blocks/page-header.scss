@@ -1,13 +1,12 @@
 .page-header {
   width: $width-mobile;
   @include margin-center;
-  outline: 2px solid green;
-  background-color: transparent;
 }
 
 @media (min-width: $width-tablet) {
   .page-header {
     width: $width-tablet;
+    margin-bottom: -63px;
   }
 }
 

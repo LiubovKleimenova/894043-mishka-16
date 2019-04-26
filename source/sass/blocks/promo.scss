@@ -43,11 +43,15 @@
   .promo__wrapper-heading {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 43px;
+    margin-top: 45px;
     margin-bottom: 55px;
   }
 
   .promo__item {
+    width: 70px;
+    margin-right: 28px;
+    align-self: center;
+    text-align: center;
     line-height: 1;
   }
 
@@ -59,16 +63,20 @@
 @media (min-width: $width-desktop) {
   .promo {
     @include outer-margin(52px, 52px);
-    margin-bottom: 53px;
+    margin-bottom: 73px;
   }
 
   .promo__wrapper-heading {
     width: 650px;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-top: 122px;
+    margin-left: 50px;
+    margin-bottom: 50px;
   }
 
   .promo__content {
     width: 292px;
+    margin-left: 175px;
   }
 }

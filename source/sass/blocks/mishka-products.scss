@@ -18,7 +18,7 @@
   list-style: none;
 }
 
-.mishka-products__link {
+.mishka-products__link { //добавить активные состояния и иконки
   @include zero-indent;
   display: block;
   padding-top: 30px;

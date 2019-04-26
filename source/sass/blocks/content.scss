@@ -45,7 +45,7 @@
 }
 
 .content__button {
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 @media (min-width: $width-tablet) {
@@ -62,11 +62,11 @@
   .content__description {
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 54px;
+    margin-bottom: 35px;
   }
 
   .content__info {
-    margin-bottom: 40px;
+    margin-bottom: 55px;
   }
 
   .content__price {
@@ -78,20 +78,23 @@
 @media (min-width: $width-desktop) {
   .content__picture {
     position: absolute;
+    width: 525px;
+    height: 636px;
+    object-fit: cover;
+    z-index: -1;
 
     @include zero-indent;
-    top: -180px;
-    right: -750px;
-    width: 525px;
+    top: -160px;
+    right: -350px;
   }
 
   .content__description {
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 54px;
+    margin-bottom: 50px;
   }
 
   .content__info {
-    margin-bottom: 40px;
+    margin-bottom: 110px;
   }
 }
