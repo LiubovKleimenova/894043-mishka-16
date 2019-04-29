@@ -12,7 +12,6 @@
   font-weight: normal;
   line-height: 2;
   color: $greyish-brown;
-  outline: 3px solid yellow;
 }
 
 .reviews__person {
@@ -56,10 +55,8 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     display: flex;
-  }
-
-  .reviews__heading {
-    margin-right: 300px;
+    padding-top: 80px;
+    padding-bottom: 5px;
   }
 
   .rewiews__body-wrapper {
@@ -69,38 +66,55 @@
   .reviews__review-text {
     font-size: 17px;
     line-height: 1.76;
-    margin-top: 65px;
-    margin-bottom: 68px;
+    margin-top: 50px;
+    margin-bottom: 60px;
     margin-right: 79px;
   }
 
   .reviews__person {
     font-size: 18px;
     line-height: 1.33;
+    width: 300px;
   }
 
   .reviews__button-wrapper {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-start;
     margin-left: -255px;
     width: 175px;
     flex-shrink: 0;
   }
 
   .reviews__arrows {
-    margin-top: 240px;
+    margin-top: 225px;
+    border: none;
   }
 }
 
 @media (min-width: $width-desktop) {
   .reviews {
     @include outer-margin(52px, 52px);
-    @include inner-padding(125px, 50px);
+    @include inner-padding(170px, 0px);
     min-height: 457px;
+    margin-bottom: 90px;
+  }
+
+  .reviews__review-text {
+    margin-bottom: 40px;
   }
 
   .reviews__person {
     font-size: 17px;
     line-height: 1.41;
+  }
+
+  .reviews__button-wrapper {
+    margin-left: -200px;
+    justify-content: flex-end;
+  }
+
+  .reviews__arrows {
+    margin-top: 180px;
   }
 }
