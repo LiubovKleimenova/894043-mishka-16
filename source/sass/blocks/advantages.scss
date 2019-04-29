@@ -1,7 +1,7 @@
 .advantages {
   display: flex;
   flex-direction: column;
-
+  position: relative;
 
   @include font-properties-normal;
   font-size: 17px;
@@ -17,7 +17,69 @@
   @include zero-indent;
   padding-top: 85px;
   min-height: 129px;
-  outline: 3px solid orange;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-of-type(1)::before {
+    width: 32px;
+    height: 37px;
+    top: 49px;
+    left: 8px;
+
+    background-image: url('../img/icon-feature-flower.svg');
+  }
+
+  &:nth-of-type(2)::before {
+    width: 47px;
+    height: 27px;
+    top: 51px;
+
+    background-image: url('../img/icon-feature-money.svg');
+  }
+
+  &:nth-of-type(3)::before {
+    width: 34px;
+    height: 27px;
+    top: 57px;
+    left: 6px;
+
+    background-image: url('../img/icon-feature-heart.svg');
+  }
+
+  &:nth-of-type(4)::before {
+    width: 35px;
+    height: 34px;
+    top: 53px;
+    left: 7px;
+
+    background-image: url('../img/icon-feature-ball.svg');
+  }
+
+  &:nth-of-type(5)::before {
+    width: 55px;
+    height: 23px;
+    top: 55px;
+
+    background-image: url('../img/icon-feature-rocket.svg');
+  }
+
+  &:nth-of-type(6)::before {
+    width: 33px;
+    height: 32px;
+    top: 55px;
+    left: 5px;
+
+    background-image: url('../img/icon-feature-gift.svg');
+  }
 }
 
 @media (min-width: $width-tablet) {
@@ -31,8 +93,11 @@
   }
 
   .advantages__item {
+
     width: 293px;
     margin-right: 35px;
+    padding-top: 105px;
+    padding-bottom: 5px;
 
     &:nth-of-type(1) {
       order: 1;
@@ -52,5 +117,11 @@
     &:nth-of-type(6) {
       order: 6;
     }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .advantages__item {
+    margin-right: 52px;
   }
 }

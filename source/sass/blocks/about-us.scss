@@ -16,13 +16,14 @@
 @media (min-width: $width-tablet) {
   .about-us {
     @include outer-margin(52px, 52px);
-    padding-top: 60px;
+    padding-top: 68px;
+    margin-bottom: 77px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .about-us {
-    @include outer-margin(175px, 200px);
-    padding-top: 60px;
+    @include outer-margin(225px, 225px);
+    padding-top: 84px;
   }
 }
