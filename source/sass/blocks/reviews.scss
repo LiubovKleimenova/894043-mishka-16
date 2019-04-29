@@ -88,6 +88,9 @@
 
   .reviews__arrows {
     margin-top: 225px;
+  }
+
+  .reviews__arrow {
     border: none;
   }
 }
@@ -95,7 +98,7 @@
 @media (min-width: $width-desktop) {
   .reviews {
     @include outer-margin(52px, 52px);
-    @include inner-padding(170px, 0px);
+    @include inner-padding(170px, 0);
     min-height: 457px;
     margin-bottom: 90px;
   }

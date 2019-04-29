@@ -36,12 +36,12 @@
     display: block;
     width: 80px;
     min-height: 88px;
+
     @include zero-indent;
     font-size: 0;
 
-
-//добавить активные состояния (заинлайнить?)
-    background-image: url('../img/icon-search.svg');
+    //добавить активные состояния ()
+    background-image: url("../img/icon-search.svg");
     background-position: center;
     background-repeat: no-repeat;
 
@@ -62,8 +62,8 @@
       width: 21px;
       height: 18px;
       left: 31px;
-//добавить активные состояния (заинлайнить?)
-      background-image: url('../img/icon-cart.svg');
+      //добавить активные состояния (заинлайнить?)
+      background-image: url("../img/icon-cart.svg");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -75,7 +75,5 @@
     display: flex;
     width: auto;
     justify-content: flex-end;
-
   }
-
 }

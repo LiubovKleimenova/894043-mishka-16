@@ -73,6 +73,7 @@
   .contacts__button {
     width: 230px;
     margin-top: 48px;
+    margin-bottom: 57px;
 
     @include margin-center;
   }
@@ -110,7 +111,7 @@
 
   .contacts__map {
     position: absolute;
-    top: 0;
+    top: 80px;
     right: -550px;
     width: 525px;
     height: 457px;
@@ -119,5 +120,6 @@
   .contacts__button {
     margin-right: 0;
     margin-left: 175px;
+    margin-bottom: 105px;
   }
 }

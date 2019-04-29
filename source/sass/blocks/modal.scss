@@ -1,5 +1,6 @@
 .modal {
   display: none;
+
   @include inner-padding;
   width: 320px;
   min-height: 336px;

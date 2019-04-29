@@ -23,6 +23,7 @@
 
 .main-nav__logo-image {
   display: block;
+
   @include margin-center;
 }
 
@@ -54,7 +55,7 @@
   background-color: $black;
 
   box-shadow: 0 6px 0 0 $black,
-  0 12px 0 0 $black;
+    0 12px 0 0 $black;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -112,7 +113,6 @@
     order: 1;
     width: 318px;
     border: none;
-
   }
 
   .main-nav__list {
@@ -125,19 +125,17 @@
 
   .main-nav__delivery {
     order: 4;
-
     display: block;
+
     @include zero-indent;
     padding-top: 18px;
     padding-bottom: 24px;
-    font-weight: normal;
-    color: $greyish-brown;
-
     margin-left: auto;
 
     font-size: 15px;
     font-weight: normal;
     line-height: 1.6;
+    color: $greyish-brown;
   }
 
   .main-nav__logo-image {
@@ -157,6 +155,7 @@
 
   .main-nav__logo {
     order: 2;
+
     @include zero-indent;
     width: 149px;
     padding-top: 9px;

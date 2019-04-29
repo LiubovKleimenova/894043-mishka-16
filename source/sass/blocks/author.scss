@@ -21,3 +21,10 @@
     fill: $greeeny-blue;
   }
 }
+
+
+@media (min-width: $width-tablet) {
+  .author {
+    @include zero-indent;
+  }
+}

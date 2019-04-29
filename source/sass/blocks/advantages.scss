@@ -14,6 +14,7 @@
 
 .advantages__item {
   width: 260px;
+
   @include zero-indent;
   padding-top: 85px;
   min-height: 129px;
@@ -35,7 +36,7 @@
     top: 49px;
     left: 8px;
 
-    background-image: url('../img/icon-feature-flower.svg');
+    background-image: url("../img/icon-feature-flower.svg");
   }
 
   &:nth-of-type(2)::before {
@@ -43,7 +44,7 @@
     height: 27px;
     top: 51px;
 
-    background-image: url('../img/icon-feature-money.svg');
+    background-image: url("../img/icon-feature-money.svg");
   }
 
   &:nth-of-type(3)::before {
@@ -52,7 +53,7 @@
     top: 57px;
     left: 6px;
 
-    background-image: url('../img/icon-feature-heart.svg');
+    background-image: url("../img/icon-feature-heart.svg");
   }
 
   &:nth-of-type(4)::before {
@@ -61,7 +62,7 @@
     top: 53px;
     left: 7px;
 
-    background-image: url('../img/icon-feature-ball.svg');
+    background-image: url("../img/icon-feature-ball.svg");
   }
 
   &:nth-of-type(5)::before {
@@ -69,7 +70,7 @@
     height: 23px;
     top: 55px;
 
-    background-image: url('../img/icon-feature-rocket.svg');
+    background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &:nth-of-type(6)::before {
@@ -78,7 +79,7 @@
     top: 55px;
     left: 5px;
 
-    background-image: url('../img/icon-feature-gift.svg');
+    background-image: url("../img/icon-feature-gift.svg");
   }
 }
 
@@ -102,18 +103,23 @@
     &:nth-of-type(1) {
       order: 1;
     }
+
     &:nth-of-type(2) {
       order: 3;
     }
+
     &:nth-of-type(3) {
       order: 5;
     }
+
     &:nth-of-type(4) {
       order: 2;
     }
+
     &:nth-of-type(5) {
       order: 4;
     }
+
     &:nth-of-type(6) {
       order: 6;
     }
