@@ -32,6 +32,11 @@
     position: relative;
   }
 
+  .user-list__item:nth-of-type(1) {
+    border-left: 1px solid $lighter-grey;
+    border-right: 1px solid $lighter-grey;
+  }
+
   .user-list__item:nth-of-type(1) .user-list__link {
     display: block;
     width: 80px;
@@ -40,13 +45,21 @@
     @include zero-indent;
     font-size: 0;
 
-    //добавить активные состояния ()
     background-image: url("../img/icon-search.svg");
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.2;
+  }
 
-    border-left: 1px solid $lighter-grey;
-    border-right: 1px solid $lighter-grey;
+  .user-list__item:nth-of-type(1) .user-list__link:hover,
+  .user-list__item:nth-of-type(1) .user-list__link:active {
+    background-image: url("../img/icon-search-hover.svg");
+    opacity: 1;
+  }
+
+  .user-list__item:nth-of-type(1) .user-list__link:disabled {
+    background-image: url("../img/icon-search-hover.svg");
+    opacity: 0.2;
   }
 
   .user-list__item:nth-of-type(2) .user-list__link {
@@ -62,10 +75,30 @@
       width: 21px;
       height: 18px;
       left: 31px;
-      //добавить активные состояния (заинлайнить?)
+
       background-image: url("../img/icon-cart.svg");
       background-position: center;
       background-repeat: no-repeat;
+      opacity: 0.2;
+    }
+  }
+
+  .user-list__item:nth-of-type(2) .user-list__link:hover,
+  .user-list__item:nth-of-type(2) .user-list__link:active {
+    color: $black-06;
+
+    &::before {
+      background-image: url("../img/icon-cart-hover.svg");
+      opacity: 1;
+    }
+  }
+
+  .user-list__item:nth-of-type(2) .user-list__link:disabled {
+    color: $black-03;
+
+    &::before {
+      background-image: url("../img/icon-cart-hover.svg");
+      opacity: 0.2;
     }
   }
 }

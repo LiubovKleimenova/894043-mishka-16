@@ -1,7 +1,6 @@
 .contacts {
   position: relative;
   padding-top: 45px;
-  outline: 3px solid red;
 }
 
 .contacts__heading {
@@ -12,10 +11,8 @@
   font-weight: bold;
   line-height: 1.67;
   color: $black;
-
-  outline: 3px solid blue;
 }
-//разобраться??
+
 .contacts__info {
   @include outer-margin;
   margin-top: 42px;
@@ -28,8 +25,15 @@
 }
 
 .contacts__button {
+  @include outer-margin(30px, 30px);
+  width: auto;
   margin-top: 39px;
   margin-bottom: 39px;
+}
+//не работает??
+.contacts__value--underlined {
+  text-decoration: underline;
+  text-decoration-color: $greeny-blue;
 }
 
 @media (min-width: $width-tablet) {

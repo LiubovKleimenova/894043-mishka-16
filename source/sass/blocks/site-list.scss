@@ -32,6 +32,15 @@
     padding-bottom: 24px;
     margin-right: 37px;
   }
+
+  .site-list__link:hover,
+  .site-list__link:active {
+    color: $black-06;
+  }
+
+  .site-list__link:disabled {
+    color: $black-03;
+  }
 }
 
 @media (min-width: $width-desktop) {

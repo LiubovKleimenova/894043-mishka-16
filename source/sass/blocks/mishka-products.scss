@@ -4,21 +4,79 @@
 
 .mishka-products__item {
   display: block;
+  position: relative;
 
   @include zero-indent;
-
-  &:first-child {
-    background-color: $seafoam-blue;
-  }
-
-  &:last-child {
-    background-color: $aqua-marine;
-  }
-
   list-style: none;
 }
 
-.mishka-products__link { //добавить активные состояния и иконки
+.mishka-products__item:first-of-type .mishka-products__link {
+  background-color: $seafoam-blue;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 62px;
+    right: 36px;
+    top: 30px;
+    background-image: url("../img/icon-interior.svg");
+    opacity: 0.5;
+  }
+}
+
+.mishka-products__item:first-of-type .mishka-products__link:hover,
+.mishka-products__item:first-of-type .mishka-products__link:active {
+  background-color: #59d5bc;
+
+  &::after {
+    opacity: 0.7;
+  }
+}
+
+.mishka-products__item:first-of-type .mishka-products__link:disabled {
+  background-color: #59d5bc;
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.mishka-products__item:last-of-type .mishka-products__link {
+  background-color: $aqua-marine;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    right: 35px;
+    top: 32px;
+    background-image: url("../img/icon-toy.svg");
+    opacity: 0.5;
+  }
+}
+
+.mishka-products__item:last-of-type .mishka-products__link:hover,
+.mishka-products__item:last-of-type .mishka-products__link:active {
+  background-color: #46c1ae;
+
+  &::after {
+    opacity: 0.7;
+  }
+}
+
+.mishka-products__item:last-of-type .mishka-products__link:disabled {
+  background-color: #46c1ae;
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.mishka-products__link {
   @include zero-indent;
   display: block;
   padding-top: 30px;
@@ -34,6 +92,10 @@
   color: $white;
 }
 
+.mishka-products__link:hover .mishka-products__item:first-of-type::after {
+  opacity: 0.3;
+}
+
 @media (min-width: $width-tablet) {
   .mishka-products {
     @include outer-margin(52px, 52px);
@@ -45,8 +107,12 @@
     align-items: center;
   }
 
+  .mishka-products__item {
+    width: 50%;
+  }
+
   .mishka-products__link {
-    padding-right: 203px;
+    padding-right: 160px;
     font-size: 20px;
     line-height: 1.5;
   }

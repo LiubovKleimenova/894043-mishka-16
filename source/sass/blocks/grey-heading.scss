@@ -7,3 +7,16 @@
   padding-bottom: 76px;
   background-color: $lighter-grey;
 }
+
+
+@media (min-width: $width-tablet) {
+  .grey-heading {
+    padding-top: 93px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .grey-heading {
+    padding-bottom: 100px;
+  }
+}

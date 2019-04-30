@@ -1,9 +1,19 @@
 .product {
-  @include inner-padding(28px, 28px);
+  @include outer-margin(30px, 30px);
+  border: 1px solid $lighter-grey;
+  margin-top: 30px;
 }
 
 .product__photo {
   display: block;
+}
+
+.product__photo img {
+  display: block;
+}
+
+.product__wrapper {
+  @include inner-padding(28px, 28px);
 }
 
 .product__name {
@@ -28,6 +38,7 @@
 }
 
 .product__price {
+  margin: 0;
   border-top: 1px solid $lighter-grey;
   padding-top: 27px;
   padding-bottom: 30px;
@@ -37,28 +48,63 @@
 @media (min-width: $width-tablet) {
   .product {
     display: flex;
-  }
 
-  .product__photo {
-    margin-right: 26px;
+    @include outer-margin(52px, 52px);
   }
 
   .product__photo img {
     min-width: 334px;
-    min-height: 334px;
+    height: 334px;
+  }
+
+  .product__wrapper {
+    width: 335px;
+
+    @include inner-padding(25px, 25px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .product__name {
+    padding-top: 25px;
+
+    @include font-properties-normal;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: $black;
+  }
+
+  .product__description {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2;
+    color: $greyish-brown;
+  }
+
+  .product__price {
+    padding-top: 21px;
+    padding-left: 5px;
+    margin-top: auto; //почему не арботает для десктопа??
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.41;
   }
 }
 
 @media (min-width: $width-desktop) {
   .product {
-    display: block;
+    flex-direction: column;
 
     @include zero-indent;
-    margin-left: 52px;
+    margin-left: 49px;
   }
 
   .product__photo img {
-    min-width: 316px;
+    min-width: 317px;
     min-height: 462px;
   }
 }

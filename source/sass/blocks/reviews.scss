@@ -3,7 +3,6 @@
   @include inner-padding();
   padding-top: 60px;
   margin-bottom: 45px;
-  outline: 3px solid red;
 }
 
 .reviews__review-text {
@@ -47,6 +46,15 @@
   &--right {
     background-image: url("../img/icon-right-arrow.svg");
   }
+}
+
+.reviews__arrow:active,
+.reviews__arrow:hover {
+  opacity: 0.6;
+}
+
+.reviews__arrow:disabled {
+  opacity: 0.3;
 }
 
 @media (min-width: $width-tablet) {

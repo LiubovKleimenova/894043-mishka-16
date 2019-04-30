@@ -24,4 +24,13 @@
     line-height: 1.6;
     color: $black;
   }
+
+  .offers__link:hover,
+  .offers__link:active {
+    color: $black-06;
+  }
+
+  .offers__link:disabled {
+    color: $black-03;
+  }
 }
