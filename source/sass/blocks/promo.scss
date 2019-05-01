@@ -29,14 +29,17 @@
 
 @media (min-width: $width-tablet) {
   .promo {
-    @include outer-margin(52px, 52px);
+    margin: 0;
+    @include inner-padding(52px, 52px);
     margin-bottom: 53px;
+
+    padding-top: 45px;
   }
 
   .promo__wrapper-heading {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 45px;
+    margin-top: 0;
     margin-bottom: 55px;
   }
 
@@ -55,7 +58,6 @@
 
 @media (min-width: $width-desktop) {
   .promo {
-    @include outer-margin(52px, 52px);
     margin-bottom: 73px;
   }
 

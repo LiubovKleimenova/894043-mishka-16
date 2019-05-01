@@ -103,6 +103,11 @@
     margin-left: 49px;
   }
 
+  .product__description {
+    flex-grow: 5;
+    //???
+  }
+
   .product__photo img {
     min-width: 317px;
     min-height: 462px;

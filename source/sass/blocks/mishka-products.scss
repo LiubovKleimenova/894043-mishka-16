@@ -10,6 +10,22 @@
   list-style: none;
 }
 
+.mishka-products__link {
+  @include zero-indent;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 185px;
+
+  @include font-properties-normal;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  text-decoration: none;
+  color: $white;
+}
+
 .mishka-products__item:first-of-type .mishka-products__link {
   background-color: $seafoam-blue;
 
@@ -74,22 +90,6 @@
   &::after {
     opacity: 0.3;
   }
-}
-
-.mishka-products__link {
-  @include zero-indent;
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 185px;
-
-  @include font-properties-normal;
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 1.26;
-  text-decoration: none;
-  color: $white;
 }
 
 .mishka-products__link:hover .mishka-products__item:first-of-type::after {

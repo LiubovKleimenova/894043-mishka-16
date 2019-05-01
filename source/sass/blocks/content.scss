@@ -55,6 +55,7 @@
     @include zero-indent;
     top: 0;
     right: -377px;
+    max-width: none;
     width: 303px;
     min-height: 404px;
   }
@@ -78,14 +79,15 @@
 @media (min-width: $width-desktop) {
   .content__picture {
     position: absolute;
+
     width: 525px;
     height: 636px;
-    object-fit: cover;
+    object-fit: fill;
     z-index: -1;
 
     @include zero-indent;
     top: -160px;
-    right: -350px;
+    right: -580px;
   }
 
   .content__description {

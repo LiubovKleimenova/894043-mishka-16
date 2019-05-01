@@ -32,8 +32,16 @@
 }
 //не работает??
 .contacts__value--underlined {
-  text-decoration: underline;
-  text-decoration-color: $greeny-blue;
+  border-bottom:1px solid $greeny-blue;
+}
+
+.contacts__value--underlined:hover {
+  color: $greeny-blue;
+}
+
+.contacts__value--underlined:disabled {
+  color: $greeny-blue;
+  opacity: 0.3;
 }
 
 @media (min-width: $width-tablet) {
