@@ -1,0 +1,24 @@
+.wave-line {
+  display: block;
+  width: 100%;
+  min-height: 10px;
+  background-repeat: repeat-x;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: center;
+  background-size: 90%;
+}
+
+@media (min-width: $width-tablet) {
+  .wave-line {
+    min-height: 15px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .wave-line {
+    @include outer-margin(49px, 49px);
+    width: auto;
+    min-height: 23px;
+    background-size: 100%;
+  }
+}

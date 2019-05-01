@@ -1,6 +1,6 @@
 .contacts {
   position: relative;
-  padding-top: 45px;
+  padding-top: 31px;
 }
 
 .contacts__heading {
@@ -15,24 +15,36 @@
 
 .contacts__info {
   @include outer-margin;
-  margin-top: 42px;
-  margin-bottom: 42px;
+  margin-top: 0;
+  margin-bottom: 33px;
   border-collapse: collapse;
+
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  color: $greyish-brown;
 }
 
 .contacts__feature {
-  width: 50px;
+  width: 75px;
+  padding-right: 25px;
+  padding-top: 28px;
+  vertical-align: top;
+}
+
+.contacts__value {
+  padding-top: 28px;
 }
 
 .contacts__button {
   @include outer-margin(30px, 30px);
   width: auto;
-  margin-top: 39px;
+  margin-top: 34px;
   margin-bottom: 39px;
 }
-//не работает??
+
 .contacts__value--underlined {
-  border-bottom:1px solid $greeny-blue;
+  border-bottom: 1px solid $greeny-blue;
 }
 
 .contacts__value--underlined:hover {
@@ -51,16 +63,16 @@
   }
 
   .contacts__heading {
-    margin-top: 65px;
-    padding-left: 15px;
+    margin-top: 31px;
+    padding-left: 16px;
 
     font-size: 43px;
     line-height: 1.16;
   }
 
   .contacts__info {
-    margin-top: 45px;
-    margin-bottom: 60px;
+    margin-top: 22px;
+    margin-bottom: 58px;
     font-size: 17px;
     font-weight: normal;
     line-height: 1.76;
@@ -96,6 +108,7 @@
     @include outer-margin(52px, 52px);
     min-height: 457px;
     width: 500px;
+    padding-top: 37px;
   }
 
   .contacts__heading {
@@ -107,8 +120,8 @@
 
   .contacts__info {
     margin-left: 170px;
-    margin-top: 47px;
-    margin-bottom: 53px;
+    margin-top: 21px;
+    margin-bottom: 82px;
   }
 
   .contacts__info tbody {
@@ -117,14 +130,11 @@
     margin: 0;
   }
 
-  .contacts__info tr {
-    margin-bottom: 30px;
-  }
-
   .contacts__map {
     position: absolute;
-    top: 80px;
-    right: -550px;
+    top: 72px;
+    right: -547px;
+    max-width: none;
     width: 525px;
     height: 457px;
   }

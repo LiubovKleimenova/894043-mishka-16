@@ -7,8 +7,8 @@
 .promo__wrapper-heading {
   display: flex;
   flex-direction: column;
-  margin-top: 34px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 22px;
 }
 
 .promo__heading {
@@ -17,7 +17,7 @@
 
 .promo__item {
   @include zero-indent;
-  padding-top: 8px;
+  padding-top: 5px;
 
   @include font-properties-normal;
   font-size: 17px;
@@ -30,9 +30,9 @@
 @media (min-width: $width-tablet) {
   .promo {
     margin: 0;
-    @include inner-padding(52px, 52px);
-    margin-bottom: 53px;
 
+    @include inner-padding(48px, 52px);
+    margin-bottom: 53px;
     padding-top: 45px;
   }
 
@@ -40,7 +40,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 0;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .promo__item {
@@ -59,6 +59,7 @@
 @media (min-width: $width-desktop) {
   .promo {
     margin-bottom: 73px;
+    padding-top: 0;
   }
 
   .promo__wrapper-heading {

@@ -6,13 +6,11 @@
   width: 100%;
   background-repeat: repeat-x;
   background-image: url("../img/bg-zigzag-fill.svg");
-
 }
 
 @media (min-width: $width-tablet) {
   .wave {
     display: block;
-
     height: 24px;
     left: 35px;
     background-size: 80%;

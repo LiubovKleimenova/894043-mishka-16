@@ -13,7 +13,7 @@
 .mishka-products__link {
   @include zero-indent;
   display: block;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 185px;
@@ -113,6 +113,7 @@
 
   .mishka-products__link {
     padding-right: 160px;
+    padding-top: 30px;
     font-size: 20px;
     line-height: 1.5;
   }
