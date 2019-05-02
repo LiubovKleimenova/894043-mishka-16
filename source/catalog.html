@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__menu main-nav main-nav--closed">
+      <nav class="page-header__menu main-nav main-nav--opened">
         <a class="main-nav__logo"  href="index.html"><img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka" width="86" height="35"></a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
@@ -40,11 +40,15 @@
                 Зайчик-попрыгайчик
               </a>
               <p class="product__description">Рост 30 см, вес 200 г</p>
-              <p class="product__price">1 200 руб.</p>
+              <div class="product__cart-wrapper">
+              <p class="product__price">1 200 руб.
+
+              </p>
               <a class="product__add-to-cart" href="#">
                 <span class="visually-hidden">Добавить в корзину</span>
               </a>
             </div>
+          </div>
           </li>
           <li class="catalog__item product">
             <a class="product__photo" href="#">
@@ -55,10 +59,15 @@
               Корзинка для белья
             </a>
             <p class="product__description">Диаметр 15 см, высота 10 см</p>
-            <p class="product__price">690 руб.</p>
+
+            <div class="product__cart-wrapper">
+            <p class="product__price">690 руб.
+
+            </p>
             <a class="product__add-to-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
             </a>
+          </div>
           </div>
           </li>
           <li class="catalog__item product">
@@ -70,10 +79,16 @@
               Большая корзинка для&nbsp;игрушек
             </a>
             <p class="product__description">Диаметр 30 см, высота 30 см</p>
-            <p class="product__price">1 500 руб.</p>
+
+            <div class="product__cart-wrapper">
+            <p class="product__price">1 500 руб.
+
+            </p>
             <a class="product__add-to-cart" href="#">
               <span class="visually-hidden">Добавить в корзину</span>
             </a>
+            </div>
+
           </div>
           </li>
         </ul>

@@ -1,5 +1,6 @@
 .user-list {
   list-style: none;
+  display: none;
 }
 
 .user-list__item {
@@ -13,6 +14,12 @@
   padding-left: 76px;
   color: $black;
   text-decoration: none;
+}
+
+.user-list__item:nth-of-type(1) .user-list__link {
+  background-image: url("../img/icon-search.svg");
+  background-position: 40px center;
+  background-repeat: no-repeat; // как задать прозрачность только иконке?
 }
 
 @media (min-width: $width-tablet) {
@@ -45,7 +52,7 @@
     @include zero-indent;
     font-size: 0;
 
-    background-image: url("../img/icon-search.svg");
+    background-image: url("../img/icon-search.svg"); //удалить  - дублируется
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.2;

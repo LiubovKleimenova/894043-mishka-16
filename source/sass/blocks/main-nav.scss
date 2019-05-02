@@ -30,9 +30,7 @@
 .main-nav__toggle {
   position: absolute;
   z-index: 2;
-  top: -15px;
   right: 0;
-
   width: 80px;
   height: 75px;
 
@@ -59,7 +57,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -15px;
   right: 0;
 
   &::before,

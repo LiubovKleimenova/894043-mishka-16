@@ -19,7 +19,7 @@
 .product__name {
   @include zero-indent;
   display: block;
-  padding-top: 32px;
+  padding-top: 29px;
 
   @include font-properties-normal;
   font-size: 17px;
@@ -29,7 +29,19 @@
   text-decoration: none;
 }
 
+.product__name:hover,
+.product__name:active {
+  color: $black-06;
+}
+
+.product__name:disabled {
+  color: $black-03;
+}
+
 .product__description {
+  margin-top: 5px;
+  margin-bottom: 20px;
+
   @include font-properties-normal;
   font-size: 13px;
   font-weight: normal;
@@ -37,11 +49,39 @@
   color: $greyish-brown;
 }
 
-.product__price {
+.product__cart-wrapper {
   margin: 0;
   border-top: 1px solid $lighter-grey;
-  padding-top: 27px;
+  padding-top: 23px;
   padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__price {
+  @include zero-indent;
+}
+
+.product__add-to-cart {
+  display: block;
+  width: 21px;
+  height: 18px;
+
+  background-image: url("../img/icon-cart.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.product__add-to-cart:hover,
+.product__add-to-cart:active {
+  background-image: url("../img/icon-cart-hover.svg");
+  opacity: 1;
+}
+
+.product__add-to-cart:active {
+  background-image: url("../img/icon-cart-hover.svg");
+  opacity: 0.3;
 }
 
 
@@ -85,7 +125,7 @@
     color: $greyish-brown;
   }
 
-  .product__price {
+  .product__cart-wrapper {
     padding-top: 21px;
     padding-left: 5px;
     margin-top: auto; //почему не арботает для десктопа??
