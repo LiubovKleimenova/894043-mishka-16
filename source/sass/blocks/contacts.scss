@@ -57,6 +57,23 @@
 }
 
 @media (min-width: $width-tablet) {
+  .contacts {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: 47px;
+      right: 56px;
+
+      background-image: url("../img/icon-flag.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+
   .contacts__map {
     width: 768px;
     height: 457px;
@@ -106,9 +123,15 @@
 @media (min-width: $width-desktop) {
   .contacts {
     @include outer-margin(52px, 52px);
+    position: relative;
     min-height: 457px;
     width: 500px;
     padding-top: 37px;
+
+    &::after {
+      top: 133px;
+      right: 392px;
+    }
   }
 
   .contacts__heading {
