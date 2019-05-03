@@ -108,6 +108,7 @@
   }
 
   .mishka-products__item {
+    margin-top: 245px;
     width: 50%;
   }
 
@@ -117,10 +118,35 @@
     font-size: 20px;
     line-height: 1.5;
   }
+
+  .mishka-products__item:hover {
+    margin-top: 240px;
+  }
+
+  .mishka-products__item:hover .mishka-products__link {
+    padding-bottom: 35px;
+  }
 }
 
 @media (min-width: $width-desktop) {
+  .mishka-products__item {
+    margin-top: 230px;
+    width: 50%;
+  }
+
   .mishka-products__link {
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+
     padding-right: 395px;
+  }
+
+  .mishka-products__item:hover {
+    margin-top: 225px;
+  }
+
+  .mishka-products__item:hover .mishka-products__link {
+    padding-bottom: 35px;
   }
 }

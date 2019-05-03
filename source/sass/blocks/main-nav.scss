@@ -27,6 +27,15 @@
   @include margin-center;
 }
 
+.main-nav__logo-image:active,
+.main-nav__logo-image:hover {
+  opacity: 0.6;
+}
+
+.main-nav__logo-image:disabled {
+  opacity: 0.3;
+}
+
 .main-nav__toggle {
   position: absolute;
   z-index: 2;
