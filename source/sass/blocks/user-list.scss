@@ -25,11 +25,11 @@
     height: 18px;
     left: 31px;
 
-  background-image: url("../img/icon-search.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.2;// как задать прозрачность только иконке?
-}
+    background-image: url("../img/icon-search.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;// как задать прозрачность только иконке?
+  }
 }
 
 .user-list__item:nth-of-type(2) .user-list__link {
@@ -50,6 +50,7 @@
 .user-list__item:nth-of-type(1) .user-list__link:hover,
 .user-list__item:nth-of-type(1) .user-list__link:active {
   color: $black-06;
+
   &::before {
     background-image: url("../img/icon-search-hover.svg");
     opacity: 1;
@@ -58,6 +59,7 @@
 
 .user-list__item:nth-of-type(1) .user-list__link:disabled {
   color: $black-03;
+
   &::before {
     background-image: url("../img/icon-search-hover.svg");
     opacity: 0.2;
@@ -131,6 +133,7 @@
   .user-list__item:nth-of-type(1) .user-list__link:active {
     background-image: url("../img/icon-search-hover.svg");
     opacity: 1;
+
     &::before {
       background: none;
     }
@@ -139,6 +142,7 @@
   .user-list__item:nth-of-type(1) .user-list__link:disabled {
     background-image: url("../img/icon-search-hover.svg");
     opacity: 0.2;
+
     &::before {
       background: none;
     }
