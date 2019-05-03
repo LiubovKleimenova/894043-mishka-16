@@ -128,7 +128,7 @@
   .product__cart-wrapper {
     padding-top: 21px;
     padding-left: 5px;
-    margin-top: auto; //почему не арботает для десктопа??
+    margin-top: auto; //почему не работает для десктопа??
     font-size: 17px;
     font-weight: bold;
     line-height: 1.41;
@@ -145,7 +145,6 @@
 
   .product__wrapper {
     width: auto;
-
   }
 
   .product__cart-wrapper {
@@ -155,7 +154,7 @@
 
   .product__description {
     flex-grow: 5;
-    //???
+    //почему не работает для десктопа??
   }
 
   .product__photo img {

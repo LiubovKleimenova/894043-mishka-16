@@ -1,6 +1,5 @@
 .site-list {
   list-style: none;
-  display: none;
 }
 
 .site-list__item {
@@ -14,6 +13,16 @@
   padding-left: 76px;
   color: $black;
   text-decoration: none;
+  border-bottom: 1px solid $lighter-grey;
+}
+
+.site-list__link:hover,
+.site-list__link:active {
+  color: $black-06;
+}
+
+.site-list__link:disabled {
+  color: $black-03;
 }
 
 @media (min-width: $width-tablet) {
@@ -32,15 +41,7 @@
     padding-top: 18px;
     padding-bottom: 24px;
     margin-right: 37px;
-  }
-
-  .site-list__link:hover,
-  .site-list__link:active {
-    color: $black-06;
-  }
-
-  .site-list__link:disabled {
-    color: $black-03;
+    border-bottom: none;
   }
 }
 
