@@ -4,41 +4,69 @@
 
 .site-list__item {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 76px;
-  box-shadow: 0 1px 0 0 $lighter-grey;
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  padding-left: 76px;
   color: $black;
   text-decoration: none;
+  border-bottom: 1px solid $lighter-grey;
+}
+
+.site-list__link:hover,
+.site-list__link:active {
+  color: $black-06;
+}
+
+.site-list__link:disabled {
+  color: $black-03;
 }
 
 @media (min-width: $width-tablet) {
   .site-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    background-color: transparent; //не работает
   }
 
   .site-list__item {
     @include zero-indent;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  }
+
+  .site-list__link {
+    @include zero-indent;
+    padding-top: 18px;
+    padding-bottom: 24px;
+    margin-right: 37px;
+    border-bottom: none;
   }
 }
 
 @media (min-width: $width-desktop) {
   .site-list {
     display: flex;
-    justify-content: space-around;
-    margin-top: -88px;
+    width: auto;
   }
 
   .site-list__item {
     @include zero-indent;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    min-height: 88px;
+  }
+
+  .site-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .site-list__item:nth-of-type(1) .site-list__link {
+    padding-right: 35px;
+    margin-right: 0;
+    border-right: 1px solid $lighter-grey;
+  }
+
+  .site-list__item:nth-of-type(2) .site-list__link {
+    padding-left: 35px;
   }
 }

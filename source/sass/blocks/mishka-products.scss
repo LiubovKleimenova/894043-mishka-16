@@ -1,31 +1,19 @@
-.mishka-products {
-  outline: 3px solid red;
-}
-
 .mishka-products__list {
   @include zero-indent;
 }
 
 .mishka-products__item {
   display: block;
+  position: relative;
 
   @include zero-indent;
-
-  &:first-child {
-    background-color: $seafoam-blue;
-  }
-
-  &:last-child {
-    background-color: $aqua-marine;
-  }
-
   list-style: none;
 }
 
 .mishka-products__link {
   @include zero-indent;
   display: block;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 185px;
@@ -36,6 +24,76 @@
   line-height: 1.26;
   text-decoration: none;
   color: $white;
+}
+
+.mishka-products__item:first-of-type .mishka-products__link {
+  background-color: $seafoam-blue;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 62px;
+    right: 36px;
+    top: 30px;
+    background-image: url("../img/icon-interior.svg");
+    opacity: 0.5;
+  }
+}
+
+.mishka-products__item:first-of-type .mishka-products__link:hover,
+.mishka-products__item:first-of-type .mishka-products__link:active {
+  background-color: #59d5bc;
+
+  &::after {
+    opacity: 0.7;
+  }
+}
+
+.mishka-products__item:first-of-type .mishka-products__link:disabled {
+  background-color: #59d5bc;
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.mishka-products__item:last-of-type .mishka-products__link {
+  background-color: $aqua-marine;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    right: 35px;
+    top: 32px;
+    background-image: url("../img/icon-toy.svg");
+    opacity: 0.5;
+  }
+}
+
+.mishka-products__item:last-of-type .mishka-products__link:hover,
+.mishka-products__item:last-of-type .mishka-products__link:active {
+  background-color: #46c1ae;
+
+  &::after {
+    opacity: 0.7;
+  }
+}
+
+.mishka-products__item:last-of-type .mishka-products__link:disabled {
+  background-color: #46c1ae;
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.mishka-products__link:hover .mishka-products__item:first-of-type::after {
+  opacity: 0.3;
 }
 
 @media (min-width: $width-tablet) {
@@ -49,15 +107,46 @@
     align-items: center;
   }
 
+  .mishka-products__item {
+    margin-top: 245px;
+    width: 50%;
+  }
+
   .mishka-products__link {
-    padding-right: 203px;
+    padding-right: 160px;
+    padding-top: 30px;
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  .mishka-products__item:hover {
+    margin-top: 240px;
+  }
+
+  .mishka-products__item:hover .mishka-products__link {
+    padding-bottom: 35px;
   }
 }
 
 @media (min-width: $width-desktop) {
+  .mishka-products__item {
+    margin-top: 230px;
+    width: 50%;
+  }
+
   .mishka-products__link {
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+
     padding-right: 395px;
+  }
+
+  .mishka-products__item:hover {
+    margin-top: 225px;
+  }
+
+  .mishka-products__item:hover .mishka-products__link {
+    padding-bottom: 35px;
   }
 }

@@ -4,7 +4,6 @@
   @include margin-center;
   @include inner-padding;
   background-color: $grey;
-  outline: 3px solid red;
 }
 
 .page-footer__logo {
@@ -36,12 +35,19 @@
   .page-footer {
     width: $width-tablet;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+
+    @include inner-padding (52px, 52px);
     min-height: 143px;
   }
 
   .page-footer__logo {
     display: block;
+  }
+
+  .page-footer__list {
+    @include zero-indent;
   }
 }
 

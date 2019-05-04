@@ -2,7 +2,6 @@
   width: $width-mobile;
 
   @include margin-center;
-  outline: 5px solid red;
 }
 
 @media (min-width: $width-tablet) {

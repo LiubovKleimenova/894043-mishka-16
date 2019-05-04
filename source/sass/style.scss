@@ -1,3 +1,4 @@
+@import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "general.scss";
@@ -5,10 +6,14 @@
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
+@import "blocks/offers.scss";
 @import "blocks/page-main.scss";
 @import "blocks/main-heading.scss";
 @import "blocks/mishka-products.scss";
+@import "blocks/wave.scss";
 @import "blocks/promo.scss";
+@import "blocks/wave-line.scss";
 @import "blocks/content.scss";
 @import "blocks/second-heading.scss";
 @import "blocks/button.scss";

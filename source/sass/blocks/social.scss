@@ -33,8 +33,41 @@
   }
 }
 
+.social__pic--instagram:active,
+.social__pic--instagram:hover {
+  background-image: url("../img/icon-insta-hover.svg");
+}
+
+
+.social__pic--fb:active,
+.social__pic--fb:hover {
+  background-image: url("../img/icon-fb-hover.svg");
+}
+
+.social__pic--twitter:active,
+.social__pic--twitter:hover {
+  background-image: url("../img/icon-twitter-hover.svg");
+}
+
+.social__pic--instagram:disabled {
+  background-image: url("../img/icon-insta-hover.svg");
+  opacity: 0.3;
+}
+
+
+.social__pic--fb:disabled {
+  background-image: url("../img/icon-fb-hover.svg");
+  opacity: 0.3;
+}
+
+.social__pic--twitter:disabled {
+  background-image: url("../img/icon-twitter-hover.svg");
+  opacity: 0.3;
+}
+
 @media (min-width: $width-tablet) {
   .social {
     width: 140px;
+    margin-left: 85px;
   }
 }

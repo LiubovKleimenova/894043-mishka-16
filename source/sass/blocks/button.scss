@@ -22,3 +22,15 @@
     color: $white;
   }
 }
+
+
+.button:active,
+.button:hover {
+  background-color: $greyish-brown;
+  color: $white;
+}
+
+.button:disabled {
+  background-color: $greyish-brown;
+  color: (255, 255, 255, 0.3);
+}

@@ -18,6 +18,13 @@
   fill: $seafoam-blue;
 
   &:hover {
-    fill: $greeeny-blue;
+    fill: $greeny-blue;
+  }
+}
+
+
+@media (min-width: $width-tablet) {
+  .author {
+    @include zero-indent;
   }
 }

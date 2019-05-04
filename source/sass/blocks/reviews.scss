@@ -1,21 +1,24 @@
 .reviews {
   @include zero-indent;
   @include inner-padding();
-  padding-top: 60px;
+  padding-top: 17px;
   margin-bottom: 45px;
-  outline: 3px solid red;
 }
 
 .reviews__review-text {
+  padding-top: 8px;
+
   @include font-properties-normal;
   font-size: 15px;
   font-weight: normal;
   line-height: 2;
   color: $greyish-brown;
-  outline: 3px solid yellow;
 }
 
 .reviews__person {
+  margin-top: 27px;
+  margin-bottom: 33px;
+
   @include font-properties-normal;
   font-size: 17px;
   font-weight: bold;
@@ -50,54 +53,87 @@
   }
 }
 
+.reviews__arrow:active,
+.reviews__arrow:hover {
+  opacity: 0.6;
+}
+
+.reviews__arrow:disabled {
+  opacity: 0.3;
+}
+
 @media (min-width: $width-tablet) {
   .reviews {
-    @include inner-padding(52px, 52px);
+    @include inner-padding(48px, 52px);
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     display: flex;
+    padding-top: 78px;
+    margin-bottom: 80px;
   }
 
   .rewiews__body-wrapper {
     flex-shrink: 0;
-    width: 642px;
   }
 
   .reviews__review-text {
     font-size: 17px;
     line-height: 1.76;
-    margin-top: 65px;
-    margin-bottom: 68px;
+    margin-top: 50px;
+    margin-bottom: 60px;
     margin-right: 79px;
+    padding-top: 0;
   }
 
   .reviews__person {
     font-size: 18px;
     line-height: 1.33;
+    width: 300px;
   }
 
   .reviews__button-wrapper {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-start;
     margin-left: -255px;
     width: 175px;
     flex-shrink: 0;
   }
 
   .reviews__arrows {
-    margin-top: 240px;
+    margin-top: 225px;
+  }
+
+  .reviews__arrow {
+    border: none;
   }
 }
 
 @media (min-width: $width-desktop) {
   .reviews {
     @include outer-margin(52px, 52px);
-    @include inner-padding(125px, 50px);
+    @include inner-padding(170px, 0);
     min-height: 457px;
+    margin-bottom: 67px;
+    padding-top: 70px;
+  }
+
+  .reviews__review-text {
+    margin-bottom: 40px;
   }
 
   .reviews__person {
     font-size: 17px;
     line-height: 1.41;
+  }
+
+  .reviews__button-wrapper {
+    margin-top: 8px;
+    margin-left: -200px;
+    justify-content: flex-end;
+  }
+
+  .reviews__arrows {
+    margin-top: 175px;
   }
 }

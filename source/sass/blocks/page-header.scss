@@ -1,18 +1,5 @@
 .page-header {
-  @include mobile-style;
-  @include margin-center;
-  padding-top: 22px;
-  outline: 6px solid green;
-}
-
-.page-header__logo {
-  display: block;
-  padding-bottom: 22px;
-  box-shadow: 0 1px 0 0 $lighter-grey;
-}
-
-.page-header__logo-image {
-  display: block;
+  width: $width-mobile;
 
   @include margin-center;
 }
@@ -20,6 +7,7 @@
 @media (min-width: $width-tablet) {
   .page-header {
     width: $width-tablet;
+    margin-bottom: -63px;
   }
 }
 

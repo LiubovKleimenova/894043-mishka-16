@@ -2,15 +2,13 @@
   @include zero-indent;
   @include outer-margin();
   margin-bottom: 36px;
-  outline: 3px dashed yellow;
 }
 
 .promo__wrapper-heading {
   display: flex;
   flex-direction: column;
-  margin-top: 34px;
-  margin-bottom: 30px;
-  outline: 2px dashed orange;
+  margin-top: 30px;
+  margin-bottom: 22px;
 }
 
 .promo__heading {
@@ -19,7 +17,7 @@
 
 .promo__item {
   @include zero-indent;
-  padding-top: 8px;
+  padding-top: 5px;
 
   @include font-properties-normal;
   font-size: 17px;
@@ -27,27 +25,29 @@
   line-height: 1.18;
   color: $seafoam-blue;
   text-transform: uppercase;
-  outline: 3px solid tomato;
-}
-
-.promo__content {
-  outline: 3px dotted green;
 }
 
 @media (min-width: $width-tablet) {
   .promo {
-    @include outer-margin(52px, 52px);
+    margin: 0;
+
+    @include inner-padding(48px, 52px);
     margin-bottom: 53px;
+    padding-top: 45px;
   }
 
   .promo__wrapper-heading {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 43px;
-    margin-bottom: 55px;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 
   .promo__item {
+    width: 70px;
+    margin-right: 28px;
+    align-self: center;
+    text-align: center;
     line-height: 1;
   }
 
@@ -58,17 +58,21 @@
 
 @media (min-width: $width-desktop) {
   .promo {
-    @include outer-margin(52px, 52px);
-    margin-bottom: 53px;
+    margin-bottom: 73px;
+    padding-top: 0;
   }
 
   .promo__wrapper-heading {
     width: 650px;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-top: 122px;
+    margin-left: 50px;
+    margin-bottom: 50px;
   }
 
   .promo__content {
     width: 292px;
+    margin-left: 175px;
   }
 }

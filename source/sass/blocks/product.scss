@@ -1,15 +1,33 @@
 .product {
-  @include inner-padding(28px, 28px);
+  @include outer-margin(30px, 30px);
+  border: 1px solid $lighter-grey;
+  margin-top: 30px;
 }
 
 .product__photo {
   display: block;
 }
 
+.product__photo img {
+  display: block;
+}
+
+.product__wrapper {
+  @include inner-padding(28px, 28px);
+}
+
+.product__wrapper:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product__wrapper:disabled {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .product__name {
   @include zero-indent;
   display: block;
-  padding-top: 32px;
+  padding-top: 29px;
 
   @include font-properties-normal;
   font-size: 17px;
@@ -19,7 +37,19 @@
   text-decoration: none;
 }
 
+.product__name:hover,
+.product__name:active {
+  color: $black-06;
+}
+
+.product__name:disabled {
+  color: $black-03;
+}
+
 .product__description {
+  margin-top: 5px;
+  margin-bottom: 20px;
+
   @include font-properties-normal;
   font-size: 13px;
   font-weight: normal;
@@ -27,38 +57,116 @@
   color: $greyish-brown;
 }
 
-.product__price {
+.product__cart-wrapper {
+  margin: 0;
   border-top: 1px solid $lighter-grey;
-  padding-top: 27px;
+  padding-top: 23px;
   padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__price {
+  @include zero-indent;
+}
+
+.product__add-to-cart {
+  display: block;
+  width: 21px;
+  height: 18px;
+
+  background-image: url("../img/icon-cart.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.product__add-to-cart:hover,
+.product__add-to-cart:active {
+  background-image: url("../img/icon-cart-hover.svg");
+  opacity: 1;
+}
+
+.product__add-to-cart:active {
+  background-image: url("../img/icon-cart-hover.svg");
+  opacity: 0.3;
 }
 
 
 @media (min-width: $width-tablet) {
   .product {
     display: flex;
-  }
 
-  .product__photo {
-    margin-right: 26px;
+    @include outer-margin(52px, 52px);
   }
 
   .product__photo img {
     min-width: 334px;
-    min-height: 334px;
+    height: 334px;
+  }
+
+  .product__wrapper {
+    width: 335px;
+
+    @include inner-padding(25px, 25px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .product__name {
+    padding-top: 25px;
+
+    @include font-properties-normal;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: $black;
+  }
+
+  .product__description {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2;
+    color: $greyish-brown;
+  }
+
+  .product__cart-wrapper {
+    padding-top: 21px;
+    padding-left: 5px;
+    margin-top: auto; //почему не работает для десктопа??
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.41;
   }
 }
 
 @media (min-width: $width-desktop) {
   .product {
-    display: block;
+    flex-direction: column;
 
     @include zero-indent;
-    margin-left: 52px;
+    margin-left: 49px;
+  }
+
+  .product__wrapper {
+    width: auto;
+  }
+
+  .product__cart-wrapper {
+    padding-top: 36px;
+    margin-top: auto;
+  }
+
+  .product__description {
+    flex-grow: 5;
+    //почему не работает для десктопа??
   }
 
   .product__photo img {
-    min-width: 316px;
+    min-width: 317px;
     min-height: 462px;
   }
 }

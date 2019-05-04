@@ -5,6 +5,7 @@
 
 .content__description {
   @include zero-indent;
+  margin-bottom: 17px;
   font-size: 15px;
   font-weight: normal;
   line-height: 1.6;
@@ -30,7 +31,7 @@
 .content__picture {
   @include zero-indent;
   margin-top: 28px;
-  margin-bottom: 28px;
+  margin-bottom: 19px;
 }
 
 .content__price {
@@ -45,7 +46,7 @@
 }
 
 .content__button {
-  margin-top: 28px;
+  margin-top: 25px;
 }
 
 @media (min-width: $width-tablet) {
@@ -53,25 +54,34 @@
     position: absolute;
 
     @include zero-indent;
-    top: 0;
+    top: 8px;
     right: -377px;
-    width: 303px;
+    max-width: none;
+    width: 333px;
     min-height: 404px;
   }
 
   .content__description {
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 54px;
+    margin-bottom: 39px;
   }
 
   .content__info {
-    margin-bottom: 40px;
+    margin-bottom: 56px;
+  }
+
+  .content__value {
+    padding: 10px 57px 10px 30px;
   }
 
   .content__price {
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  .content__button {
+    margin-top: 33px;
   }
 }
 
@@ -79,19 +89,23 @@
   .content__picture {
     position: absolute;
 
-    @include zero-indent;
-    top: -180px;
-    right: -750px;
     width: 525px;
+    height: 636px;
+    object-fit: fill;
+    z-index: -1;
+
+    @include zero-indent;
+    top: -160px;
+    right: -585px;
   }
 
   .content__description {
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 54px;
+    margin-bottom: 50px;
   }
 
   .content__info {
-    margin-bottom: 40px;
+    margin-bottom: 110px;
   }
 }
