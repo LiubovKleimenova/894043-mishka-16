@@ -126,7 +126,11 @@
               <td class="contacts__value">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</td>
             </tr>
           </table>
-          <img class="contacts__map" src="http://placehold.it/320x457" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8, офис 101" width="320" height="457">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="iimg/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8, офис 101" width="320" height="457">
+          </picture>
           <a href="#" class="contacts__button button">Напишите нам</a>
       </section>
 
