@@ -2,10 +2,18 @@
   display: none;
   position: absolute;
   z-index: 2;
-  top: 823px;
+
   width: 100%;
   background-repeat: repeat-x;
   background-image: url("../img/bg-zigzag-fill.svg");
+
+  &--index {
+    top: 823px;
+  }
+
+  &--catalog {
+    top: 290px;
+  }
 }
 
 @media (min-width: $width-tablet) {
@@ -19,9 +27,17 @@
 
 @media (min-width: $width-desktop) {
   .wave {
-    top: 817px;
+
     height: 34px;
     left: 35px;
     background-size: 100%;
+
+    &--index {
+      top: 817px;
+    }
+
+    &--catalog {
+      top: 320px;
+    }
   }
 }
