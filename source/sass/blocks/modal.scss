@@ -1,17 +1,27 @@
 .modal {
   display: none;
+  position: absolute;
+  top: 1046px;
 
   @include inner-padding;
   width: 320px;
   min-height: 336px;
+  background-color: $white;
   box-shadow: 0 5px 10px 0 0 $dark-forest-green;
   border: solid 1px $pinkish-grey;
+
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+
 }
 
 .modal__heading {
   display: block;
 
   @include margin-center;
+  margin-top: 30px;
+
   @include font-properties-normal;
   font-size: 25px;
   font-weight: bold;
