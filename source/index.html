@@ -63,7 +63,11 @@
               <td class="content__value">15 см</td>
             </tr>
           </table>
-          <img class="content__picture" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки различных расцветок" width="260" height="315">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
+            <img class="content__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки различных расцветок" width="260" height="315">
+          </picture>
           <p class="content__price">Цена: 990 руб.</p>
           <a href="#" class="content__button button">Заказать</a>
         </div>

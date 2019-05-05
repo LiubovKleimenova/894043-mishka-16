@@ -1,5 +1,6 @@
 .site-list {
   list-style: none;
+  display: none;
 }
 
 .site-list__item {
@@ -58,6 +59,7 @@
   .site-list__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-right: 0;
   }
 
   .site-list__item:nth-of-type(1) .site-list__link {

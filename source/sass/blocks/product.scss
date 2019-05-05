@@ -148,16 +148,17 @@
     flex-direction: column;
 
     @include zero-indent;
-    margin-left: 49px;
+    margin-left: 50px;
   }
 
   .product__wrapper {
     width: auto;
+    flex-grow: 1;
   }
 
   .product__cart-wrapper {
-    padding-top: 36px;
-    margin-top: auto;
+    padding-top: 23px;
+    margin-top: 13px;
   }
 
   .product__description {
