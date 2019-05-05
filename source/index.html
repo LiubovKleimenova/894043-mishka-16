@@ -9,7 +9,13 @@
   <body>
     <header class="page-header">
       <nav class="page-header__menu main-nav main-nav--closed">
-        <a class="main-nav__logo"  href="index.html"><img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka" width="86" height="35"></a>
+        <a class="main-nav__logo"  href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Магазин Mishka" width="86" height="35">
+          </picture>
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>

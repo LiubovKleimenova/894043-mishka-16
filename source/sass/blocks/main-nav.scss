@@ -146,6 +146,8 @@
 
   .main-nav__logo-image {
     @include zero-indent;
+    width: 112px;
+    height: auto;
   }
 
   .main-nav__toggle {
@@ -191,6 +193,6 @@
   .main-nav__logo-image {
     @include zero-indent;
     width: 149px;
-    height: 72px;
+    height: auto;
   }
 }
