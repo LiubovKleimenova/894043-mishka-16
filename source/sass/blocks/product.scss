@@ -101,8 +101,8 @@
   }
 
   .product__photo img {
-    min-width: 334px;
-    height: 334px;
+    width: 334px;
+    height: auto;
   }
 
   .product__wrapper {
@@ -167,7 +167,7 @@
   }
 
   .product__photo img {
-    min-width: 317px;
-    min-height: 462px;
+    width: 316px;
+    height: auto;
   }
 }
