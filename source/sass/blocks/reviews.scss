@@ -70,6 +70,11 @@
     display: flex;
     padding-top: 78px;
     margin-bottom: 80px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .rewiews__body-wrapper {

@@ -9,7 +9,13 @@
   <body>
     <header class="page-header">
       <nav class="page-header__menu main-nav main-nav--closed">
-        <a class="main-nav__logo"  href="index.html"><img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип Mishka" width="86" height="35"></a>
+        <a class="main-nav__logo"  href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Магазин Mishka" width="86" height="35">
+          </picture>
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
@@ -35,7 +41,7 @@
           <li class="mishka-products__item"><a class="mishka-products__link" href="#">Детские игрушки</a></li>
         </ul>
       </section>
-      <div class="wave"></div>
+      <div class="wave wave--index"></div>
       <section class="promo">
         <div class="promo__wrapper-heading">
           <h2 class="promo__heading second-heading">Вязаные корзинки</h2>
@@ -57,7 +63,11 @@
               <td class="content__value">15 см</td>
             </tr>
           </table>
-          <img class="content__picture" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки различных расцветок" width="260" height="315">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
+            <img class="content__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки различных расцветок" width="260" height="315">
+          </picture>
           <p class="content__price">Цена: 990 руб.</p>
           <a href="#" class="content__button button">Заказать</a>
         </div>
@@ -116,7 +126,11 @@
               <td class="contacts__value">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</td>
             </tr>
           </table>
-          <img class="contacts__map" src="http://placehold.it/320x457" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8, офис 101" width="320" height="457">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="iimg/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Санкт-Петербург, улица Большая Конюшенная, дом 19 дробь 8, офис 101" width="320" height="457">
+          </picture>
           <a href="#" class="contacts__button button">Напишите нам</a>
       </section>
 

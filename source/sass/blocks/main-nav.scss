@@ -119,6 +119,7 @@
     order: 1;
     width: 318px;
     border: none;
+    padding-bottom: 20px;
   }
 
   .main-nav__list {
@@ -146,6 +147,8 @@
 
   .main-nav__logo-image {
     @include zero-indent;
+    width: 112px;
+    height: auto;
   }
 
   .main-nav__toggle {
@@ -191,6 +194,6 @@
   .main-nav__logo-image {
     @include zero-indent;
     width: 149px;
-    height: 72px;
+    height: auto;
   }
 }

@@ -58,7 +58,7 @@
     right: -377px;
     max-width: none;
     width: 333px;
-    min-height: 404px;
+    height: auto;
   }
 
   .content__description {
@@ -90,8 +90,7 @@
     position: absolute;
 
     width: 525px;
-    height: 636px;
-    object-fit: fill;
+    height: auto;
     z-index: -1;
 
     @include zero-indent;
