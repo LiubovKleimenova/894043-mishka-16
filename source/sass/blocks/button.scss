@@ -30,6 +30,11 @@
   color: $white;
 }
 
+.button--blue:active,
+.button--blue:hover {
+  border-color: $greyish-brown;
+}
+
 .button:disabled {
   background-color: $greyish-brown;
   color: (255, 255, 255, 0.3);
