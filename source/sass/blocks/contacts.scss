@@ -47,11 +47,12 @@
   border-bottom: 1px solid $greeny-blue;
 }
 
-.contacts__value--underlined:hover {
+.contacts__value--underlined:hover,
+.contacts__value--underlined:focus {
   color: $greeny-blue;
 }
 
-.contacts__value--underlined:disabled {
+.contacts__value--underlined:active {
   color: $greeny-blue;
   opacity: 0.3;
 }

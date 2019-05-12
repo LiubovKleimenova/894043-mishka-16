@@ -53,12 +53,12 @@
   }
 }
 
-.reviews__arrow:active,
+.reviews__arrow:focus,
 .reviews__arrow:hover {
   opacity: 0.6;
 }
 
-.reviews__arrow:disabled {
+.reviews__arrow:active {
   opacity: 0.3;
 }
 

@@ -43,7 +43,7 @@
 }
 
 .mishka-products__item:first-of-type .mishka-products__link:hover,
-.mishka-products__item:first-of-type .mishka-products__link:active {
+.mishka-products__item:first-of-type .mishka-products__link:focus {
   background-color: #59d5bc;
 
   &::after {
@@ -51,7 +51,7 @@
   }
 }
 
-.mishka-products__item:first-of-type .mishka-products__link:disabled {
+.mishka-products__item:first-of-type .mishka-products__link:active {
   background-color: #59d5bc;
 
   &::after {
@@ -76,7 +76,7 @@
 }
 
 .mishka-products__item:last-of-type .mishka-products__link:hover,
-.mishka-products__item:last-of-type .mishka-products__link:active {
+.mishka-products__item:last-of-type .mishka-products__link:focus {
   background-color: #46c1ae;
 
   &::after {
@@ -84,16 +84,12 @@
   }
 }
 
-.mishka-products__item:last-of-type .mishka-products__link:disabled {
+.mishka-products__item:last-of-type .mishka-products__link:active {
   background-color: #46c1ae;
 
   &::after {
     opacity: 0.3;
   }
-}
-
-.mishka-products__link:hover .mishka-products__item:first-of-type::after {
-  opacity: 0.3;
 }
 
 @media (min-width: $width-tablet) {

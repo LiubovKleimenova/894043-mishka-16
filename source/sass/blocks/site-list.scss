@@ -18,11 +18,11 @@
 }
 
 .site-list__link:hover,
-.site-list__link:active {
+.site-list__link:focus {
   color: $black-06;
 }
 
-.site-list__link:disabled {
+.site-list__link:active {
   color: $black-03;
 }
 
