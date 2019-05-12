@@ -53,6 +53,7 @@
 
 .mishka-products__item:first-of-type .mishka-products__link:active {
   background-color: #59d5bc;
+  color: rgba(255, 255, 255, 0.3);
 
   &::after {
     opacity: 0.3;
@@ -86,6 +87,7 @@
 
 .mishka-products__item:last-of-type .mishka-products__link:active {
   background-color: #46c1ae;
+  color: rgba(255, 255, 255, 0.3);
 
   &::after {
     opacity: 0.3;
