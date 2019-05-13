@@ -1,6 +1,6 @@
 .promo {
   @include zero-indent;
-  @include outer-margin();
+  @include inner-padding();
   margin-bottom: 36px;
 }
 

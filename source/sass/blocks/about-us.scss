@@ -1,6 +1,6 @@
 .about-us {
   @include zero-indent;
-  @include outer-margin();
+  @include inner-padding();
   padding-top: 24px;
 }
 
@@ -14,7 +14,7 @@
 
 @media (min-width: $width-tablet) {
   .about-us {
-    @include outer-margin(48px, 52px);
+    @include inner-padding(48px, 52px);
     padding-top: 50px;
     margin-bottom: 48px;
   }
@@ -22,7 +22,7 @@
 
 @media (min-width: $width-desktop) {
   .about-us {
-    @include outer-margin(223px, 225px);
+    @include inner-padding(223px, 225px);
     padding-top: 58px;
     margin-bottom: 53px;
   }
