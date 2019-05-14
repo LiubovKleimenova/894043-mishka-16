@@ -13,3 +13,28 @@
   margin-bottom: 22px;
   min-height: 40px;
 }
+
+@media (min-width: $width-tablet) {
+  .color {
+    padding-right: 0;
+    background-color: $grey;
+  }
+
+  .color__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    margin-top: 51px;
+    margin-bottom: 25px;
+  }
+
+  .color__option {
+    width: 260px;
+    padding-left: 82px;
+    padding-top: 15px;
+    margin-bottom: 24px;
+    min-height: 52px;
+    outline: 1px solid pink;
+  }
+}

@@ -5,3 +5,14 @@
   padding-left: 17px;
   padding-right: 17px;
 }
+
+@media (min-width: $width-tablet) {
+  .add-details__field {
+    margin-top: 50px;
+    padding-top: 14px;
+    padding-left: 15px;
+    padding-bottom: 14px;
+    height: 142px;
+    //можно ли явно задать высоту текстового поля??
+  }
+}

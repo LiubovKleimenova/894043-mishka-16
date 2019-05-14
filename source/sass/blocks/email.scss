@@ -8,3 +8,15 @@
   width: 100%;
   padding-right: 40px;
 }
+
+@media (min-width: $width-tablet) {
+  .email {
+    background-color: $grey;
+  }
+
+  .email__field {
+    background-color: inherit;
+    margin-bottom: 50px;
+    padding-left: 18px;
+  }
+}

@@ -8,3 +8,16 @@
   width: 100%;
   padding-right: 40px;
 }
+
+@media (min-width: $width-tablet) {
+  .phone {
+    background-color: $grey;
+  }
+
+  .phone__field {
+    margin-top: 51px;
+    margin-bottom: 17px;
+    padding-left: 17px;
+    background-color: inherit;
+  }
+}

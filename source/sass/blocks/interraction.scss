@@ -6,6 +6,7 @@
   font-weight: bold;
   line-height: 18px;
   text-align: left;
+  color: $black;
 }
 
 .interraction__field ul {
@@ -47,4 +48,43 @@
   font-weight: normal;
   line-height: 16px;
   color: $greyish-brown;
+}
+
+@media (min-width: $width-tablet) {
+  .interraction__field {
+    @include inner-padding(217px, 50px)
+    position: relative;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .interraction__legend  {
+    position: absolute;
+    left: 50px;
+    top: 69px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .interraction__wrapper {
+    @include outer-margin(50px, 51px);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .interraction__button {
+    @include inner-padding(32px, 31px);
+    width: auto;
+  }
+
+  .interraction__obligatory {
+    @include zero-indent;
+    align-self: center;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
