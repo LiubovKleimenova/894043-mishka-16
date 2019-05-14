@@ -118,12 +118,21 @@
             <h2 class="manufacturing__heading">Процесс производства</h2>
           </div>
           <div class="manufacturing__video-wrapper">
-            <a class="manufacturing__video" href="#"><img src="http://placehold.it/260x150" alt="Видео процесса"  width="260" height="150"></a>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства вязаных товаров">
+            </picture>
+            <button class="manufacturing__play-button button">
+              <span>
+                <img src="img/icon-play.svg" alt="Воспроизвести">
+              </span>
+
+            </button>
           </div>
           <div class="manufacturing__description-wrapper">
-            <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары
-              <a href="#" class="manufacturing__button button">Сделать заказ</a>
-            </p>
+            <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+            <a href="#" class="manufacturing__button button">Сделать заказ</a>
           </div>
         </div>
       </section>

@@ -1,7 +1,3 @@
-.email {
-  outline: 1px grey solid;
-}
-
 .email__field {
   margin-top: 7px;
   margin-bottom: 32px;
@@ -12,6 +8,10 @@
 @media (min-width: $width-tablet) {
   .email {
     background-color: $grey;
+  }
+
+  .email legend {
+    top: 29px;
   }
 
   .email__field {

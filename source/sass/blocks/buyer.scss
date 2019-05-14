@@ -1,12 +1,10 @@
 .buyer {
-  outline: 1px pink solid;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 
 .buyer__label {
   @include zero-indent;
-
 }
 
 .buyer__text-field {
