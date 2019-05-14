@@ -88,3 +88,24 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .interraction__field {
+    @include inner-padding(225px, 225px)
+  }
+
+  .interraction__legend  {
+    position: absolute;
+    left: 110px;
+    top: 69px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .interraction__wrapper {
+    @include outer-margin(225px, 225px);
+    margin-top: 48px;
+  }
+}

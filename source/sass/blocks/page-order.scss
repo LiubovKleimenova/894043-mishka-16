@@ -45,4 +45,10 @@
   .page-order {
     width: $width-desktop;
   }
+
+  .page-order__suggestion {
+    @include outer-margin(225px, 240px);
+    margin-top: 120px;
+    margin-bottom: 7px;
+  }
 }
