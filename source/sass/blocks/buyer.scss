@@ -1,0 +1,18 @@
+.buyer {
+  outline: 1px pink solid;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.buyer__label {
+  @include zero-indent;
+
+}
+
+.buyer__text-field {
+  margin-bottom: 22px;
+
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-right: 12px;
+}

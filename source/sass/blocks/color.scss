@@ -1,0 +1,15 @@
+.color {
+  outline: 1px green dotted;
+}
+
+.color__list {
+  @include zero-indent;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.color__option {
+  padding-left: 62px;
+  margin-bottom: 22px;
+  min-height: 40px;
+}

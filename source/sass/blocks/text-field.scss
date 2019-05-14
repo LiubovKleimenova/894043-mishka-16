@@ -1,0 +1,15 @@
+.text-field {
+  width: 100%;
+  min-height: 52px;
+  border: none;
+  border-bottom: 2px solid $black;
+
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $greyish-brown-03;
+
+  &--big-font {
+    font-size: 19px;
+  }
+}

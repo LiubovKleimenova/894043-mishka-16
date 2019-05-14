@@ -1,0 +1,15 @@
+.type {
+  outline: red 1px solid;
+}
+
+.type__list {
+  @include zero-indent;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.type__option {
+  padding-left: 62px;
+  margin-bottom: 20px;
+  min-height: 40px;
+}

@@ -1,0 +1,50 @@
+.interraction__field {
+  @include zero-indent;
+  border: none;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: left;
+}
+
+.interraction__field ul {
+  list-style: none;
+}
+
+.interraction__legend {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $seafoam-blue;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+
+    width: 198px;
+    height: 1px;
+    top: 7px;
+    right: 0;
+    background-color: $seafoam-blue;
+  }
+}
+
+.interraction__legend--short-line {
+  &::after {
+    width: 179px;
+  }
+}
+
+.interraction__obligatory {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  color: $greyish-brown;
+}

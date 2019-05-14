@@ -2,7 +2,7 @@
   @include mobile-style;
   @include margin-center;
   padding-bottom: 55px;
-  outline: 5px solid blue;
+  outline: blue 1px dashed;
 }
 
 .page-order__suggestion {
@@ -15,7 +15,8 @@
 }
 
 .page-order__form-wrapper {
-  @include outer-margin;
+  @include zero-indent;
+  @include inner-padding();
 }
 
 
