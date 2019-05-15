@@ -1,0 +1,10 @@
+.checkbox-indicator {
+  width: 40px;
+  height: 40px;
+}
+ @media (min-width: $width-tablet) {
+   .checkbox-indicator {
+     width: 53px;
+     height: 53px;
+   }
+ }
