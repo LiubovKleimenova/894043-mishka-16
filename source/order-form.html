@@ -100,10 +100,10 @@
           <fieldset class="interraction__field buyer">
             <legend class="interraction__legend">ФИО</legend>
             <label class="buyer__label"> Имя:
-              <input class="buyer__text-field text-field" type="text" name="name" value="Введите ваше имя*">
+              <input class="buyer__text-field text-field" type="text" name="name" value="Введите ваше имя*" required>
             </label>
             <label class="buyer__label"> Фамилия:
-              <input class="buyer__text-field text-field" type="text" name="surname" value="Укажите фамилию*">
+              <input class="buyer__text-field text-field" type="text" name="surname" value="Укажите фамилию*" required>
             </label>
             <label class="buyer__label"> Отчество:
               <input class="buyer__text-field text-field" type="text" name="fathers-name" value="Отчество, если желаете">
@@ -111,11 +111,11 @@
           </fieldset>
           <fieldset class="interraction__field phone">
             <legend class="interraction__legend">ТЕЛ</legend>
-            <input class="phone__field text-field text-field--big-font" type="text" name="phone-number" value="+7 XXX XXX XX XX*">
+            <input class="phone__field text-field text-field--big-font" type="tel" name="phone-number" placeholder="+7 XXX XXX XX XX*" required>
           </fieldset>
           <fieldset class="interraction__field email">
             <legend class="interraction__legend interraction__legend--short-line">E-MAIL</legend>
-            <input class="email__field text-field" type="email" placeholder="Ваш Email*">
+            <input class="email__field text-field" type="email" placeholder="Ваш Email*" required>
           </fieldset>
           <fieldset class="interraction__field add-details">
             <legend class="interraction__legend">ДОП</legend>

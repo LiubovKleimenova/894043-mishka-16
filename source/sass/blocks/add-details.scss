@@ -6,6 +6,15 @@
   padding-right: 17px;
 }
 
+.add-details__field:hover,
+.add-details__field:focus {
+  border: 2px solid $seafoam-blue-three;
+}
+
+.add-details__field:active {
+  color: $black;
+}
+
 @media (min-width: $width-tablet) {
   .add-details__field {
     margin-top: 50px;
@@ -13,6 +22,6 @@
     padding-left: 15px;
     padding-bottom: 14px;
     height: 142px;
-    //можно ли явно задать высоту текстового поля??
+    //можно ли явно задавать высоту текстового поля??
   }
 }

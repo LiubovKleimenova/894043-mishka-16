@@ -14,6 +14,15 @@
   }
 }
 
+.text-field:hover,
+.text-field:focus {
+  border-bottom: 2px solid $seafoam-blue-three;
+}
+
+.text-field:active {
+  color: $black;
+}
+
 @media (min-width: $width-tablet) {
   .text-field {
     //width: auto;
