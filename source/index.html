@@ -192,16 +192,18 @@
       </p>
     </footer>
     <script>
+    //открытие-закрытие меню
+
     var menuSL = document.querySelector(".site-list");
     var menuUL = document.querySelector(".user-list");
     var toggle = document.querySelector(".main-nav__toggle");
     var nav = document.querySelector(".main-nav");
 
+    // 1 скрываем при включенном js
     nav.classList.remove("main-nav--opened");
     nav.classList.add("main-nav--closed");
     menuUL.classList.add("user-list--hide");
     menuSL.classList.add("site-list--hide");
-
 
     toggle.addEventListener("click", function(evt) {
       evt.preventDefault();
@@ -210,6 +212,18 @@
       nav.classList.add("main-nav--opened");
     });
 
+    //ниже не работает?
+    if (nav.classList.contains("main-nav--opened")) {
+      toggle.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        menuUL.classList.add("user-list--hide");
+        menuSL.classList.add("site-list--hide");
+        nav.classList.remove("main-nav--opened");
+        nav.classList.add("main-nav--closed");
+      })
+    }
+
+    //открытие-закрытие модалки
     var buttonOrder = document.querySelector(".js-order-button");
     var popup = document.querySelector(".banner");
     buttonOrder.addEventListener("click", function(evt) {
@@ -217,7 +231,7 @@
       popup.classList.add("banner--show");
     });
 
-
+    //как отключить: escape или нажатие на overlay?
     </script>
   </body>
 </html>
