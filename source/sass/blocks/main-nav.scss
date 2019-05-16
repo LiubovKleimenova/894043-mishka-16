@@ -27,12 +27,12 @@
   @include margin-center;
 }
 
-.main-nav__logo-image:active,
+.main-nav__logo-image:focus,
 .main-nav__logo-image:hover {
   opacity: 0.6;
 }
 
-.main-nav__logo-image:disabled {
+.main-nav__logo-image:active {
   opacity: 0.3;
 }
 
@@ -98,6 +98,10 @@
 }
 
 .main-nav__delivery {
+  display: none;
+}
+
+.main-nav__toggle--hide {
   display: none;
 }
 
@@ -193,6 +197,7 @@
 
   .main-nav__logo-image {
     @include zero-indent;
+    margin-left: -12px;
     width: 149px;
     height: auto;
   }

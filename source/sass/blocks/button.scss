@@ -23,19 +23,18 @@
   }
 }
 
-
-.button:active,
+.button:focus,
 .button:hover {
   background-color: $greyish-brown;
   color: $white;
 }
 
-.button--blue:active,
+.button--blue:focus,
 .button--blue:hover {
   border-color: $greyish-brown;
 }
 
-.button:disabled {
+.button:active {
   background-color: $greyish-brown;
-  color: (255, 255, 255, 0.3);
+  color: $white-03;
 }

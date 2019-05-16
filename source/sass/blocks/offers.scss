@@ -26,11 +26,11 @@
   }
 
   .offers__link:hover,
-  .offers__link:active {
+  .offers__link:focus {
     color: $black-06;
   }
 
-  .offers__link:disabled {
+  .offers__link:active {
     color: $black-03;
   }
 }

@@ -16,11 +16,12 @@
   @include inner-padding(28px, 28px);
 }
 
-.product__wrapper:hover {
+.product__wrapper:hover,
+.product__wrapper:focus {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.product__wrapper:disabled {
+.product__wrapper:active {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -38,11 +39,11 @@
 }
 
 .product__name:hover,
-.product__name:active {
+.product__name:focus {
   color: $black-06;
 }
 
-.product__name:disabled {
+.product__name:active {
   color: $black-03;
 }
 
@@ -82,7 +83,7 @@
 }
 
 .product__add-to-cart:hover,
-.product__add-to-cart:active {
+.product__add-to-cart:focus {
   background-image: url("../img/icon-cart-hover.svg");
   opacity: 1;
 }
@@ -134,9 +135,10 @@
   }
 
   .product__cart-wrapper {
-    padding-top: 21px;
+    padding-top: 17px;
+    padding-bottom: 25px;
     padding-left: 5px;
-    margin-top: auto; //почему не работает для десктопа??
+    margin-top: auto;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.41;

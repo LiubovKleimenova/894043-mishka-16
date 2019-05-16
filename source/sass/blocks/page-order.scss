@@ -2,7 +2,6 @@
   @include mobile-style;
   @include margin-center;
   padding-bottom: 55px;
-  outline: 5px solid blue;
 }
 
 .page-order__suggestion {
@@ -15,18 +14,40 @@
 }
 
 .page-order__form-wrapper {
-  @include outer-margin;
+  @include zero-indent;
+  @include inner-padding();
 }
 
 
 @media (min-width: $width-tablet) {
   .page-order {
     width: $width-tablet;
+    padding-bottom: 49px;
+  }
+
+  .page-order__suggestion {
+    @include outer-margin(51px, 100px);
+    margin-top: 77px;
+    margin-bottom: 7px;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 30px;
+    color: $greyish-brown;
+  }
+
+  .page-order__form-wrapper {
+    @include inner-padding(0, 0);
   }
 }
 
 @media (min-width: $width-desktop) {
   .page-order {
     width: $width-desktop;
+  }
+
+  .page-order__suggestion {
+    @include outer-margin(225px, 240px);
+    margin-top: 120px;
+    margin-bottom: 7px;
   }
 }

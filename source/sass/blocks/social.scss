@@ -33,34 +33,34 @@
   }
 }
 
-.social__pic--instagram:active,
+.social__pic--instagram:focus,
 .social__pic--instagram:hover {
   background-image: url("../img/icon-insta-hover.svg");
 }
 
 
-.social__pic--fb:active,
+.social__pic--fb:focus,
 .social__pic--fb:hover {
   background-image: url("../img/icon-fb-hover.svg");
 }
 
-.social__pic--twitter:active,
+.social__pic--twitter:focus,
 .social__pic--twitter:hover {
   background-image: url("../img/icon-twitter-hover.svg");
 }
 
-.social__pic--instagram:disabled {
+.social__pic--instagram:active {
   background-image: url("../img/icon-insta-hover.svg");
   opacity: 0.3;
 }
 
 
-.social__pic--fb:disabled {
+.social__pic--fb:active {
   background-image: url("../img/icon-fb-hover.svg");
   opacity: 0.3;
 }
 
-.social__pic--twitter:disabled {
+.social__pic--twitter:active {
   background-image: url("../img/icon-twitter-hover.svg");
   opacity: 0.3;
 }

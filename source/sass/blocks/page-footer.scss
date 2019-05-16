@@ -16,6 +16,16 @@
   @include margin-center;
 }
 
+.page-footer__logo:hover .page-footer__logo-image,
+.page-footer__logo:focus .page-footer__logo-image {
+  fill: $greeny-blue;
+}
+
+.page-footer__logo:active .page-footer__logo-image {
+  fill: $greeny-blue;
+  opacity: 0.3;
+}
+
 .page-footer__list {
   @include zero-indent;
   display: block;
@@ -28,7 +38,6 @@
 
 .page-footer__copyright {
   display: block;
-  min-height: 80px;
 }
 
 @media (min-width: $width-tablet) {
@@ -48,6 +57,7 @@
 
   .page-footer__list {
     @include zero-indent;
+    border-bottom: none;
   }
 }
 

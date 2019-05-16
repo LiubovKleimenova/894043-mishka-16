@@ -1,0 +1,31 @@
+.phone__field {
+  margin-top: 7px;
+  margin-bottom: 32px;
+  width: 100%;
+  padding-right: 40px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 5px;
+    top: 8px;
+    background-image: url("../img/icon-phone.svg");
+    background-size: auto;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .phone {
+    background-color: $grey;
+  }
+
+  .phone__field {
+    margin-top: 51px;
+    margin-bottom: 17px;
+    padding-left: 17px;
+    background-color: inherit;
+  }
+}

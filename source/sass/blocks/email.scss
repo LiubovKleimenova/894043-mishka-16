@@ -1,0 +1,33 @@
+.email__field {
+  margin-top: 7px;
+  margin-bottom: 32px;
+  width: 100%;
+  padding-right: 40px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 5px;
+    top: 8px;
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .email {
+    background-color: $grey;
+  }
+
+  .email legend {
+    top: 29px;
+  }
+
+  .email__field {
+    background-color: inherit;
+    margin-bottom: 50px;
+    padding-left: 18px;
+  }
+}

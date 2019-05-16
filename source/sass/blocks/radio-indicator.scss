@@ -1,0 +1,11 @@
+.radio-indicator {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+ @media (min-width: $width-tablet) {
+   .radio-indicator {
+     width: 52px;
+     height: 52px;
+   }
+ }
