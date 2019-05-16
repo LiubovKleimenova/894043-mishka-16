@@ -16,7 +16,7 @@
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Магазин Mishka" width="86" height="35">
           </picture>
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--hide" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a class="site-list__link" href="order-form.html">Вязание на заказ</a></li>
@@ -200,6 +200,8 @@
     var nav = document.querySelector(".main-nav");
 
     // 1 скрываем при включенном js
+
+    toggle.classList.remove("main-nav__toggle--hide");
     nav.classList.remove("main-nav--opened");
     nav.classList.add("main-nav--closed");
     menuUL.classList.add("user-list--hide");

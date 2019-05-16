@@ -101,6 +101,10 @@
   display: none;
 }
 
+.main-nav__toggle--hide {
+  display: none;
+}
+
 @media (min-width: $width-tablet) {
   .main-nav {
     flex-direction: row;
