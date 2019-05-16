@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__menu main-nav main-nav--closed">
+      <nav class="page-header__menu main-nav main-nav--opened">
         <a class="main-nav__logo"  href="index.html">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -69,7 +69,7 @@
             <img class="content__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки различных расцветок" width="260" height="315">
           </picture>
           <p class="content__price">Цена: 990 руб.</p>
-          <a href="#" class="content__button button">Заказать</a>
+          <a href="#" class="content__button button js-order-button">Заказать</a>
         </div>
 
       </section>
@@ -133,7 +133,7 @@
           </picture>
           <a href="#" class="contacts__button button">Напишите нам</a>
       </section>
-      <section class="page-main__banner banner js-banner">
+      <section class="page-main__banner banner">
         <div class="banner__overlay overlay">
           <div class="banner__modal modal">
             <h2 class="modal__heading">Добавить в корзину</h2>
@@ -191,5 +191,33 @@
         </a>
       </p>
     </footer>
+    <script>
+    var menuSL = document.querySelector(".site-list");
+    var menuUL = document.querySelector(".user-list");
+    var toggle = document.querySelector(".main-nav__toggle");
+    var nav = document.querySelector(".main-nav");
+
+    nav.classList.remove("main-nav--opened");
+    nav.classList.add("main-nav--closed");
+    menuUL.classList.add("user-list--hide");
+    menuSL.classList.add("site-list--hide");
+
+
+    toggle.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      menuUL.classList.remove("user-list--hide");
+      menuSL.classList.remove("site-list--hide");
+      nav.classList.add("main-nav--opened");
+    });
+
+    var buttonOrder = document.querySelector(".js-order-button");
+    var popup = document.querySelector(".banner");
+    buttonOrder.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.add("banner--show");
+    });
+
+
+    </script>
   </body>
 </html>
