@@ -4,6 +4,9 @@
 
   @include inner-padding;
   width: 320px;
+  left: 50%;
+  margin-left: -160px;
+  top: 30vh;
   min-height: 336px;
   background-color: $white;
   box-shadow: 0 5px 10px 0 $dark-forest-green;
@@ -99,16 +102,5 @@
 
   .modal__label input[type="radio"]+.modal__checkbox {
     width: 112px;
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .modal {
-    width: 566px;
-    top: 1114px;
-    left: 50%;
-    margin-left: -283px;
-
-    @include inner-padding(107px, 107px);
   }
 }
