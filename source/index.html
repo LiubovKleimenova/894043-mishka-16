@@ -139,9 +139,21 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="modal__fieldset">
             <p class="modal__command">Выберите размер</p>
-            <label class="modal__radio radio_S" for="small">S <input type="radio" name="item-size" id="small" value="small" checked></label>
-            <label class="modal__radio radio_M" for="medium">M <input type="radio" name="item-size" id="medium" value="medium"></label>
-            <label class="modal__radio radio_L" for="large">L <input type="radio" name="item-size" id="large" value="large"></label>
+            <label class="modal__label" for="small">
+              <input class="visually-hidden" type="radio" name="item-size" id="small" value="small" checked>
+              <span class="modal__checkbox"></span>
+              S
+            </label>
+            <label class="modal__label" for="medium">
+              <input class="visually-hidden" type="radio" name="item-size" id="medium" value="medium">
+              <span class="modal__checkbox"></span>
+              M
+            </label>
+            <label class="modal__label" for="large">
+              <input class="visually-hidden" type="radio" name="item-size" id="large" value="large">
+              L
+              <span class="modal__checkbox"></span>
+            </label>
           </fieldset>
           <button class="modal__button button button--blue" type="submit">Добавить</button>
         </form>

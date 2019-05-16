@@ -4,14 +4,26 @@
   @include margin-center;
 }
 
+.page-catalog__modal {
+  top: 801px;
+}
+
 @media (min-width: $width-tablet) {
   .page-catalog {
     width: $width-tablet;
+  }
+
+  .page-catalog__modal {
+    top: 1078px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .page-catalog {
     width: $width-desktop;
+  }
+
+  .page-catalog__modal {
+    top: 747px;
   }
 }

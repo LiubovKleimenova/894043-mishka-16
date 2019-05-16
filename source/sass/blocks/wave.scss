@@ -3,7 +3,6 @@
   position: absolute;
   z-index: 2;
 
-  width: 100%;
   background-repeat: repeat-x;
   background-image: url("../img/bg-zigzag-fill.svg");
 
@@ -20,16 +19,14 @@
   .wave {
     display: block;
     height: 24px;
-    left: 35px;
-    background-size: 100%;
+    width: $width-tablet;
   }
 }
 
 @media (min-width: $width-desktop) {
   .wave {
     height: 34px;
-    left: 0;
-    background-size: 100%;
+    width: $width-desktop;
 
     &--index {
       top: 817px;

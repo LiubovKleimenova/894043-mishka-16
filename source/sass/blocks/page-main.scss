@@ -18,6 +18,11 @@
   text-align: center;
 }
 
+.page-main__modal {
+  top: 1046px;
+}
+
+
 @media (min-width: $width-tablet) {
   .page-main {
     width: $width-tablet;
@@ -28,10 +33,18 @@
     padding-top: 150px;
     padding-bottom: 493px;
   }
+
+  .page-main__modal {
+    top: 1532px;
+  }
 }
 
 @media (min-width: $width-desktop) {
   .page-main {
     width: $width-desktop;
+  }
+
+  .page-main__modal {
+    top: 1114px;
   }
 }

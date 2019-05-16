@@ -193,6 +193,7 @@
 
   .main-nav__logo-image {
     @include zero-indent;
+    margin-left: -12px;
     width: 149px;
     height: auto;
   }

@@ -1,7 +1,6 @@
 .modal {
-  display: none;
+  display: block;
   position: absolute;
-  top: 1046px;
 
   @include inner-padding;
   width: 320px;
@@ -43,10 +42,38 @@
   color: $greyish-brown;
 }
 
+.modal__label {
+  position: relative;
+  display: inline-block;
+  width: 78px;
+  height: 48px;
+  line-height: 52px;
+  text-align: center;
+  margin-left: 4px;
+}
+
+.modal__label input[type="radio"]+.modal__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 82px;
+  height: 52px;
+  border: 2px solid $greyish-brown-01;
+}
+
+.modal__label input[type="radio"]:hover+.modal__checkbox,
+.modal__label input[type="radio"]:focus+.modal__checkbox {
+  border: 2px solid $greyish-brown-03;
+}
+
+.modal__label input[type="radio"]:checked+.modal__checkbox,
+.modal__label input[type="radio"]:active+.modal__checkbox {
+  border: 2px solid $seafoam-blue;
+}
+
 @media (min-width: $width-tablet) {
   .modal {
     width: 566px;
-    top: 1532px;
     left: 50%;
     margin-left: -283px;
 
@@ -58,6 +85,20 @@
 
   .modal__heading {
     margin-top: 47px;
+  }
+
+  .modal__label {
+    position: relative;
+    display: inline-block;
+    width: 108px;
+    height: 48px;
+    line-height: 52px;
+    text-align: center;
+    margin-left: 4px;
+  }
+
+  .modal__label input[type="radio"]+.modal__checkbox {
+    width: 112px;
   }
 }
 
