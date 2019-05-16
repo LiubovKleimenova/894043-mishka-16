@@ -157,4 +157,40 @@
         </a>
       </p>
     </footer>
+
+    <script>
+    //открытие-закрытие меню
+
+    var menuSL = document.querySelector(".site-list");
+    var menuUL = document.querySelector(".user-list");
+    var toggle = document.querySelector(".main-nav__toggle");
+    var nav = document.querySelector(".main-nav");
+
+    // 1 скрываем при включенном js
+
+    toggle.classList.remove("main-nav__toggle--hide");
+    nav.classList.remove("main-nav--opened");
+    nav.classList.add("main-nav--closed");
+    menuUL.classList.add("user-list--hide");
+    menuSL.classList.add("site-list--hide");
+
+    toggle.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      menuUL.classList.remove("user-list--hide");
+      menuSL.classList.remove("site-list--hide");
+      nav.classList.add("main-nav--opened");
+    });
+
+    //ниже не работает?
+    if (nav.classList.contains("main-nav--opened")) {
+      toggle.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        menuUL.classList.add("user-list--hide");
+        menuSL.classList.add("site-list--hide");
+        nav.classList.remove("main-nav--opened");
+        nav.classList.add("main-nav--closed");
+      })
+    }
+    </script>
+  </body>
 </html>
