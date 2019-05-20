@@ -19,7 +19,8 @@
   border-bottom: 2px solid $seafoam-blue-three;
 }
 
-.text-field:active {
+.text-field:active,
+.text-field:focus {
   color: $black;
 }
 

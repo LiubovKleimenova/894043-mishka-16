@@ -191,6 +191,16 @@
         nav.classList.add("main-nav--closed");
       })
     }
+
+    //открытие-закрытие модалки
+    var buttonOrder = document.querySelector(".js-order-button");
+    var popup = document.querySelector(".banner");
+    buttonOrder.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.add("banner--show");
+    });
+
+    //как отключить: escape или нажатие на overlay?
     </script>
   </body>
 </html>

@@ -191,7 +191,7 @@
         </a>
       </p>
     </footer>
-    <script>
+   <script>
     //открытие-закрытие меню
 
     var menuSL = document.querySelector(".site-list");
@@ -228,12 +228,19 @@
     //открытие-закрытие модалки
     var buttonOrder = document.querySelector(".js-order-button");
     var popup = document.querySelector(".banner");
+    var modal = document.querySelector(".modal");
     buttonOrder.addEventListener("click", function(evt) {
       evt.preventDefault();
       popup.classList.add("banner--show");
     });
 
+    //подумать какое событие??
+    modal.addEventListener("mouseleave", function(evt) {
+      evt.preventDefault();
+      popup.classList.remove("banner--show");
+    });
+
     //как отключить: escape или нажатие на overlay?
-    </script>
+  </script> -->
   </body>
 </html>
