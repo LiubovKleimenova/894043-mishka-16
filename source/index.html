@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет-магазин Mishka</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
@@ -191,56 +191,6 @@
         </a>
       </p>
     </footer>
-   <script>
-    //открытие-закрытие меню
-
-    var menuSL = document.querySelector(".site-list");
-    var menuUL = document.querySelector(".user-list");
-    var toggle = document.querySelector(".main-nav__toggle");
-    var nav = document.querySelector(".main-nav");
-
-    // 1 скрываем при включенном js
-
-    toggle.classList.remove("main-nav__toggle--hide");
-    nav.classList.remove("main-nav--opened");
-    nav.classList.add("main-nav--closed");
-    menuUL.classList.add("user-list--hide");
-    menuSL.classList.add("site-list--hide");
-
-    toggle.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      menuUL.classList.remove("user-list--hide");
-      menuSL.classList.remove("site-list--hide");
-      nav.classList.add("main-nav--opened");
-    });
-
-    //ниже не работает?
-    if (nav.classList.contains("main-nav--opened")) {
-      toggle.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        menuUL.classList.add("user-list--hide");
-        menuSL.classList.add("site-list--hide");
-        nav.classList.remove("main-nav--opened");
-        nav.classList.add("main-nav--closed");
-      })
-    }
-
-    //открытие-закрытие модалки
-    var buttonOrder = document.querySelector(".js-order-button");
-    var popup = document.querySelector(".banner");
-    var modal = document.querySelector(".modal");
-    buttonOrder.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("banner--show");
-    });
-
-    //подумать какое событие??
-    modal.addEventListener("mouseleave", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("banner--show");
-    });
-
-    //как отключить: escape или нажатие на overlay?
-  </script> -->
+    <script src="js/app.js"></script>
   </body>
 </html>
