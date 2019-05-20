@@ -6,7 +6,6 @@
  var toggle = document.querySelector(".main-nav__toggle");
  var nav = document.querySelector(".main-nav");
 
-
  toggle.classList.remove("main-nav__toggle--hide");
  nav.classList.remove("main-nav--opened");
  nav.classList.add("main-nav--closed");
@@ -32,12 +31,12 @@
  var buttonOrder = document.querySelector(".js-order-button");
  var popup = document.querySelector(".banner");
  var modal = document.querySelector(".modal");
+
  buttonOrder.addEventListener("click", function(evt) {
    evt.preventDefault();
    popup.classList.add("banner--show");
  });
 
- //подумать какое событие??
  modal.addEventListener("mouseleave", function(evt) {
    evt.preventDefault();
    popup.classList.remove("banner--show");
