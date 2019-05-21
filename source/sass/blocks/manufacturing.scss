@@ -65,6 +65,10 @@
   border: 1px solid $lighter-grey;
 }
 
+.manufacturing__video-wrapper img {
+  display: block;
+}
+
 .manufacturing__button {
   width: 100%;
 }
@@ -130,13 +134,14 @@
 
   .manufacturing__video-wrapper {
     order: -1;
-    min-height: 455px;
+
   }
 }
 
 @media (min-width: $width-desktop) {
   .manufacturing {
     margin-bottom: 103px;
+    min-width: 455px;
   }
 
   .manufacturing__wrapper {
@@ -180,5 +185,6 @@
     top: 0;
     left: 0;
     min-width: 682px;
+    height: 455px;
   }
 }
