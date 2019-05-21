@@ -94,7 +94,6 @@
     }
   }
 
-
   .contacts__map {
     width: 768px;
     height: auto;
@@ -131,6 +130,10 @@
     width: 80px;
     text-align: left;
     vertical-align: top;
+  }
+
+  .contacts__value {
+    width: 225px;
   }
 
   .contacts__button {
