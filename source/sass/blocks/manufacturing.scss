@@ -134,7 +134,13 @@
 
   .manufacturing__video-wrapper {
     order: -1;
+  }
 
+  .manufacturing__video-wrapper img {
+    display: block;
+    width: 668px;
+    height: auto;
+    min-height: 455px;
   }
 }
 
@@ -186,5 +192,9 @@
     left: 0;
     min-width: 682px;
     height: 455px;
+  }
+
+  .manufacturing__video-wrapper img {
+    width: 668px;
   }
 }
