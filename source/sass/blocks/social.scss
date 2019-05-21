@@ -69,6 +69,19 @@
   .social {
     width: 140px;
     margin-left: 80px;
-    padding-top: 62px;
+  }
+
+  .social__pic {
+    &--instagram {
+      padding-top: 85px;
+    }
+
+    &--fb {
+      padding-top: 77px;
+    }
+
+    &--twitter {
+      padding-top: 83px;
+    }
   }
 }
