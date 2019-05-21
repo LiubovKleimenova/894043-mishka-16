@@ -53,13 +53,13 @@
 
 @media (min-width: $width-tablet) {
   .interraction__field {
-    @include inner-padding(217px, 50px)
+    @include inner-padding(217px, 50px);
     position: relative;
     font-size: 19px;
     line-height: 18px;
   }
 
-  .interraction__legend  {
+  .interraction__legend {
     position: absolute;
     left: 50px;
     top: 69px;
@@ -92,10 +92,10 @@
 
 @media (min-width: $width-desktop) {
   .interraction__field {
-    @include inner-padding(225px, 225px)
+    @include inner-padding(225px, 225px);
   }
 
-  .interraction__legend  {
+  .interraction__legend {
     position: absolute;
     left: 110px;
     top: 69px;

@@ -45,7 +45,7 @@
     width: $width-tablet;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
 
     @include inner-padding (52px, 52px);
     min-height: 143px;
@@ -53,6 +53,7 @@
 
   .page-footer__logo {
     display: block;
+    margin-top: 50px;
   }
 
   .page-footer__list {

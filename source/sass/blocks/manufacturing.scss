@@ -48,6 +48,7 @@
 .manufacturing__description-wrapper {
   margin-top: 34px;
   margin-bottom: 33px;
+
   @include outer-margin(34px, 34px);
 }
 
@@ -75,11 +76,11 @@
 
 .manufacturing__play-button {
   position: absolute;
-  width: auto;
+  width: 101px;
   height: auto;
   top: 50%;
   left: 50%;
-//?? бэкграунд
+
   background: none;
   border: none;
   transform: translate(-50%, -50%);

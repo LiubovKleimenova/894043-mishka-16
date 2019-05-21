@@ -55,7 +55,7 @@
   margin-left: 4px;
 }
 
-.modal__label input[type="radio"]+.modal__checkbox {
+.modal__label input[type="radio"] + .modal__checkbox {
   position: absolute;
   top: 0;
   left: 0;
@@ -64,13 +64,13 @@
   border: 2px solid $greyish-brown-01;
 }
 
-.modal__label input[type="radio"]:hover+.modal__checkbox,
-.modal__label input[type="radio"]:focus+.modal__checkbox {
+.modal__label input[type="radio"]:hover + .modal__checkbox,
+.modal__label input[type="radio"]:focus + .modal__checkbox {
   border: 2px solid $greyish-brown-03;
 }
 
-.modal__label input[type="radio"]:checked+.modal__checkbox,
-.modal__label input[type="radio"]:active+.modal__checkbox {
+.modal__label input[type="radio"]:checked + .modal__checkbox,
+.modal__label input[type="radio"]:active + .modal__checkbox {
   border: 2px solid $seafoam-blue;
 }
 
@@ -100,7 +100,7 @@
     margin-left: 4px;
   }
 
-  .modal__label input[type="radio"]+.modal__checkbox {
+  .modal__label input[type="radio"] + .modal__checkbox {
     width: 112px;
   }
 }

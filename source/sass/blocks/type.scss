@@ -12,14 +12,14 @@
   min-height: 40px;
 }
 
-.type__label input[type="radio"]+.type__radio {
+.type__label input[type="radio"] + .type__radio {
   position: absolute;
   top: 0;
   left: 0;
   border: 2px solid $greyish-brown;
 }
 
-.type__label input[type="radio"]:checked+.type__radio::after {
+.type__label input[type="radio"]:checked + .type__radio::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -30,12 +30,12 @@
   background-color: $seafoam-blue-three;
 }
 
-.type__label input[type="radio"]:hover+.type__radio,
-.type__label input[type="radio"]:focus+.type__radio {
+.type__label input[type="radio"]:hover + .type__radio,
+.type__label input[type="radio"]:focus + .type__radio {
   border: 2px solid $seafoam-blue-three;
 }
 
-.type__label input[type="radio"]:active+.type__radio {
+.type__label input[type="radio"]:active + .type__radio {
   border: 2px solid $greyish-brown-03;
 }
 
@@ -53,7 +53,7 @@
     line-height: 53px;
   }
 
-  .type__label input[type="radio"]:checked+.type__radio::after {
+  .type__label input[type="radio"]:checked + .type__radio::after {
     top: 13px;
     left: 13px;
     width: 22px;

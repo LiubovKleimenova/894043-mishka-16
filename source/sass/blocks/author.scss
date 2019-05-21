@@ -39,5 +39,6 @@
 @media (min-width: $width-tablet) {
   .author {
     @include zero-indent;
+    margin-top: 32px;
   }
 }

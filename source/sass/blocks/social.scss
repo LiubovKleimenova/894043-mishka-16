@@ -1,7 +1,7 @@
 .social {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 30px;
 }
 
 .social__item {
@@ -68,6 +68,20 @@
 @media (min-width: $width-tablet) {
   .social {
     width: 140px;
-    margin-left: 85px;
+    margin-left: 80px;
+  }
+
+  .social__pic {
+    &--instagram {
+      padding-top: 85px;
+    }
+
+    &--fb {
+      padding-top: 77px;
+    }
+
+    &--twitter {
+      padding-top: 83px;
+    }
   }
 }
