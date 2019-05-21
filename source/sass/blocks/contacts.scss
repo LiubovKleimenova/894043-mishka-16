@@ -1,6 +1,20 @@
 .contacts {
   position: relative;
   padding-top: 31px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 67px;
+    height: 100px;
+    top: 445px;
+    right: 109px;
+
+    background-image: url("../img/icon-map-pin.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .contacts__heading {
@@ -74,6 +88,10 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+
+    &::before {
+      right: 338px;
+    }
   }
 
 
@@ -135,6 +153,12 @@
       top: 133px;
       right: 392px;
     }
+
+    &::before {
+      z-index: 1000;
+      right: -322px;
+      top: 217px;
+    }
   }
 
   .contacts__heading {
@@ -163,6 +187,7 @@
     max-width: none;
     width: 525px;
     height: auto;
+    max-height: 457px;
   }
 
   .contacts__button {
