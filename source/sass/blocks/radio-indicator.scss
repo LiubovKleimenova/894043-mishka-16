@@ -3,9 +3,10 @@
   height: 40px;
   border-radius: 50%;
 }
- @media (min-width: $width-tablet) {
-   .radio-indicator {
-     width: 52px;
-     height: 52px;
-   }
- }
+
+@media (min-width: $width-tablet) {
+  .radio-indicator {
+    width: 52px;
+    height: 52px;
+  }
+}

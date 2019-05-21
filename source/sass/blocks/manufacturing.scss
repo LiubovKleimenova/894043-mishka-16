@@ -48,6 +48,7 @@
 .manufacturing__description-wrapper {
   margin-top: 34px;
   margin-bottom: 33px;
+
   @include outer-margin(34px, 34px);
 }
 
@@ -79,7 +80,7 @@
   height: auto;
   top: 50%;
   left: 50%;
-//?? бэкграунд
+
   background: none;
   border: none;
   transform: translate(-50%, -50%);
