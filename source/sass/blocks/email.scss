@@ -5,15 +5,15 @@
   padding-right: 40px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: 5px;
-    top: 8px;
-    background-image: url("../img/icon-mail.svg");
-  }
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 227px center;
+}
+
+.email__field:hover,
+.email__field:focus,
+.email__field:active {
+  background-image: url("../img/icon-mail-hover.svg");
 }
 
 @media (min-width: $width-tablet) {
@@ -29,5 +29,14 @@
     background-color: inherit;
     margin-bottom: 50px;
     padding-left: 18px;
+    padding-right: 60px;
+
+    background-position: 447px center;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .email__field {
+    background-position: 664px center;
   }
 }

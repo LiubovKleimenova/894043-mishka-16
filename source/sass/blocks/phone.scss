@@ -5,16 +5,15 @@
   padding-right: 40px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: 5px;
-    top: 8px;
-    background-image: url("../img/icon-phone.svg");
-    background-size: auto;
-  }
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 227px center;
+}
+
+.phone__field:hover,
+.phone__field:focus,
+.phone__field:active {
+  background-image: url("../img/icon-phone-hover.svg");
 }
 
 @media (min-width: $width-tablet) {
@@ -26,6 +25,15 @@
     margin-top: 51px;
     margin-bottom: 17px;
     padding-left: 17px;
+    padding-right: 60px;
     background-color: inherit;
+    background-image: url("../img/icon-phone.svg");
+    background-position: 450px center;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .phone__field {
+    background-position: 664px center;
   }
 }
