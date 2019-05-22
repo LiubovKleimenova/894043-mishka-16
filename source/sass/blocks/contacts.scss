@@ -1,21 +1,6 @@
 .contacts {
   padding-top: 31px;
   padding-bottom: 39px;
-
-//  &::before {
-//    content: "";
-//    display: block;
-//    position: absolute;
-//    z-index: 100;
-//    width: 67px;
-//    height: 100px;
-//    top: 443px;
-//    right: 127px;
-
-//    background-image: url("../img/icon-map-pin.svg");
-//    background-position: center;
-//    background-repeat: no-repeat;
-//  }
 }
 
 .contacts__heading {
@@ -66,7 +51,7 @@
 }
 
 .contacts__value--email a:hover,
-.contacts__value--email a:focus{
+.contacts__value--email a:focus {
   color: $greeny-blue;
 }
 
@@ -94,7 +79,7 @@
   position: relative;
   width: 100vw;
   min-width: $width-mobile;
-  top:0;
+  top: 0;
   left: 0;
   z-index: 2;
   border: none;
@@ -118,10 +103,6 @@
       background-position: center;
       background-repeat: no-repeat;
     }
-
-//    &::before {
-//      right: 350px;
-//    }
   }
 
   .contacts__map {
@@ -213,11 +194,6 @@
       top: 133px;
       right: 392px;
     }
-
-//    &::before {
-//      right: -320px;
-//      top: 215px;
-//    }
   }
 
   .contacts__heading {
