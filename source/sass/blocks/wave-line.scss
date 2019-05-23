@@ -1,6 +1,7 @@
 .wave-line {
   display: block;
   width: $width-mobile;
+
   @include margin-center;
   min-height: 10px;
   background-repeat: repeat-x;
@@ -12,6 +13,7 @@
 @media (min-width: $width-tablet) {
   .wave-line {
     width: $width-tablet;
+
     @include margin-center;
     min-height: 15px;
   }
@@ -20,6 +22,7 @@
 @media (min-width: $width-desktop) {
   .wave-line {
     width: 1050px;
+
     @include margin-center;
     min-height: 23px;
     background-size: 100%;

@@ -5,6 +5,7 @@
 
 .page-order__suggestion {
   width: $width-mobile;
+
   @include zero-indent;
   @include margin-center;
   @include inner-padding;
@@ -18,7 +19,7 @@
 }
 
 .page-order__form-wrapper {
-  width: 100%
+  width: 100%;
 }
 
 
@@ -29,6 +30,7 @@
 
   .page-order__suggestion {
     width: $width-tablet;
+
     @include margin-center;
     @include inner-padding(51px, 100px);
     margin-top: 77px;

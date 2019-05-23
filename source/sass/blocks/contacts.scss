@@ -59,7 +59,7 @@
 }
 
 .contacts__value--email a:hover,
-.contacts__value--email a:focus{
+.contacts__value--email a:focus {
   color: $greeny-blue;
 }
 
@@ -87,7 +87,7 @@
   position: relative;
   width: 100vw;
   min-width: $width-mobile;
-  top:0;
+  top: 0;
   left: 0;
   z-index: 2;
   border: none;
@@ -124,20 +124,18 @@
 
     position: relative;
 
-
-        &::after {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 47px;
-          height: 81px;
-          top: -15px;
-          right: 23px;
-
-          background-image: url("../img/icon-flag.svg");
-          background-position: center;
-          background-repeat: no-repeat;
-        }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: -15px;
+      right: 23px;
+      background-image: url("../img/icon-flag.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   .contacts__info {
@@ -196,6 +194,7 @@
 @media (min-width: $width-desktop) {
   .contacts__wrapper {
     width: $width-desktop;
+
     @include margin-center;
     position: relative;
     min-height: 457px;

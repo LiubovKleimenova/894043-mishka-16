@@ -4,6 +4,7 @@
 
 .phone__wrapper {
   width: $width-mobile;
+
   @include margin-center;
   @include inner-padding;
   position: relative;
@@ -34,6 +35,7 @@
 
   .phone__wrapper {
     width: $width-tablet;
+
     @include margin-center;
     @include inner-padding(217px, 50px);
   }
@@ -52,6 +54,7 @@
 @media (min-width: $width-desktop) {
   .phone__wrapper {
     width: $width-desktop;
+
     @include inner-padding(225px, 225px);
   }
 

@@ -1,7 +1,7 @@
 .promo {
   width: $width-mobile;
-  @include margin-center;
 
+  @include margin-center;
   @include inner-padding();
   margin-bottom: 36px;
 }
