@@ -1,6 +1,7 @@
 .wave-line {
   display: block;
-  width: 100%;
+  width: $width-mobile;
+  @include margin-center;
   min-height: 10px;
   background-repeat: repeat-x;
   background-image: url("../img/bg-zigzag-line.svg");
@@ -10,14 +11,16 @@
 
 @media (min-width: $width-tablet) {
   .wave-line {
+    width: $width-tablet;
+    @include margin-center;
     min-height: 15px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .wave-line {
-    @include outer-margin(49px, 49px);
-    width: auto;
+    width: 1050px;
+    @include margin-center;
     min-height: 23px;
     background-size: 100%;
   }
