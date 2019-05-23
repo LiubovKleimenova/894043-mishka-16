@@ -4,6 +4,7 @@
 
 .add-details__wrapper {
   width: $width-mobile;
+
   @include margin-center;
   @include inner-padding;
   position: relative;
@@ -31,9 +32,11 @@
 @media (min-width: $width-tablet) {
   .add-details__wrapper {
     width: $width-tablet;
+
     @include margin-center;
     @include inner-padding(217px, 50px);
   }
+
   .add-details__field {
     margin-top: 50px;
     padding-top: 14px;
@@ -46,6 +49,7 @@
 @media (min-width: $width-desktop) {
   .add-details__wrapper {
     width: $width-desktop;
+
     @include inner-padding(225px, 225px);
   }
 }

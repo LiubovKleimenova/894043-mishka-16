@@ -47,6 +47,7 @@
 @media (min-width: $width-tablet) {
   .page-footer__wrapper {
     width: $width-tablet;
+
     @include margin-center;
     display: flex;
     justify-content: space-between;

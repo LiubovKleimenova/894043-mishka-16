@@ -1,5 +1,6 @@
 .mishka-products {
   width: $width-mobile;
+
   @include margin-center;
 }
 
@@ -102,6 +103,7 @@
 @media (min-width: $width-tablet) {
   .mishka-products {
     width: $width-tablet;
+
     @include margin-center;
     @include inner-padding(52px, 52px);
   }
@@ -126,13 +128,13 @@
   }
 
   .mishka-products__item:first-of-type .mishka-products__link {
-    &::after{
+    &::after {
       top: 30px;
     }
   }
 
   .mishka-products__item:last-of-type .mishka-products__link {
-    &::after{
+    &::after {
       top: 32px;
       right: 31px;
     }

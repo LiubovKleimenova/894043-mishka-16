@@ -45,6 +45,7 @@
 
 .interraction__wrapper {
   width: $width-mobile;
+
   @include margin-center;
   @include inner-padding;
 }
@@ -77,6 +78,7 @@
 
   .interraction__wrapper {
     width: $width-tablet;
+
     @include margin-center;
     @include inner-padding(50px, 50px);
     margin-top: 50px;
@@ -115,8 +117,9 @@
 
   .interraction__wrapper {
     width: $width-desktop;
+
     @include margin-center;
-    @include inner-padding(225px, 224px)
+    @include inner-padding(225px, 224px);
     margin-top: 48px;
   }
 }

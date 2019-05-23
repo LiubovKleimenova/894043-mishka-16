@@ -54,6 +54,7 @@
 @media (min-width: $width-tablet) {
   .type__wrapper {
     width: $width-tablet;
+
     @include margin-center;
     @include inner-padding(217px, 50px);
     padding-top: 50px;
@@ -83,6 +84,7 @@
 @media (min-width: $width-desktop) {
   .type__wrapper {
     width: $width-desktop;
+
     @include inner-padding(224px, 50px);
     padding-bottom: 26px;
   }
