@@ -1,7 +1,7 @@
 .manufacturing {
   @include outer-margin();
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .manufacturing__wrapper {
@@ -23,7 +23,7 @@
 .manufacturing__heading-wrapper {
   position: relative;
 
-  padding: 7px 30px 9px 90px;
+  padding: 10px 30px 10px 90px;
 
   &::before {
     content: "";
@@ -46,7 +46,7 @@
 }
 
 .manufacturing__description-wrapper {
-  margin-top: 34px;
+  margin-top: 27px;
   margin-bottom: 33px;
 
   @include outer-margin(34px, 34px);
@@ -76,7 +76,7 @@
 
 .manufacturing__play-button {
   position: absolute;
-  width: 101px;
+  width: 115px;
   height: auto;
   top: 50%;
   left: 50%;
@@ -104,8 +104,8 @@
   }
 
   .manufacturing__heading-wrapper {
-    padding-left: 107px;
-    padding-top: 4px;
+    padding-left: 102px;
+    padding-top: 8px;
     text-indent: 1px;
 
     &::before {
@@ -124,6 +124,7 @@
     margin-top: 15px;
     margin-bottom: 45px;
     padding: 0;
+    @include outer-margin(40px, 40px);
   }
 
   .manufacturing__description {
@@ -140,14 +141,13 @@
   .manufacturing__video-wrapper img {
     display: block;
     width: 668px;
-    height: auto;
-    min-height: 455px;
+    height: 450px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .manufacturing {
-    margin-bottom: 103px;
+    margin-bottom: 105px;
     min-width: 455px;
   }
 
@@ -173,6 +173,7 @@
   }
 
   .manufacturing__description-wrapper {
+    @include outer-margin(34px, 34px);
     max-width: 350px;
     padding-top: 5px;
     padding-right: 22px;
@@ -191,11 +192,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 682px;
+    width: 682px;
     height: 455px;
   }
 
   .manufacturing__video-wrapper img {
-    width: 668px;
+    width: 682px;
   }
 }

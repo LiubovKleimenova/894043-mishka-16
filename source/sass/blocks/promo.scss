@@ -1,5 +1,7 @@
 .promo {
-  @include zero-indent;
+  width: $width-mobile;
+  @include margin-center;
+
   @include inner-padding();
   margin-bottom: 36px;
 }
@@ -29,8 +31,9 @@
 
 @media (min-width: $width-tablet) {
   .promo {
-    margin: 0;
+    width: $width-tablet;
 
+    @include margin-center;
     @include inner-padding(48px, 52px);
     margin-bottom: 53px;
     padding-top: 45px;
@@ -58,6 +61,7 @@
 
 @media (min-width: $width-desktop) {
   .promo {
+    width: $width-desktop;
     margin-bottom: 73px;
     padding-top: 0;
   }

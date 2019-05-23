@@ -1,6 +1,19 @@
 .buyer {
-  padding-top: 30px;
+  width: 100%;
+  padding-top: 0;
   padding-bottom: 10px;
+}
+
+.buyer__wrapper {
+  width: $width-mobile;
+
+  @include margin-center;
+  @include inner-padding;
+  position: relative;
+}
+
+.buyer__container {
+  margin-top: 28px;
 }
 
 .buyer__label {
@@ -9,7 +22,6 @@
 
 .buyer__text-field {
   margin-bottom: 22px;
-
   padding-top: 17px;
   padding-bottom: 15px;
   padding-right: 12px;
@@ -17,6 +29,13 @@
 
 @media (min-width: $width-tablet) {
   .buyer {
+    padding-bottom: 4px;
+  }
+
+  .buyer__wrapper {
+    width: $width-tablet;
+    @include margin-center;
+    @include inner-padding(217px, 50px);
     padding-top: 43px;
     padding-bottom: 33px;
   }
@@ -28,7 +47,20 @@
 
   .buyer__text-field {
     margin-left: 26px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     padding-left: 18px;
+    padding-bottom: 13px;
+    padding-top: 26px;
+  }
+
+  .buyer__container {
+    margin-top: -7px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .buyer__wrapper {
+    width: $width-desktop;
+    @include inner-padding(225px, 225px);
   }
 }

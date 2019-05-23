@@ -1,34 +1,36 @@
 .page-order {
-  @include mobile-style;
-  @include margin-center;
-  padding-bottom: 55px;
+  width: 100vw;
+  padding-bottom: 53px;
 }
 
 .page-order__suggestion {
-  @include outer-margin;
+  width: $width-mobile;
+  @include zero-indent;
+  @include margin-center;
+  @include inner-padding;
   @include font-properties-normal;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.85;
   color: $greyish-brown;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .page-order__form-wrapper {
-  @include zero-indent;
-  @include inner-padding();
+  width: 100%
 }
 
 
 @media (min-width: $width-tablet) {
   .page-order {
-    width: $width-tablet;
-    padding-bottom: 49px;
+    padding-bottom: 50px;
   }
 
   .page-order__suggestion {
-    @include outer-margin(51px, 100px);
+    width: $width-tablet;
+    @include margin-center;
+    @include inner-padding(51px, 100px);
     margin-top: 77px;
     margin-bottom: 7px;
     font-size: 17px;
@@ -38,18 +40,20 @@
   }
 
   .page-order__form-wrapper {
-    @include inner-padding(0, 0);
+    width: 100%;
   }
 }
 
 @media (min-width: $width-desktop) {
-  .page-order {
+  .page-order__suggestion {
     width: $width-desktop;
+
+    @include inner-padding(225px, 240px);
+    margin-top: 124px;
+    margin-bottom: 5px;
   }
 
-  .page-order__suggestion {
-    @include outer-margin(225px, 240px);
-    margin-top: 120px;
-    margin-bottom: 7px;
+  .page-order__form-wrapper {
+    width: 100%;
   }
 }

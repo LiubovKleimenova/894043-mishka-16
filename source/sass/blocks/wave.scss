@@ -7,11 +7,11 @@
   background-image: url("../img/bg-zigzag-fill.svg");
 
   &--index {
-    top: 823px;
+    top: 820px;
   }
 
   &--catalog {
-    top: 290px;
+    top: 294px;
   }
 }
 
@@ -19,14 +19,14 @@
   .wave {
     display: block;
     height: 24px;
-    width: $width-tablet;
+    width: 100vw;
   }
 }
 
 @media (min-width: $width-desktop) {
   .wave {
     height: 34px;
-    width: $width-desktop;
+    width: 100vw;
 
     &--index {
       top: 817px;

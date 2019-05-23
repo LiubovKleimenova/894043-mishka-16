@@ -1,5 +1,7 @@
 .about-us {
-  @include zero-indent;
+  width: $width-mobile;
+
+  @include margin-center;
   @include inner-padding();
   padding-top: 24px;
 }
@@ -14,16 +16,20 @@
 
 @media (min-width: $width-tablet) {
   .about-us {
-    @include inner-padding(48px, 52px);
+    width: $width-tablet;
+
+    @include inner-padding(47px, 50px);
     padding-top: 50px;
-    margin-bottom: 39px;
+    margin-bottom: 37px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .about-us {
-    @include inner-padding(225px, 225px);
-    padding-top: 59px;
+    width: $width-desktop;
+
+    @include inner-padding(223px, 225px);
+    padding-top: 57px;
     margin-bottom: 45px;
   }
 }

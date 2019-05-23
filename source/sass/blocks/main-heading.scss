@@ -14,8 +14,8 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 640px auto;
-    background-position: center -40px;
+    background-size: 580px auto;
+    background-position: center -20px;
   }
 }
 
@@ -45,7 +45,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
-      background-size: cover;
+      background-size: 1150px auto;
       background-position: top;
     }
   }
