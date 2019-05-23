@@ -110,7 +110,7 @@
   .product__wrapper {
     width: 335px;
 
-    @include inner-padding(25px, 25px);
+    @include inner-padding(27px, 25px);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -137,7 +137,7 @@
 
   .product__cart-wrapper {
     padding-top: 17px;
-    padding-bottom: 25px;
+    padding-bottom: 28px;
     padding-left: 5px;
     margin-top: auto;
     font-size: 17px;
@@ -154,6 +154,10 @@
     margin-left: 50px;
   }
 
+  .product__name {
+    padding-top: 28px;
+  }
+
   .product__wrapper {
     width: auto;
     flex-grow: 1;
@@ -162,6 +166,7 @@
   .product__cart-wrapper {
     padding-top: 23px;
     margin-top: 13px;
+    padding-left: 0;
   }
 
   .product__description {
