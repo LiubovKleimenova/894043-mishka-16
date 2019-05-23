@@ -40,12 +40,12 @@
   &::before {
     content: "";
     position: absolute;
-    width: 21px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     left: 31px;
 
     background-image: url("../img/icon-cart.svg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     opacity: 0.2;
   }
