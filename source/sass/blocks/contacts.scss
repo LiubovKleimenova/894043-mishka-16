@@ -26,7 +26,6 @@
   margin-top: 0;
   margin-bottom: 33px;
   border-collapse: collapse;
-
   font-size: 15px;
   font-weight: normal;
   line-height: 2;
@@ -79,6 +78,7 @@
 .contacts__map img {
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 1;
 }
 
