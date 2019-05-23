@@ -79,6 +79,7 @@
 .contacts__map img {
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -195,11 +196,11 @@
 @media (min-width: $width-desktop) {
   .contacts__wrapper {
     width: $width-desktop;
-
-    @include outer-margin(51px, 52px);
+    @include margin-center;
+  //  @include outer-margin(51px, 52px);
     position: relative;
     min-height: 457px;
-    width: 500px;
+
     padding-top: 36px;
     padding-bottom: 0;
 
@@ -222,6 +223,7 @@
   }
 
   .contacts__info {
+    width: 500px;
     margin-left: 196px;
     margin-top: 47px;
     margin-bottom: 82px;
