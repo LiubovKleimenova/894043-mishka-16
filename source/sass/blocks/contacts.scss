@@ -197,7 +197,6 @@
   .contacts__wrapper {
     width: $width-desktop;
     @include margin-center;
-  //  @include outer-margin(51px, 52px);
     position: relative;
     min-height: 457px;
 
@@ -211,7 +210,7 @@
   }
 
   .contacts__heading {
-    margin-left: 178px;
+    margin-left: 204px;
     margin-top: 104px;
     font-size: 53px;
     line-height: 1.08;
@@ -224,7 +223,7 @@
 
   .contacts__info {
     width: 500px;
-    margin-left: 196px;
+    margin-left: 225px;
     margin-top: 47px;
     margin-bottom: 82px;
   }
@@ -263,7 +262,7 @@
   .contacts__button {
     margin-top: 0;
     margin-right: 0;
-    margin-left: 200px;
+    margin-left: 225px;
     margin-bottom: 105px;
   }
 }
