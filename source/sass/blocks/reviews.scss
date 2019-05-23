@@ -1,5 +1,7 @@
 .reviews {
-  @include zero-indent;
+  width: $width-mobile;
+
+  @include margin-center;
   @include inner-padding();
   padding-top: 20px;
   margin-bottom: 45px;
@@ -64,6 +66,8 @@
 
 @media (min-width: $width-tablet) {
   .reviews {
+    width: $width-tablet;
+
     @include inner-padding(48px, 52px);
     display: flex;
     padding-top: 78px;
@@ -118,6 +122,8 @@
 
 @media (min-width: $width-desktop) {
   .reviews {
+    width: $width-desktop;
+
     @include inner-padding(172px, 52px);
     margin-left: 50px;
     min-height: 457px;

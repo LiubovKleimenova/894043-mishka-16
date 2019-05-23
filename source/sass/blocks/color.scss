@@ -1,6 +1,18 @@
+.color {
+  width: 100%;
+}
+
+.color__wrapper {
+  width: $width-mobile;
+
+  @include margin-center;
+  @include inner-padding;
+  position: relative;
+}
+
 .color__list {
   @include zero-indent;
-  margin-top: 26px;
+  margin-top: 24px;
   margin-bottom: 32px;
 }
 
@@ -47,18 +59,28 @@
     background-color: $grey;
   }
 
+  .color__wrapper {
+    width: $width-tablet;
+    @include margin-center;
+    @include inner-padding(217px, 0);
+    padding-top: 50px;
+    padding-bottom: 25px;
+    outline: 1px solid orange;
+  }
+
   .color__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
-    margin-top: 51px;
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .color__option {
     width: 260px;
     padding-left: 82px;
+
     margin-bottom: 24px;
     min-height: 52px;
     line-height: 52px;
@@ -74,5 +96,16 @@
     background-image: url("../img/icon-tick.svg");
     background-size: 100%;
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .color__wrapper {
+    width: $width-desktop;
+    @include inner-padding(224px, 50px);
+  }
+
+  .color__option {
+    width: 263px;
   }
 }

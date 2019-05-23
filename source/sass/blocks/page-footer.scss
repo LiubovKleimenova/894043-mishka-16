@@ -1,9 +1,13 @@
 .page-footer {
+  width: 100vw;
+  background-color: $grey;
+}
+
+.page-footer__wrapper {
   width: $width-mobile;
 
   @include margin-center;
   @include inner-padding;
-  background-color: $grey;
 }
 
 .page-footer__logo {
@@ -41,8 +45,9 @@
 }
 
 @media (min-width: $width-tablet) {
-  .page-footer {
+  .page-footer__wrapper {
     width: $width-tablet;
+    @include margin-center;
     display: flex;
     justify-content: space-between;
 
@@ -63,7 +68,7 @@
 }
 
 @media (min-width: $width-desktop) {
-  .page-footer {
+  .page-footer__wrapper {
     width: $width-desktop;
   }
 }

@@ -1,3 +1,14 @@
+.email {
+  width: 100%;
+}
+
+.email__wrapper {
+  width: $width-mobile;
+  @include margin-center;
+  @include inner-padding;
+  position: relative;
+}
+
 .email__field {
   margin-top: 7px;
   margin-bottom: 32px;
@@ -7,7 +18,7 @@
 
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
-  background-position: 227px center;
+  background-position: 224px center;
 }
 
 .email__field:hover,
@@ -19,6 +30,12 @@
 @media (min-width: $width-tablet) {
   .email {
     background-color: $grey;
+  }
+
+  .email__wrapper {
+    width: $width-tablet;
+    @include margin-center;
+    @include inner-padding(217px, 50px);
   }
 
   .email legend {
@@ -36,6 +53,11 @@
 }
 
 @media (min-width: $width-desktop) {
+  .email__wrapper {
+    width: $width-desktop;
+    @include inner-padding(225px, 225px);
+  }
+
   .email__field {
     background-position: 664px center;
   }

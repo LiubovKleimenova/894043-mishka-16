@@ -1,10 +1,21 @@
+.add-details {
+  width: 100%;
+}
+
+.add-details__wrapper {
+  width: $width-mobile;
+  @include margin-center;
+  @include inner-padding;
+  position: relative;
+}
+
 .add-details__field {
-  margin-top: 21px;
+  margin-top: 25px;
   border: 2px $black solid;
-  padding-top: 16px;
+  padding-top: 15px;
   padding-left: 17px;
   padding-right: 17px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
 }
 
 .add-details__field:hover,
@@ -18,12 +29,23 @@
 }
 
 @media (min-width: $width-tablet) {
+  .add-details__wrapper {
+    width: $width-tablet;
+    @include margin-center;
+    @include inner-padding(217px, 50px);
+  }
   .add-details__field {
     margin-top: 50px;
     padding-top: 14px;
     padding-left: 15px;
     padding-bottom: 14px;
     height: 142px;
-    //можно ли явно задавать высоту текстового поля??
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .add-details__wrapper {
+    width: $width-desktop;
+    @include inner-padding(225px, 225px);
   }
 }

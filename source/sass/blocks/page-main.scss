@@ -1,6 +1,4 @@
 .page-main {
-  width: $width-mobile;
-
   @include margin-center;
   @include font-properties-normal;
   font-size: 15px;
@@ -19,19 +17,9 @@
 }
 
 @media (min-width: $width-tablet) {
-  .page-main {
-    width: $width-tablet;
-  }
-
   .page-main__heading {
     @include inner-padding(125px, 125px);
     padding-top: 150px;
     padding-bottom: 493px;
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .page-main {
-    width: $width-desktop;
   }
 }

@@ -1,7 +1,19 @@
+.type {
+  width: 100%;
+}
+
+.type__wrapper {
+  width: $width-mobile;
+
+  @include margin-center;
+  @include inner-padding;
+  position: relative;
+}
+
 .type__list {
   @include zero-indent;
-  margin-top: 25px;
-  margin-bottom: 30px;
+  margin-top: 23px;
+  margin-bottom: 32px;
 }
 
 .type__option {
@@ -40,9 +52,17 @@
 }
 
 @media (min-width: $width-tablet) {
+  .type__wrapper {
+    width: $width-tablet;
+    @include margin-center;
+    @include inner-padding(217px, 50px);
+    padding-top: 50px;
+    padding-bottom: 27px;
+    outline: 1px solid pink;
+  }
+
   .type__list {
-    margin-top: 50px;
-    margin-bottom: 48px;
+    @include zero-indent;
   }
 
   .type__option {
@@ -58,5 +78,13 @@
     left: 13px;
     width: 22px;
     height: 22px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .type__wrapper {
+    width: $width-desktop;
+    @include inner-padding(224px, 50px);
+    padding-bottom: 26px;
   }
 }

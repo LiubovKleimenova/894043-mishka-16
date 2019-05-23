@@ -1,17 +1,21 @@
 .page-catalog {
+  width: 100vw;
+}
+
+.page-catalog__wrapper {
   width: $width-mobile;
 
   @include margin-center;
 }
 
 @media (min-width: $width-tablet) {
-  .page-catalog {
+  .page-catalog__wrapper {
     width: $width-tablet;
   }
 }
 
 @media (min-width: $width-desktop) {
-  .page-catalog {
+  .page-catalog__wrapper {
     width: $width-desktop;
   }
 }

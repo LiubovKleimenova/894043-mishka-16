@@ -1,5 +1,16 @@
+.phone {
+  width: 100%;
+}
+
+.phone__wrapper {
+  width: $width-mobile;
+  @include margin-center;
+  @include inner-padding;
+  position: relative;
+}
+
 .phone__field {
-  margin-top: 7px;
+  margin-top: 6px;
   margin-bottom: 32px;
   width: 100%;
   padding-right: 40px;
@@ -21,6 +32,12 @@
     background-color: $grey;
   }
 
+  .phone__wrapper {
+    width: $width-tablet;
+    @include margin-center;
+    @include inner-padding(217px, 50px);
+  }
+
   .phone__field {
     margin-top: 51px;
     margin-bottom: 17px;
@@ -33,6 +50,11 @@
 }
 
 @media (min-width: $width-desktop) {
+  .phone__wrapper {
+    width: $width-desktop;
+    @include inner-padding(225px, 225px);
+  }
+
   .phone__field {
     background-position: 664px center;
   }

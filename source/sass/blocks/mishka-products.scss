@@ -1,3 +1,8 @@
+.mishka-products {
+  width: $width-mobile;
+  @include margin-center;
+}
+
 .mishka-products__list {
   @include zero-indent;
 }
@@ -96,7 +101,9 @@
 
 @media (min-width: $width-tablet) {
   .mishka-products {
-    @include outer-margin(52px, 52px);
+    width: $width-tablet;
+    @include margin-center;
+    @include inner-padding(52px, 52px);
   }
 
   .mishka-products__list {
@@ -127,6 +134,10 @@
 }
 
 @media (min-width: $width-desktop) {
+  .mishka-products {
+    width: $width-desktop;
+  }
+
   .mishka-products__item {
     margin-top: -150px;
     width: 50%;
