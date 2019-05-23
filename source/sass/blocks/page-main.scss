@@ -9,8 +9,10 @@
 }
 
 .page-main__heading {
+  width: $width-mobile;
   @include zero-indent;
   @include inner-padding();
+  @include margin-center;
   padding-top: 70px;
   padding-bottom: 126px;
   text-align: center;
@@ -18,8 +20,9 @@
 
 @media (min-width: $width-tablet) {
   .page-main__heading {
+    width: 100vw;
     @include inner-padding(125px, 125px);
-    padding-top: 150px;
+    padding-top: 155px;
     padding-bottom: 493px;
   }
 }

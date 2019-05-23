@@ -18,9 +18,9 @@
   .about-us {
     width: $width-tablet;
 
-    @include inner-padding(48px, 52px);
+    @include inner-padding(47px, 50px);
     padding-top: 50px;
-    margin-bottom: 39px;
+    margin-bottom: 37px;
   }
 }
 
@@ -28,8 +28,8 @@
   .about-us {
     width: $width-desktop;
 
-    @include inner-padding(225px, 225px);
-    padding-top: 59px;
+    @include inner-padding(223px, 225px);
+    padding-top: 57px;
     margin-bottom: 45px;
   }
 }

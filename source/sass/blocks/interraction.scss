@@ -79,7 +79,6 @@
     width: $width-tablet;
     @include margin-center;
     @include inner-padding(50px, 50px);
-    outline: 1px solid green;
     margin-top: 50px;
     display: flex;
     flex-direction: row-reverse;

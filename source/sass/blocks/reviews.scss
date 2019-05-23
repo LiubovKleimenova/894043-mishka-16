@@ -71,7 +71,7 @@
     @include inner-padding(48px, 52px);
     display: flex;
     padding-top: 78px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -81,6 +81,10 @@
       background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
     }
+  }
+
+  .reviews__container {
+    display: flex;
   }
 
   .rewiews__body-wrapper {
@@ -97,7 +101,7 @@
   }
 
   .reviews__person {
-    margin-bottom: 33px;
+    margin-bottom: 46px;
     font-size: 18px;
     width: 300px;
   }
@@ -106,7 +110,7 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
-    margin-left: -255px;
+    margin-left: -229px;
     width: 175px;
     flex-shrink: 0;
   }
@@ -117,23 +121,41 @@
 
   .reviews__arrow {
     border: none;
+    margin-bottom: 48px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .reviews {
     width: $width-desktop;
-
-    @include inner-padding(172px, 52px);
-    margin-left: 50px;
+    @include zero-indent;
+    @include margin-center;
+    @include inner-padding(50px, 50px);
     min-height: 457px;
     margin-bottom: 67px;
+    background: none;
+  }
+
+  .reviews__container {
+    padding-left: 170px;
     padding-top: 70px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+    margin-right: -100px;
   }
 
   .reviews__review-text {
     margin-bottom: 41px;
-    margin-right: 100px;
+    margin-right: 0;
+    margin-top: 47px;
+    margin-left: 3px;
+    width: 770px;
   }
 
   .reviews__person {
@@ -142,8 +164,9 @@
   }
 
   .reviews__button-wrapper {
+    width: 175px;
     margin-top: 8px;
-    margin-left: -200px;
+    margin-left: -67px;
     justify-content: flex-end;
   }
 

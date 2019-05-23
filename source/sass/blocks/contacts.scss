@@ -1,29 +1,14 @@
 .contacts {
   width: 100%;
   position: relative;
-
-//  &::before {
-//    content: "";
-//    display: block;
-//    position: absolute;
-//    z-index: 100;
-//    width: 67px;
-//    height: 100px;
-//    top: 443px;
-//    right: 127px;
-
-//    background-image: url("../img/icon-map-pin.svg");
-//    background-position: center;
-//    background-repeat: no-repeat;
-//  }
 }
 
 .contacts__wrapper {
   width: $width-mobile;
 
   @include margin-center;
-  padding-top: 31px;
-  padding-bottom: 39px;
+  padding-top: 29px;
+  padding-bottom: 0;
 }
 
 .contacts__heading {
@@ -62,7 +47,7 @@
 .contacts__button {
   @include outer-margin(30px, 30px);
   width: auto;
-  margin-top: 538px;
+  margin-top: 531px;
   margin-bottom: 39px;
 }
 
@@ -94,7 +79,6 @@
 .contacts__map img {
   position: absolute;
   top: 0;
-  left: 0;
   z-index: 1;
 }
 
@@ -113,28 +97,10 @@
     width: $width-tablet;
     padding-top: 30px;
     padding-bottom: 57px;
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 47px;
-      height: 81px;
-      top: 10px;
-      right: 53px;
-
-      background-image: url("../img/icon-flag.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-//    &::before {
-//      right: 350px;
-//    }
   }
 
   .contacts__map {
-    top: 300px;
+    top: 306px;
     left: 0;
   }
 
@@ -154,10 +120,27 @@
 
     font-size: 43px;
     line-height: 1.16;
+
+    position: relative;
+
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 47px;
+          height: 81px;
+          top: -15px;
+          right: 23px;
+
+          background-image: url("../img/icon-flag.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+        }
   }
 
   .contacts__info {
-    margin-top: -12px;
+    margin-top: -10px;
     margin-bottom: 58px;
     font-size: 17px;
     font-weight: normal;
@@ -202,7 +185,7 @@
 
   .contacts__button {
     width: 230px;
-    margin-top: 564px;
+    margin-top: 567px;
     margin-bottom: 0;
 
     @include margin-center;
@@ -224,22 +207,22 @@
       top: 133px;
       right: 392px;
     }
-
-//    &::before {
-//      right: -320px;
-//      top: 215px;
-//    }
   }
 
   .contacts__heading {
-    margin-left: 155px;
-    margin-top: 105px;
+    margin-left: 178px;
+    margin-top: 104px;
     font-size: 53px;
     line-height: 1.08;
+
+    &::after {
+      top: -9px;
+      left: -91px;
+    }
   }
 
   .contacts__info {
-    margin-left: 170px;
+    margin-left: 196px;
     margin-top: 47px;
     margin-bottom: 82px;
   }
@@ -278,7 +261,7 @@
   .contacts__button {
     margin-top: 0;
     margin-right: 0;
-    margin-left: 175px;
+    margin-left: 200px;
     margin-bottom: 105px;
   }
 }
