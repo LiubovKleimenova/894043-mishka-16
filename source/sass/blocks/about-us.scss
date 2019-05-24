@@ -2,6 +2,7 @@
   width: $width-mobile;
 
   @include margin-center;
+
   @include inner-padding();
   padding-top: 24px;
 }
