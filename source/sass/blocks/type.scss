@@ -1,6 +1,4 @@
-.type {
-  width: 100%;
-}
+
 
 .type__wrapper {
   width: $width-mobile;
@@ -63,6 +61,8 @@
 
   .type__list {
     @include zero-indent;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .type__option {

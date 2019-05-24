@@ -1,5 +1,6 @@
 .interraction__field {
   @include zero-indent;
+  width: 100%;
   border: none;
 
   font-size: 17px;
@@ -16,12 +17,14 @@
 .interraction__field fieldset {
   border: none;
   outline: none;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .interraction__legend {
   position: relative;
   display: block;
-  width: $width-mobile;
+  width: 257px;
 
   font-size: 17px;
   line-height: 16px;
@@ -125,6 +128,6 @@
 
     @include margin-center;
     @include inner-padding(225px, 224px);
-    margin-top: 48px;
+    margin-top: 46px;
   }
 }

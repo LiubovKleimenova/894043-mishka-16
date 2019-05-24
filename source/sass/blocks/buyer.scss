@@ -55,7 +55,8 @@
   }
 
   .buyer__container {
-    margin-top: -7px;
+    margin-top: 35px;
+    margin-bottom: 34px;
   }
 }
 
@@ -64,5 +65,9 @@
     width: $width-desktop;
 
     @include inner-padding(225px, 225px);
+  }
+
+  .buyer__container {
+    margin-bottom: 33px;
   }
 }
