@@ -48,7 +48,7 @@
   @include outer-margin(30px, 30px);
   width: auto;
   margin-top: 531px;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 }
 
 .contacts__value--email a {
@@ -162,7 +162,8 @@
   }
 
   .contacts__feature {
-    width: 80px;
+    width: 75px;
+    padding-right: 0;
     text-align: left;
     vertical-align: top;
   }
@@ -233,6 +234,11 @@
     margin: 0;
   }
 
+  .contacts__feature {
+    width: 72px;
+    padding-right: 0;
+  }
+
   .contacts__value--address,
   .contacts__feature--address {
     margin-top: 0;
@@ -240,9 +246,8 @@
 
   .contacts__map {
     position: absolute;
-    top: 72px;
-
-    left: 547px;
+    top: 69px;
+    left: 574px;
     max-width: none;
     width: 525px;
     height: 457px;
