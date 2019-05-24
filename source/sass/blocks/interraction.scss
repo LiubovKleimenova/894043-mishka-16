@@ -13,6 +13,11 @@
   list-style: none;
 }
 
+.interraction__field fieldset {
+  border: none;
+  outline: none;
+}
+
 .interraction__legend {
   position: relative;
   display: block;

@@ -40,8 +40,9 @@
       <p class="page-order__suggestion">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <div class="page-order__form-wrapper interraction">
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="interraction__field type">
-            <div class="type__wrapper">
+
+          <div class="interraction__field type">
+            <fieldset class="type__wrapper">
               <legend class="interraction__legend">Тип</legend>
               <ul class="type__list">
                 <li class="type__option">
@@ -59,11 +60,10 @@
                   </label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
-
-          <fieldset class="interraction__field color">
-            <div class="color__wrapper">
+            </fieldset>
+          </div>
+          <div class="interraction__field color">
+            <fieldset class="color__wrapper">
               <legend class="interraction__legend">Цвет</legend>
               <ul class="color__list">
                 <li class="color__option">
@@ -103,11 +103,10 @@
                   </label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
-
-          <fieldset class="interraction__field buyer">
-            <div class="buyer__wrapper">
+            </fieldset>
+          </div>
+          <div class="interraction__field buyer">
+            <fieldset class="buyer__wrapper">
               <legend class="interraction__legend">ФИО</legend>
               <div class="buyer__container">
                 <label class="buyer__label"> Имя:
@@ -121,30 +120,25 @@
                 </label>
               </div>
             </div>
-          </fieldset>
-
-
-          <fieldset class="interraction__field phone">
-            <div class="phone__wrapper">
+          </div>
+          <div class="interraction__field phone">
+            <fieldset class="phone__wrapper">
               <legend class="interraction__legend">ТЕЛ</legend>
               <input class="phone__field text-field text-field--big-font" type="tel" name="phone-number" placeholder="+7 XXX XXX XX XX*" required>
-            </div>
-          </fieldset>
-
-          <fieldset class="interraction__field email">
-            <div class="email__wrapper">
+            </fieldset>
+          </div>
+          <div class="interraction__field email">
+            <fieldset class="email__wrapper">
               <legend class="interraction__legend interraction__legend--short-line">E-MAIL</legend>
               <input class="email__field text-field" type="email" placeholder="Ваш Email*" required>
-            </div>
-
-          </fieldset>
-          <fieldset class="interraction__field add-details">
-            <div class="add-details__wrapper">
+            </fieldset>
+          </div>
+          <div class="interraction__field add-details">
+            <fieldset class="add-details__wrapper">
               <legend class="interraction__legend">ДОП</legend>
               <textarea class="add-details__field text-field" name="additional-info" rows="6" cols="25">Опишите все ваши пожелания к заказу</textarea>
-            </div>
-
-          </fieldset>
+            </fieldset>
+          </div>
           <div class="interraction__wrapper">
             <p class="interraction__obligatory">*Поля обязательны для заполнения</p>
             <button class="interraction__button button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
