@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Каталог Mishka</title>
+    <title>Mishka</title>
     <link rel="stylesheet" href="css/style.min.css">
     <script>document.createElement( "picture" );</script>
     <script src="js/picturefill.min.js" async></script>
@@ -15,31 +15,31 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Магазин Mishka" width="86" height="35">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Mishka Store" width="86" height="35">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--hide" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--hide" type="button">Open menu</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="order-form.html">Вязание на заказ</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Shop all items</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="order-form.html">Customize your order</a></li>
         </ul>
         <ul class="main-nav__user-interraction user-list">
-          <li class="user-list__item"><a class="user-list__link" href="#">Поиск по сайту</a></li>
-          <li class="user-list__item"><a class="user-list__link" href="#">Корзина: пока пуста</a></li>
+          <li class="user-list__item"><a class="user-list__link" href="#">Search</a></li>
+          <li class="user-list__item"><a class="user-list__link" href="#">Cart: 0 items</a></li>
         </ul>
         <ul class="main-nav__offers offers">
-          <li class="offers__item"><a class="offers__link" href="#">Новые поступления</a></li>
-          <li class="offers__item"><a class="offers__link" href="#">Распродажа</a></li>
+          <li class="offers__item"><a class="offers__link" href="#">New arrivals</a></li>
+          <li class="offers__item"><a class="offers__link" href="#">Check our sale</a></li>
         </ul>
-        <p class="main-nav__delivery">Бесплатная доставка по Росиии</p>
+        <p class="main-nav__delivery">Free delivery for all orders</p>
       </nav>
     </header>
     <main class="page-catalog">
-      <h1  class="page-catalog__heading grey-heading">Каталог товаров</h1>
+      <h1  class="page-catalog__heading grey-heading">Shop all items</h1>
       <div class="wave wave--catalog"></div>
       <div class="page-catalog__wrapper">
         <section class="catalog">
-          <h2 class="visually-hidden">Список товаров</h2>
+          <h2 class="visually-hidden">Item's list</h2>
           <ul class="catalog__list">
             <li class="catalog__item product">
               <a class="product__photo" href="#">
@@ -50,12 +50,12 @@
                 </picture>
               </a>
               <div class="product__wrapper">
-                <a class="product__name" href="#">Зайчик-попрыгайчик</a>
-                <p class="product__description">Рост 30 см, вес 200 г</p>
+                <a class="product__name" href="#">Bunny</a>
+                <p class="product__description">Height 30 sm, weight 200 g</p>
                 <div class="product__cart-wrapper">
-                  <p class="product__price">1 200 руб.</p>
+                  <p class="product__price">$ 40</p>
                   <a class="product__add-to-cart js-order-button" href="#">
-                    <span class="visually-hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Add to cart</span>
                   </a>
                 </div>
               </div>
@@ -69,12 +69,12 @@
                 </picture>
               </a>
               <div class="product__wrapper">
-                <a class="product__name" href="#">Корзинка для белья</a>
-                <p class="product__description">Диаметр 15 см, высота 10 см</p>
+                <a class="product__name" href="#">Storage basket</a>
+                <p class="product__description">Diameter 15 sm, height 10 sm</p>
                 <div class="product__cart-wrapper">
-                  <p class="product__price">690 руб.</p>
+                  <p class="product__price">$ 14</p>
                   <a class="product__add-to-cart js-order-button" href="#">
-                    <span class="visually-hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Add to cart</span>
                   </a>
                 </div>
               </div>
@@ -88,12 +88,12 @@
                 </picture>
               </a>
               <div class="product__wrapper">
-                <a class="product__name" href="#">Большая корзинка для&nbsp;игрушек</a>
-                <p class="product__description">Диаметр 30 см, высота 30 см</p>
+                <a class="product__name" href="#">Large toy basket</a>
+                <p class="product__description">Diameter 30 sm, height 30 см</p>
                 <div class="product__cart-wrapper">
-                  <p class="product__price">1 500 руб.</p>
+                  <p class="product__price">$ 30</p>
                   <a class="product__add-to-cart js-order-button" href="#">
-                    <span class="visually-hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Add to cart</span>
                   </a>
                 </div>
               </div>
@@ -103,7 +103,7 @@
         <section class="manufacturing">
           <div class="manufacturing__wrapper">
             <div class="manufacturing__heading-wrapper">
-              <h2 class="manufacturing__heading">Процесс производства</h2>
+              <h2 class="manufacturing__heading">How we make our toys</h2>
             </div>
             <div class="manufacturing__video-wrapper">
               <picture>
@@ -118,8 +118,8 @@
               </button>
             </div>
             <div class="manufacturing__description-wrapper">
-              <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-              <a href="order-form.html" class="manufacturing__button button">Сделать заказ</a>
+              <p class="manufacturing__description">Detailed video on how we create our toys and other products for our customers and followers</p>
+              <a href="order-form.html" class="manufacturing__button button">Place an order</a>
             </div>
           </div>
         </section>
@@ -127,10 +127,10 @@
       <section class="page-catalog__banner banner">
         <div class="banner__overlay overlay">
           <div class="banner__modal modal">
-            <h2 class="modal__heading">Добавить в корзину</h2>
+            <h2 class="modal__heading">Add to cart</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="modal__fieldset">
-                <p class="modal__command">Выберите размер</p>
+                <p class="modal__command">Choose size</p>
                 <label class="modal__label" for="small">
                   <input class="visually-hidden" type="radio" name="item-size" id="small" value="small" checked>
                   <span class="modal__checkbox"></span>
@@ -147,7 +147,7 @@
                   <span class="modal__checkbox"></span>
                 </label>
               </fieldset>
-              <button class="modal__button button button--blue" type="submit">Добавить</button>
+              <button class="modal__button button button--blue" type="submit">Add</button>
             </form>
           </div>
         </div>
@@ -175,11 +175,11 @@
         </ul>
         <p class="page-footer__copyright author">
           <a class="author__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="author__text">Разработано</span>
+            <span class="author__text">Created by</span>
             <svg class="author__logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
             </svg>
-            <span class="visually-hidden">Логотип HTML Academy</span>
+            <span class="visually-hidden">Logo HTML Academy</span>
           </a>
         </p>
       </div>
