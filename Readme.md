@@ -10,7 +10,19 @@
 
 Responsive layout built with HTML and CSS using preprocessor (Sass). The main goal of the project was to get practice with media queries and flexbox layout. Automation is done with Gulp.
 
-#### 2. Создайте форк
+#### 2. Screenshots
+
+Desktop:
+
+<img width="769" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-desc.png?raw=true">
+
+Tablet:
+
+<img width="769" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-tab.png?raw=true">
+
+Mobile:
+
+<img width="320" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-mob1.png?raw=true">
 
 Desktop:
 
