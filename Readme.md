@@ -14,10 +14,12 @@ Responsive layout built with HTML and CSS using preprocessor (Sass). The main go
 
 Desktop:
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455590/09e03f32-206a-11e6-9dc8-32d4c11edc90.png">
+<img width="769" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-Desktop2.png?raw=true">
 
 Tablet:
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455592/0a060884-206a-11e6-863d-531a4023ac2e.png">
+<img width="769" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-tablet2.png?raw=true">
 
 Mobile:
+
+<img width="320" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-mob2.png?raw=true">
