@@ -1,4 +1,4 @@
-# Project «Mishka» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Project «Mishka»
 
 * Student: [Liubov Kleimenova](https://up.htmlacademy.ru/adaptive/16/user/894043).
 
