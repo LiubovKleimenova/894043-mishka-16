@@ -16,21 +16,31 @@ Desktop:
 
 <img width="769" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-desc.png?raw=true">
 
+---
+
 Tablet:
 
 <img width="769" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-tab.png?raw=true">
+
+---
 
 Mobile:
 
 <img width="320" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-mob1.png?raw=true">
 
+---
+
 Desktop:
 
 <img width="769" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-Desktop2.png?raw=true">
 
+---
+
 Tablet:
 
 <img width="769" alt="" src="https://github.com/LiubovKleimenova/894043-mishka-16/blob/master/docs/mishka-tablet2.png?raw=true">
+
+---
 
 Mobile:
 
